@@ -10,7 +10,7 @@ export const GeneralTab = () => {
                         <p>Distribución del puntaje del Índice de Innovación Pública según categoría de instituciones sobre un máximo de 100 puntos. Año de referencia 2019 - 37 servicios participantes.</p>
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/740x460" />
+                        <img src="https://via.placeholder.com/740x460" alt= "gráfico" />
                     </div>
                 </Col>
             </Row>
@@ -70,7 +70,7 @@ export const GeneralTab = () => {
             </Row>
             <Row>
                 <Col md={12}>
-                    <a href="https://www.google.com/?hl=es">+ más información sobre las categorías</a>
+                    <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las categorías</a>
                 </Col>
             </Row>
         </>

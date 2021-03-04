@@ -9,7 +9,7 @@ export const Layout = ({ onStateChange }) => {
 
     return (
         <>
-            <div>
+            <div className="body-container">
                 <Header />
                 <Body />
                 <Footer />

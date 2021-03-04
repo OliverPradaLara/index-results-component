@@ -1,18 +1,20 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Card, CardGroup } from 'react-bootstrap'
 
 export const TextIndex = () => {
     return (
-        <Row>
-            <Col md={12}>
-                <div>
+        <Row className="justify-content-md-center">
+            <Col md={6}>
+                <CardGroup>
+                    <Card border="light">
                     <h1>
                         Resultados del Índice
                     </h1>
-                    <p>
-                        Podrás conocer  los resultados del Índice de Innovación Pública, es decir el desempeño de 37 servicios públicos chilenos  en cuanto a sus capacidades para innovar. Estos resultados están agrupados por categoríasde instituciones, y podrás  acceder al detalle de cada una de las 10 subdimensiones medidas
-                    </p>
-                </div>
+                        <Card.Body>
+                            Podrás conocer  los resultados del Índice de Innovación Pública, es decir el desempeño de 37 servicios públicos chilenos  en cuanto a sus capacidades para innovar. Estos resultados están agrupados por categoríasde instituciones, y podrás  acceder al detalle de cada una de las 10 subdimensiones medidas
+                            </Card.Body>
+                    </Card>
+                </CardGroup>
             </Col>
         </Row>
     )

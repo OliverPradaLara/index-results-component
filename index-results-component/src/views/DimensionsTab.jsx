@@ -17,7 +17,7 @@ export const DimensionsTab = () => {
                     <Card border="light">
                         <Card.Body>
                             <div>
-                                <img src="https://via.placeholder.com/300x550" />
+                                <img src="https://via.placeholder.com/300x550" alt= "" />
                             </div>
                             <Card.Title>RECURSOS INSTITUCIONALES</Card.Title>
                             <Card.Text>
@@ -34,7 +34,7 @@ export const DimensionsTab = () => {
                                 elementos de estrategia y gobernanza
                                 de la innovación en cada servicio.
                         </Card.Text>
-                            <a href="https://www.google.com/?hl=es">ver detalle subdimensiones</a>
+                            <a href="https://www.google.com/?hl=es" className="color-orange-one">ver detalle subdimensiones</a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,7 +42,7 @@ export const DimensionsTab = () => {
                     <Card border="light">
                         <Card.Body>
                             <div>
-                                <img src="https://via.placeholder.com/300x550" />
+                                <img src="https://via.placeholder.com/300x550" alt= ""  />
                             </div>
                             <Card.Title>PRÁCTICAS Y PROCESOS</Card.Title>
                             <Card.Text>
@@ -60,7 +60,7 @@ export const DimensionsTab = () => {
                                 prototipado y testeo para la detección
                                 temprana de fallas.
                         </Card.Text>
-                            <a href="https://www.google.com/?hl=es">ver detalle subdimensiones</a>
+                            <a href="https://www.google.com/?hl=es" className="color-orange-one">ver detalle subdimensiones</a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -68,7 +68,7 @@ export const DimensionsTab = () => {
                     <Card border="light" >
                         <Card.Body>
                             <div>
-                                <img src="https://via.placeholder.com/300x550" />
+                                <img src="https://via.placeholder.com/300x550" alt= "" />
                             </div>
                             <Card.Title>COLABORACIÓN Y APERTURA</Card.Title>
                             <Card.Text>
@@ -81,7 +81,7 @@ export const DimensionsTab = () => {
                                 beneficiarios, con otras instituciones
                                 dentro de la esfera de la
                         </Card.Text>
-                            <a href="https://www.google.com/?hl=es">ver detalle subdimensiones</a>
+                            <a href="https://www.google.com/?hl=es" className="color-orange-one">ver detalle subdimensiones</a>
 
                         </Card.Body>
                     </Card>
@@ -89,7 +89,7 @@ export const DimensionsTab = () => {
             </Row>
             <Row>
                 <Col md={12}>
-                    <a href="https://www.google.com/?hl=es">+ más información sobre las dimensiones</a>
+                    <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
                 </Col>
             </Row>
         </>
