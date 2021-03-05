@@ -1,0 +1,75 @@
+.contenedor-footer{
+    background: #000;
+    width: 100%;
+    padding: 40px 32px 56px;
+}
+.contenedor-footer .all-logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-footer .all-logos .logo-izquierdo, 
+.contenedor-footer .all-logos .logo-centro, 
+.contenedor-footer .all-logos .logo-derecho{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo,
+.contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno,
+.contenedor-footer .all-logos .logo-izquierdo .ministerio{
+    width: 33%;
+}
+
+.contenedor-footer .all-logos .logo-izquierdo img{
+    width: 75%;
+    height: 90px ;
+}
+
+.contenedor-footer .all-logos .logo-centro .indice-innovacion-publica{
+    width: 60%;
+}
+.contenedor-footer .all-logos .logo-centro .indice-innovacion-publica img{
+    width: 70%;
+}
+
+.contenedor-footer .all-logos .logo-derecho .twitter,
+.contenedor-footer .all-logos .logo-derecho .instagram,
+.contenedor-footer .all-logos .logo-derecho .in,
+.contenedor-footer .all-logos .logo-derecho .facebook{
+    width: 20%;
+    font-size: 400%;
+    color: #fff;
+}
+.contenedor-footer .links {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-footer .links ul {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-footer .links ul li{
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contenedor-footer .links ul li a{
+    color: #fff;
+}
+.contenedor-footer .links ul li a:hover{
+    text-decoration: none;
+}
+.contenedor-footer .links ul .decoracion a:hover{
+    text-decoration: underline !important;
+    color: #fff;
+}
