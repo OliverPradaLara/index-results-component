@@ -1,5 +1,7 @@
 import React from 'react';
-import { Navbar, Nav, Row, Col } from 'react-bootstrap'
+import { Navbar, Nav, Row, Col } from 'react-bootstrap';
+import  indiceInnivacionGris  from './../SVG/icons/indice-innovacion-publica-gris.svg'
+import  laboratorioGobiernoGris  from './../SVG/icons/Laboratorio-Gobierno-gris.svg'
 
 export const Header = () => {
     return (
@@ -7,7 +9,10 @@ export const Header = () => {
             <Col md={12}>
                 <Navbar bg="light" variant="light">
                     <Col md={3}>
-                        <Navbar.Brand href="#home" className="align-left">Laboratorio | índice</Navbar.Brand>
+                        <Navbar.Brand href="#home" className="align-left">
+                        <img src = {laboratorioGobiernoGris}/>
+                        <img src = {indiceInnivacionGris}/>
+                            </Navbar.Brand>
                     </Col>
                     <Col md={4}/>
                     <Col md={5}>
