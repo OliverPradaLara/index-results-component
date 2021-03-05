@@ -1,9 +1,9 @@
 import React from 'react';
+import BID from '../img/SVG/BID.svg' 
+
 
 export const Footer = () => {
     return (
-        <h1>
-            Footer
-        </ h1>
+        <img src={BID} />
     )
 }
