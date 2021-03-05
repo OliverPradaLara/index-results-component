@@ -13,6 +13,7 @@ export const PieFooter = () => {
     return(
         <>
         <div className="contenedor-footer">
+
                 <div className="all-logos">
                     <div className="logo-izquierdo">
                         <div className="banco-interamericano-desarrollo">
@@ -25,11 +26,13 @@ export const PieFooter = () => {
                             <img src={Ministerio} alt="Ministerio Secretaria" />
                         </div>
                     </div>
+
                     <div className="logo-centro">
                         <div className="indice-innovacion-publica">
                             <img src={indiceInnovacionPublica} alt="Indice Innovacion Pública" />
                         </div>
                     </div>
+                    
                     <div className="logo-derecho">
                         <div className="twitter">
                             <a><i className="fab fa-twitter"></i></a>
@@ -45,6 +48,7 @@ export const PieFooter = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="links color-orange-one">
                     <ul>
                         <li><a href="#"><span className='color-orange-one'>ACERCA DEL ÍNDICE DE INNOVACIÓN PÚBLICA</span></a></li>
@@ -52,6 +56,7 @@ export const PieFooter = () => {
                         <li className="decoracion">SI ERES PARTE DE LAS INSTITUCIONES PARTICIPANTES <a href="#">INGRESA ACÁ</a></li>
                     </ul>
                 </div>
+
             </div>
         </>
     )

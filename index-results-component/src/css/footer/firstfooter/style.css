@@ -50,7 +50,14 @@
 .contenedor-first-footer .contenedor .lista ul li{
     font-size: 20px;
     font-weight: 600;
+}
+.contenedor-first-footer .contenedor .lista ul li .underline{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
     color: #dc712d;
+
 }
 .contenedor-first-footer .contenedor .lista ul li span{
     font-weight: lighter;
