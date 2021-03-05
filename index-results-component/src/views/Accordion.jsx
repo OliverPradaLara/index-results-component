@@ -12,9 +12,13 @@ export const AccordionComponent = () => {
                     <Card>
                         <FirstAccordion />
                     </Card>
+                </Accordion>
+                <Accordion defaultActiveKey="0">
                     <Card>
                         <SecondAccordion />
                     </Card>
+                </Accordion>
+                <Accordion defaultActiveKey="0">
                     <Card>
                         <ThirdAccordion />
                     </Card>

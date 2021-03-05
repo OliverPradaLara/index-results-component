@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
+import Grafico1 from "./../SVG/img/Grafico1.svg";
 
 export const GeneralTab = () => {
     return (
@@ -10,7 +11,7 @@ export const GeneralTab = () => {
                         <p>Distribución del puntaje del Índice de Innovación Pública según categoría de instituciones sobre un máximo de 100 puntos. Año de referencia 2019 - 37 servicios participantes.</p>
                     </div>
                     <div>
-                        <img src="https://via.placeholder.com/740x460" alt= "gráfico" />
+                        <img src={Grafico1} alt= "gráfico" />
                     </div>
                 </Col>
             </Row>

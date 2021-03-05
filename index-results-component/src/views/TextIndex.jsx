@@ -4,7 +4,7 @@ import { Row, Col, Card, CardGroup } from 'react-bootstrap'
 export const TextIndex = () => {
     return (
         <Row className="justify-content-md-center">
-            <Col md={6}>
+            <Col md={12}>
                 <CardGroup>
                     <Card border="light">
                     <h1>

@@ -14,7 +14,7 @@ export const ThirdAccordion = () => {
     return (
         <>
             {drop === false ?
-                (
+                (<>
                     <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => buttonHandler()}>
                         <Card.Title>
                             <div>
@@ -22,9 +22,9 @@ export const ThirdAccordion = () => {
                             </div>
                             <div>
                                 | Por categorías de instituciones
-                    </div>
+                            </div>
                             <div>
-                                <i class="fas fa-chevron-down color-orange-one"></i>
+                                <i class="fas fa-chevron-up color-orange-one"></i>
                             </div>
                         </Card.Title>
                         <Card.Text>
@@ -33,20 +33,23 @@ export const ThirdAccordion = () => {
                             misma categoría; éstas son: Pilares, Centralizadas o Nuevas.
                 </Card.Text>
                     </Accordion.Toggle>
+                </>
                 )
                 :
                 (
                     <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => buttonHandler()}>
                         <Card.Title>
-                            <div>
-                                <b>Resultados</b>
-                            </div>
-                            <div>
-                                | Por categorías de instituciones
+                            <>
+                                <div>
+                                    <b>Resultados</b>
+                                </div>
+                                <div>
+                                    | Por categorías de instituciones
                     </div>
-                            <div>
-                                <i class="fas fa-chevron-up color-orange-one"></i>
-                            </div>
+                                <div>
+                                    <i class="fas fa-chevron-down color-orange-one"></i>
+                                </div>
+                            </>
                         </Card.Title>
                         <Card.Text>
                             A continuación, se presentan los resultados agrupados según categoría de instituciones.
