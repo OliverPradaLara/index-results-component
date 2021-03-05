@@ -62,7 +62,7 @@ export const ThirdAccordion = () => {
 
             <Accordion.Collapse eventKey="0">
                 <Card.Body>
-                    <Tabs defaultActiveKey="general" id="uncontrolled-tab-example">
+                    <Tabs className="tabGeneralDimensions" defaultActiveKey="general" id="uncontrolled-tab-example">
                         <Tab eventKey="general" title="General">
                             <GeneralTab />
                         </Tab>
