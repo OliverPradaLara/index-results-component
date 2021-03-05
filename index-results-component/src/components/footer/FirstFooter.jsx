@@ -24,8 +24,8 @@ export const UpFooter = () => {
                     </div>
                     <div className="lista">
                         <ul>
-                            <li><i className="fas fa-chevron-right color-orange-one"></i> Base de datos <span>(.csv)</span></li>
-                            <li><i className="fas fa-chevron-right color-orange-one"></i> Nota técnica de resultados <span>(.pdf)</span></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">Base de datos</span> <span>(.csv)</span></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">Nota técnica de resultados</span> <span>(.pdf)</span></li>
                         </ul>
                     </div>
                 </div>
