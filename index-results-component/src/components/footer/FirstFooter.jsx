@@ -1,15 +1,19 @@
 import React from 'react'
 
+//import Css
+import "../../css/footer/firstfooter/style.css"
+
+import cloud from '../../SVG/img/download.png'
 
 
 export const UpFooter = () => {
-    return(
+    return (
         <>
             <div className="contenedor-first-footer">
                 <div className="contenedor">
                     <div className="descargas">
                         <div className="imagen">
-                        <i className="far fa-cloud-download-alt"></i>
+                            <img src={cloud} alt="Cloud" />
                         </div>
                         <div className="titulo">
                             <h4>Descargas</h4>
@@ -18,7 +22,12 @@ export const UpFooter = () => {
                             <p>(todos los documentos)</p>
                         </div>
                     </div>
-                    <div className="archivos"></div>
+                    <div className="lista">
+                        <ul>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> Base de datos <span>(.csv)</span></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> Nota técnica de resultados <span>(.pdf)</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
