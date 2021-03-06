@@ -17,10 +17,10 @@ export const Header = () => {
                     <Col md={4}/>
                     <Col md={5}>
                         <Nav className="mr-auto">
-                            <Nav.Link className="color-orange-one" href="#home">Resultados del índice</Nav.Link>
-                            <Nav.Link href="#features">Metodología de medición</Nav.Link>
-                            <Nav.Link href="#pricing">Beneficios de participar</Nav.Link>
-                            <Nav.Link href="#pricing">Categorías de instituciones</Nav.Link>
+                            <Nav.Link className="color-orange-one" href="#home"><b>Resultados del índice</b></Nav.Link>
+                            <Nav.Link href="#features"><b>Metodología de medición</b></Nav.Link>
+                            <Nav.Link href="#pricing"><b>Beneficios de participar</b></Nav.Link>
+                            <Nav.Link href="#pricing"><b>Categorías de instituciones</b></Nav.Link>
                         </Nav>
                     </Col>
                 </Navbar>

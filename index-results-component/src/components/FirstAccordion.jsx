@@ -1,53 +1,57 @@
 import React, { useState } from 'react'
-import { Accordion, Card } from 'react-bootstrap'
+import { Accordion, Card, Row, Col } from 'react-bootstrap'
 import Fijo1 from "./../SVG/img/Fijo1.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const FirstAccordion = () => {
-    const [drop, setDrop] = useState(false)
-
-    const buttonHandler = () => {
-        drop === true ? setDrop(false) : setDrop(true)
-        console.log({ drop })
-    }
-
+    const [drop, setDrop] = useState(true)
     return (
         <>
-            {
-                drop === false ?
-                    (<>
-                        <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => buttonHandler()}>
-                            <Card.Title>
-                                <div>
-                                    <b>Cantidad de servicios públicos </b>
-                                            | Según rango de puntaje total del índice
-                                            <i className="fas fa-chevron-down color-orange-one" />
-                                </div>
-                            </Card.Title>
-                            <Card.Text>
-                                Año de referencia 2019 - 37 servicios participantes
-                            </Card.Text>
-                        </Accordion.Toggle>
-                    </>
-                    )
-                    :
-                    (
+            <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => {
+                drop ? setDrop(false) : setDrop(true)
+            }}>
 
-                        <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => buttonHandler()}>
-                            <Card.Title>
+                <Row className="pt-5">
+                    {
+                        drop ? (
+                            <>
+                                <Col md={10}>
+                                    <h1>
+                                        <b>Cantidad de servicios públicos </b>
+                                                    | Según rango de puntaje total del índice
+                                    </h1>
+                                </Col>
+                                <Col md={2} className="tittleText">
+                                    <FontAwesomeIcon icon={["fas", "chevron-down"]} size="4x" color = "#dc712d" />
+                                </Col>
+                            </>
+                        ) :
+                            (
                                 <>
-                                    <div>
-                                        <b>Cantidad de servicios públicos</b>
+                                    <Col md={10}>
+                                        <h1>
+                                            <b>Cantidad de servicios públicos </b>
                                             | Según rango de puntaje total del índice sobre un máximo de 100 puntos.
-                                    <i className="fas fa-chevron-up color-orange-one" />
-                                    </div>
+                                        </h1>
+                                    </Col>
+                                    <Col md={2} className="tittleText" >
+                                        <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color = "#dc712d" />
+                                    </Col>
                                 </>
-                            </Card.Title>
-                            <Card.Text>
-                                Año de referencia 2019 - 37 servicios participantes
-                            </Card.Text>
-                        </Accordion.Toggle>
-                    )
-            }
+                            )
+                    }
+                    <>
+                    </>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>
+                            Año de referencia 2019 - 37 servicios participantes
+                                    </p>
+                    </Col>
+                </Row>
+            </Accordion.Toggle>
+
             <Accordion.Collapse eventKey="2">
                 <Card.Body>
                     <div>
