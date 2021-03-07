@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
-import Grafico1 from "./../SVG/img/Grafico1.svg";
+import Grafico1 from "../SVG/img/Grafico1.svg";
 
 export const GeneralTab = () => {
     return (

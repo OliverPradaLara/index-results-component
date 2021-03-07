@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
-import Fijo2 from "./../SVG/img/Fijo2.svg";
+import Fijo2 from "../SVG/img/Fijo2.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const SecondAccordion = () => {

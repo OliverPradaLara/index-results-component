@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Row, Col } from 'react-bootstrap';
-import  indiceInnivacionGris  from './../SVG/icons/indice-innovacion-publica-gris.svg'
-import  laboratorioGobiernoGris  from './../SVG/icons/Laboratorio-Gobierno-gris.svg'
+import  indiceInnivacionGris  from '../SVG/icons/indice-innovacion-publica-gris.svg'
+import  laboratorioGobiernoGris  from '../SVG/icons/Laboratorio-Gobierno-gris.svg'
 
 export const Header = () => {
     return (

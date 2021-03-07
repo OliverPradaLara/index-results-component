@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col, Tab, Tabs } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GeneralTab } from './../components/GeneralTab'
-import { DimensionsTab } from './../views/DimensionsTab'
+import { GeneralTab } from '../components/GeneralTab'
+import { DimensionsTab } from '../views/DimensionsTab'
 
 export const ThirdAccordion = () => {
     const [drop, setDrop] = useState(false)
