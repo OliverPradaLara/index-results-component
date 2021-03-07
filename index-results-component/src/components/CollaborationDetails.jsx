@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
-import Grafico3 from "./../SVG/img/Grafico3.svg";
-import Grafico4 from "./../SVG/img/Grafico4.svg";
+import Grafico3 from "../SVG/img/Grafico3.svg";
+import Grafico4 from "../SVG/img/Grafico4.svg";
 import { SecondCollaborationAnalysis } from './SecondCollaborationAnalysis'
+import {CarouselDetails} from './CarouselDetails'
 
 export const CollaborationDetails = () => {
     const [view, setView] = useState(0)
     return (
         <>
+        <CarouselDetails/>
             {
                 view === 1 ? (
                     <>

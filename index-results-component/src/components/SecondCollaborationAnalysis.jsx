@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
-import Grafico4 from "./../SVG/img/Grafico4.svg";
+import Grafico4 from "../SVG/img/Grafico4.svg";
 
 export const SecondCollaborationAnalysis = () => {
     return (

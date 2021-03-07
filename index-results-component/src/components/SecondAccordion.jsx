@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
-import Fijo2 from "./../SVG/img/Fijo2.svg";
+import Fijo2 from "../SVG/img/Fijo2.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const SecondAccordion = () => {
     const [drop, setDrop] = useState(true)
     return (
         <>
-            <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => {
+            <Accordion.Toggle  className="bg-white" as={Card.Header} eventKey="1" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
