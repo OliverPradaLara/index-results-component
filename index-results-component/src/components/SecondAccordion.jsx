@@ -7,7 +7,7 @@ export const SecondAccordion = () => {
     const [drop, setDrop] = useState(true)
     return (
         <>
-            <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => {
+            <Accordion.Toggle  className="bg-white" as={Card.Header} eventKey="1" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 

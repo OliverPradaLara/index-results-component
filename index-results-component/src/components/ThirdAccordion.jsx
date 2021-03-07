@@ -8,7 +8,7 @@ export const ThirdAccordion = () => {
     const [drop, setDrop] = useState(false)
     return (
         <>
-            <Accordion.Toggle as={Card.Header} eventKey="0" onClick={() => {
+            <Accordion.Toggle className="bg-white" as={Card.Header} eventKey="0" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -18,7 +18,7 @@ export const ThirdAccordion = () => {
                             <>
                                 <Col md={10}>
                                     <h1>
-                                        <b>Resultados</b>
+                                        <b>Resultados </b>
                                     | Por categorías de instituciones
                                     </h1>
                                 </Col>
@@ -31,9 +31,12 @@ export const ThirdAccordion = () => {
                                 <>
                                     <Col md={10}>
                                         <h1>
-                                            <b>Cantidad de servicios públicos </b>
-                                            | Según rango de puntaje total del índice sobre un máximo de 100 puntos.
+                                            <b>Resultados </b>
+                                            | Por categorías de instituciones
                                         </h1>
+                                        <h4 className="mt-3">A continuación, se presentan los resultados agrupados según categoría de instituciones.<br/>
+                                        Considerar que los resultados entre instituciones sólo son comparables si forman parte de la<br/>
+                                        misma categoría; éstas son: Pilares, Centralizadas o Nuevas.</h4>
                                     </Col>
                                     <Col md={2} className="tittleText" >
                                         <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />
@@ -44,28 +47,17 @@ export const ThirdAccordion = () => {
                     <>
                     </>
                 </Row>
-                <Row>
-                    <Col>
-                        <p>
-                            A continuación, se presentan los resultados agrupados según categoría de instituciones.
-                            Considerar que los resultados entre instituciones sólo son comparables si forman parte de la
-                            misma categoría; éstas son: Pilares, Centralizadas o Nuevas.
-                                    </p>
-                    </Col>
-                </Row>
             </Accordion.Toggle>
 
             <Accordion.Collapse eventKey="0">
-                <Card.Body>
-                    <Tabs className="tabGeneralDimensions" defaultActiveKey="general" id="uncontrolled-tab-example">
-                        <Tab eventKey="general" title="General">
-                            <GeneralTab />
-                        </Tab>
-                        <Tab eventKey="dimensions" title="Dimensiones">
-                            <DimensionsTab />
-                        </Tab>
-                    </Tabs>
-                </Card.Body>
+                <Tabs className="tabGeneralDimensions" defaultActiveKey="general" id="uncontrolled-tab-example">
+                    <Tab eventKey="general" title="General">
+                        <GeneralTab />
+                    </Tab>
+                    <Tab eventKey="dimensions" title="Dimensiones">
+                        <DimensionsTab />
+                    </Tab>
+                </Tabs>
             </Accordion.Collapse>
         </>
     )
