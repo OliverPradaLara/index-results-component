@@ -18,11 +18,11 @@ export const FirstAccordion = () => {
                                 <Col md={10}>
                                     <h1>
                                         <b>Cantidad de servicios públicos </b>
-                                                    | Según rango de puntaje total del índice
+                                                    <span className="sub-titulo">| Según rango de puntaje total del índice</span>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
-                                    <FontAwesomeIcon icon={["fas", "chevron-down"]} size="4x" color = "#dc712d" />
+                                    <FontAwesomeIcon icon={["fas", "chevron-down"]} size="4x" color="#dc712d" />
                                 </Col>
                             </>
                         ) :
@@ -31,11 +31,11 @@ export const FirstAccordion = () => {
                                     <Col md={10}>
                                         <h1>
                                             <b>Cantidad de servicios públicos </b>
-                                            | Según rango de puntaje total del índice sobre un máximo de 100 puntos.
+                                            <span className="sub-titulo">| Según rango de puntaje total del índice sobre un máximo de 100 puntos.</span>
                                         </h1>
                                     </Col>
                                     <Col md={2} className="tittleText" >
-                                        <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color = "#dc712d" />
+                                        <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />
                                     </Col>
                                 </>
                             )
@@ -45,19 +45,19 @@ export const FirstAccordion = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <p>
+                        <p className="descripcion-carrusel">
                             Año de referencia 2019 - 37 servicios participantes
-                                    </p>
+                        </p>
                     </Col>
                 </Row>
             </Accordion.Toggle>
 
             <Accordion.Collapse eventKey="2">
                 <Card.Body>
-                    <div>
-                        <img src={Fijo1} alt="gráfico" className="fijo1Style"/>
+                    <div className="text-center p-5">
+                        <img width="85%" src={Fijo1} alt="gráfico" />
                     </div>
-                    <div>
+                    <div className="text-center pt-4 pb-4">
                         <a href="https://www.google.com/?hl=es" className="color-orange-one">+ ver servicios públicos participantes</a>
                     </div>
                 </Card.Body>
