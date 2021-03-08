@@ -6,10 +6,10 @@ export const CarouselDetails = () => {
     return (
         <Row>
             <Col md={12}>
-                <Carousel  interval={null}>
-                    <Carousel.Item className="bg-light">
+                <Carousel interval={null}>
+                    <Carousel.Item>
                         <Row className="d-flex justify-content-center">
-                            <Col md={5} className="mt-5 mb-5">
+                            <Col md={5} className>
                                 <h3>COLABORACIÓN Y APERTURA</h3>
                                 <p>Considera la capacidad de interacción de los servicios públicos con su entorno, lo que les permite
                                 aprender y adaptarse a contextos cambiantes. Busca identificar el trabajo colaborativo con
@@ -21,7 +21,7 @@ export const CarouselDetails = () => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <Row className="d-flex justify-content-center">
-                            <Col md={5} className="mt-5 mb-5">
+                            <Col md={5} className>
                                 <h3>RECURSOS INSTITUCIONALES</h3>
                                 <p>Corresponde a los aspectos más básicos o habilitantes para el desarrollo de las capacidades para
                                 innovar. Sin su existencia, las siguientes dimensiones tienen baja probabilidad de fortalecerse,
@@ -33,14 +33,14 @@ export const CarouselDetails = () => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <Row className="d-flex justify-content-center">
-                            <Col md={5} className="mt-5 mb-5">
+                            <Col md={5} className>
                                 <h3>PRÁCTICAS Y PROCESOS</h3>
                                 <p>Corresponde a las capacidades necesarias para el desarrollo de iniciativas de innovación.
                                 A nivel general, el Índice estimula el desarrollo de iniciativas que hayan logrado un nivel
                                 alto de madurez, es decir que hayan sido implementadas y evaluadas, idealmente. Además,
                                 considera el grado de formalización de los procedimientos y procesos de innovación basadas en
                                 la lógica del diseño de servicios, es decir de prototipado y testeo para la detección temprana
-                                de fallas.</p>
+                        de fallas.</p>
                             </Col>
                         </Row>
                     </Carousel.Item>
