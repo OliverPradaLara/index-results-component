@@ -17,7 +17,7 @@ export const GeneralTab = () => {
             </Row>
             <Row className="p-5">
                 <Col md={4}>
-                    <Card border="light">
+                    <Card border="0">
                         <Card.Body className="p-5">
                             <Card.Title className="title-resultado">PILARES</Card.Title>
                             <Card.Text className="descripcion-resultado">
@@ -34,7 +34,7 @@ export const GeneralTab = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card border="light">
+                    <Card border="0">
                         <Card.Body className="borde p-5">
                             <Card.Title className="title-resultado">CENTRALIZADAS</Card.Title>
                             <Card.Text className="descripcion-resultado">
@@ -52,7 +52,7 @@ export const GeneralTab = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="borde" border="light" >
+                    <Card className="borde" border="0" >
                         <Card.Body className="p-5">
                             <Card.Title className="title-resultado">NUEVAS</Card.Title>
                             <Card.Text className="descripcion-resultado">

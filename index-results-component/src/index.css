@@ -272,9 +272,19 @@ body {
 }
 .descripcion-carrusel{
     font-size: 23px;
+    font-weight: 300 !important;
+}
+.title-grafico{
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+.borde-left{
+    border-left: 2px dotted #797979;
+}
+.sub-titulo{
+    color: #797979;
     font-weight: 300;
 }
-
 /* .carousel-control-next-icon {
     background-image: url('https://ibb.co/Nmx2t37') !important;
 } */

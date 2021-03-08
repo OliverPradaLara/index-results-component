@@ -29,7 +29,7 @@ export const DimensionsTab = () => {
                             <Row className="p-5">
 
                                 <Col md={4}>
-                                    <Card border="light">
+                                    <Card border="0">
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">RECURSOS INSTITUCIONALES</Card.Title>
                                             <Card.Text className="descripcion-resultado">
@@ -51,7 +51,7 @@ export const DimensionsTab = () => {
                                     </Card>
                                 </Col>
                                 <Col md={4}>
-                                    <Card border="light">
+                                    <Card border="0">
                                         <Card.Body className="borde p-5">
                                             <Card.Title className="title-resultado">PRÁCTICAS Y PROCESOS</Card.Title>
                                             <Card.Text className="descripcion-resultado">
@@ -74,7 +74,7 @@ export const DimensionsTab = () => {
                                     </Card>
                                 </Col>
                                 <Col md={4}>
-                                    <Card border="light" >
+                                    <Card border="0" >
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">COLABORACIÓN Y APERTURA</Card.Title>
                                             <Card.Text className="descripcion-resultado">

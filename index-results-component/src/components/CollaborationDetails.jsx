@@ -25,23 +25,23 @@ export const CollaborationDetails = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md={2} />
-                            <Col md={4}>
-                                <Card border="light">
-                                    <Card.Body>
-                                        <Card.Title>
+                            <Col md={1} />
+                            <Col md={3}>
+                                <Card border="0">
+                                    <Card.Body className="p-5">
+                                        <Card.Title className="title-grafico">
                                             INTERPRETACIÓN DEL GRÁFICO
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col md={4}>
-                                <Card border="light">
-                                    <Card.Body>
-                                        <Card.Title>
+                            <Col md={5}>
+                                <Card border="0" >
+                                    <Card.Body className="borde-left p-5">
+                                        <Card.Title className="title-resultado">
                                             COORDINACIÓN INTERINSTITUCIONAL
                                         </Card.Title>
-                                        <Card.Text>
+                                        <Card.Text  className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
                                             ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
@@ -53,7 +53,7 @@ export const CollaborationDetails = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md={12}>
+                            <Col md={12} className="text-center pt-4 pb-4">
                                 <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
                             </Col>
                         </Row>
@@ -74,7 +74,7 @@ export const CollaborationDetails = () => {
                             <Row>
 
                                 <Col md={4}>
-                                    <Card border="light">
+                                    <Card border="0">
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">PARTICIPACIÓN DE USUARIOS</Card.Title>
                                             <Card.Text className="descripcion-resultado">
@@ -96,7 +96,7 @@ export const CollaborationDetails = () => {
                                     </Card>
                                 </Col>
                                 <Col md={4}>
-                                    <Card border="light">
+                                    <Card border="0">
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">
                                                 COORDINACIÓN INTERINSTITUCIONAL
@@ -117,7 +117,7 @@ export const CollaborationDetails = () => {
                                     </Card>
                                 </Col>
                                 <Col md={4}>
-                                    <Card border="light" >
+                                    <Card border="0" >
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">GESTIÓN DEL ENTORNO</Card.Title>
                                             <Card.Text className="descripcion-resultado">
