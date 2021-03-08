@@ -3,14 +3,13 @@ import { Accordion, Card, Row, Col, Tab, Tabs, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GeneralTab } from '../components/GeneralTab'
 import { DimensionsTab } from '../views/DimensionsTab'
-import i18next from '../i18n/index'
+// import i18next from '../i18n/index'
+import { useTranslation } from 'react-i18next'
 
 export const ThirdAccordion = () => {
+    const { t } = useTranslation();
     const [drop, setDrop] = useState(false)
     const [tabActive, setTabActive] = useState("general")
-    const translate = (txt)=>{       
-        i18next.t(txt)
-    } 
 
     return (
         <>
@@ -59,15 +58,15 @@ export const ThirdAccordion = () => {
 
                 <Tab.Container defaultActiveKey="general">
                     <Card>
-                            <Nav variant="tabs" className="tabGeneralDimensions">
-                                <Nav.Item className="tabHead" onClick={()=>{setTabActive("general")}}>
-                                    <Nav.Link eventKey="general" className={tabActive === "general"? "bg-orange-one tabHeadGeneralsActive": "tabHeadGeneral"}>General</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item className="tabHead" onClick={()=>{setTabActive("dimensions")}}>
-                                    <Nav.Link eventKey="dimensions" className={tabActive === "dimensions" ? "bg-orange-one tabHeadDimensionsActive":"tabHeadDimensions"}>{translate('dimensions')}</Nav.Link>
-                                </Nav.Item>
+                        <Nav variant="tabs" className="tabGeneralDimensions">
+                            <Nav.Item className="tabHead" onClick={() => { setTabActive("general") }}>
+                                <Nav.Link eventKey="general" className={tabActive === "general" ? "bg-orange-one tabHeadGeneralsActive" : "tabHeadGeneral"}>General</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item className="tabHead" onClick={() => { setTabActive("dimensions") }}>
+                                <Nav.Link eventKey="dimensions" className={tabActive === "dimensions" ? "bg-orange-one tabHeadDimensionsActive" : "tabHeadDimensions"}>{t('tab2')}</Nav.Link>
+                            </Nav.Item>
 
-                            </Nav>
+                        </Nav>
                         <Card.Body>
                             <Tab.Content>
                                 <Tab.Pane eventKey="general">
