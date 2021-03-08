@@ -43,9 +43,9 @@ export const SecondAccordion = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <p>
+                        <p className="descripcion-carrusel">
                             Año de referencia 2019 - Servicios participantes
-                                    </p>
+                        </p>
                     </Col>
                 </Row>
             </Accordion.Toggle>
