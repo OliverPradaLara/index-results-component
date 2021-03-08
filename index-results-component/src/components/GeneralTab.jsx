@@ -7,20 +7,20 @@ export const GeneralTab = () => {
         <>
             <Row>
                 <Col md={12}>
-                    <div>
-                        <p>Distribución del puntaje del Índice de Innovación Pública según categoría de instituciones sobre un máximo de 100 puntos. Año de referencia 2019 - 37 servicios participantes.</p>
+                    <div className="p-5">
+                        <p className="text-descripcion">Distribución del puntaje del Índice de Innovación Pública según categoría de instituciones sobre un máximo de 100 puntos. Año de referencia 2019 - 37 servicios participantes.</p>
                     </div>
-                    <div>
-                        <img src={Grafico1} alt= "gráfico" />
+                    <div className="text-center p-5">
+                        <img width="85%" src={Grafico1} alt= "gráfico" />
                     </div>
                 </Col>
             </Row>
-            <Row>
+            <Row className="p-5">
                 <Col md={4}>
                     <Card border="light">
-                        <Card.Body>
-                            <Card.Title>PILARES</Card.Title>
-                            <Card.Text>
+                        <Card.Body className="p-5">
+                            <Card.Title className="title-resultado">PILARES</Card.Title>
+                            <Card.Text className="descripcion-resultado">
                                 Corresponde a 15 servicios públicos en
                                 la primera medición. Se caracterizan
                                 por tener un presupuesto alto,
@@ -35,9 +35,9 @@ export const GeneralTab = () => {
                 </Col>
                 <Col md={4}>
                     <Card border="light">
-                        <Card.Body>
-                            <Card.Title>CENTRALIZADAS</Card.Title>
-                            <Card.Text>
+                        <Card.Body className="borde p-5">
+                            <Card.Title className="title-resultado">CENTRALIZADAS</Card.Title>
+                            <Card.Text className="descripcion-resultado">
                                 Corresponde a 7 servicios públicos,
                                 caracterizados por una forma de
                                 organización que tiende a la
@@ -52,10 +52,10 @@ export const GeneralTab = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card border="light" >
-                        <Card.Body>
-                            <Card.Title>NUEVAS</Card.Title>
-                            <Card.Text>
+                    <Card className="borde" border="light" >
+                        <Card.Body className="p-5">
+                            <Card.Title className="title-resultado">NUEVAS</Card.Title>
+                            <Card.Text className="descripcion-resultado">
                                 Son 15 servicios públicos en la primera
                                 medición, definidos principalmente por
                                 su año de creación, en su mayoría
@@ -70,8 +70,8 @@ export const GeneralTab = () => {
                 </Col>
             </Row>
             <Row>
-                <Col md={12}>
-                    <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las categorías</a>
+                <Col className="text-center pt-4 pb-4" md={12}>
+                    <a  href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las categorías</a>
                 </Col>
             </Row>
         </>

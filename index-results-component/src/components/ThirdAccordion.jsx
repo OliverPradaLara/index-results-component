@@ -52,6 +52,7 @@ export const ThirdAccordion = () => {
             </Accordion.Toggle>
 
             <Accordion.Collapse eventKey="0">
+
                 <Tab.Container defaultActiveKey="general">
                     <Card>
                             <Nav variant="tabs" className="tabGeneralDimensions">

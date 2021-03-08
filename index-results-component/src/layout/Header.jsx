@@ -23,10 +23,10 @@ export const Header = () => {
                     <Col md={3} />
                     <Col md={5}>
                         <Nav className="mr-auto">
-                            <Nav.Link className="color-orange-one" href="#home"><b>Resultados del índice</b></Nav.Link>
-                            <Nav.Link href="#features"><b>Metodología de medición</b></Nav.Link>
-                            <Nav.Link href="#pricing"><b>Beneficios de participar</b></Nav.Link>
-                            <Nav.Link href="#pricing"><b>Categorías de instituciones</b></Nav.Link>
+                            <Nav.Link className="color-orange-one text-center" href="#home"><b>Resultados del índice</b></Nav.Link>
+                            <Nav.Link className="text-center" href="#features"><b>Metodología de medición</b></Nav.Link>
+                            <Nav.Link className="text-center" href="#pricing"><b>Beneficios de participar</b></Nav.Link>
+                            <Nav.Link className="text-center" href="#pricing"><b>Categorías de instituciones</b></Nav.Link>
                         </Nav>
                     </Col>
                 </Navbar>
