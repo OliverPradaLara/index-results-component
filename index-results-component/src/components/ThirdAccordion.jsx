@@ -10,7 +10,7 @@ export const ThirdAccordion = () => {
 
     return (
         <>
-            <Accordion.Toggle className="bg-white" as={Card.Header} eventKey="0" onClick={() => {
+            <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="0" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -51,7 +51,7 @@ export const ThirdAccordion = () => {
                 </Row>
             </Accordion.Toggle>
 
-            <Accordion.Collapse eventKey="0">
+            <Accordion.Collapse className="" eventKey="0">
 
                 <Tab.Container defaultActiveKey="general">
                     <Card>

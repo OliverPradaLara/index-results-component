@@ -7,7 +7,7 @@ export const FirstAccordion = () => {
     const [drop, setDrop] = useState(true)
     return (
         <>
-            <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => {
+            <Accordion.Toggle className="pl-5 pr-5" as={Card.Header} eventKey="2" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -52,7 +52,7 @@ export const FirstAccordion = () => {
                 </Row>
             </Accordion.Toggle>
 
-            <Accordion.Collapse className="accordionView" eventKey="2">
+            <Accordion.Collapse className="accordionView pl-5 pr-5" eventKey="2">
                 <Card.Body>
                     <div className="text-center p-5">
                         <img width="85%" src={Fijo1} alt="gráfico" />
