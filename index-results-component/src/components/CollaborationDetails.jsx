@@ -16,7 +16,7 @@ export const CollaborationDetails = () => {
                         <Row>
                             <Col md={12}>
                                 <div>
-                                    <p>Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
+                                    <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
                                     dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
                                 </div>
                                 <div>
@@ -62,7 +62,7 @@ export const CollaborationDetails = () => {
                         <Row>
                             <Col md={12}>
                                 <div>
-                                    <p>Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
+                                    <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
                 dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
                                 </div>
                                 <div>
