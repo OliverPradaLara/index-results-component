@@ -18,10 +18,10 @@ export const ThirdAccordion = () => {
                     {
                         drop ? (
                             <>
-                                <Col md={10}>
+                                <Col md={10} >
                                     <h1>
                                         <b>Resultados </b>
-                                    | Por categorías de instituciones
+                                        <span className="sub-titulo">| Por categorías de instituciones</span>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
@@ -34,9 +34,9 @@ export const ThirdAccordion = () => {
                                     <Col md={10}>
                                         <h1>
                                             <b>Resultados </b>
-                                            | Por categorías de instituciones
+                                            <span className="sub-titulo">| Por categorías de instituciones</span>
                                         </h1>
-                                        <h4 className="mt-3">A continuación, se presentan los resultados agrupados según categoría de instituciones.<br />
+                                        <h4 className="descripcion-carrusel pt-4 pb-4">A continuación, se presentan los resultados agrupados según categoría de instituciones.<br />
                                         Considerar que los resultados entre instituciones sólo son comparables si forman parte de la<br />
                                         misma categoría; éstas son: Pilares, Centralizadas o Nuevas.</h4>
                                     </Col>
