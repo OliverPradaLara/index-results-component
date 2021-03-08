@@ -9,14 +9,14 @@ export const AccordionComponent = () => {
         <Row>
             <Col md={12}>
                 <Accordion defaultActiveKey="0" >
-                        <FirstAccordion />
+                    <FirstAccordion />
                 </Accordion>
                 <Accordion defaultActiveKey="0" >
-                        <SecondAccordion />
+                    <SecondAccordion />
                 </Accordion>
 
                 <Accordion defaultActiveKey="0"  >
-                        <ThirdAccordion />
+                    <ThirdAccordion />
                 </Accordion>
             </Col>
         </Row>

@@ -11,7 +11,7 @@ export const FirstAccordion = () => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
-                <Row className="pt-5">
+                <Row className="pt-5 accordionView">
                     {
                         drop ? (
                             <>
@@ -43,7 +43,7 @@ export const FirstAccordion = () => {
                     <>
                     </>
                 </Row>
-                <Row>
+                <Row className="accordionView" >
                     <Col>
                         <p className="descripcion-carrusel">
                             Año de referencia 2019 - 37 servicios participantes
@@ -52,7 +52,7 @@ export const FirstAccordion = () => {
                 </Row>
             </Accordion.Toggle>
 
-            <Accordion.Collapse eventKey="2">
+            <Accordion.Collapse className="accordionView" eventKey="2">
                 <Card.Body>
                     <div className="text-center p-5">
                         <img width="85%" src={Fijo1} alt="gráfico" />

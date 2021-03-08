@@ -51,9 +51,8 @@ export const SecondAccordion = () => {
             </Accordion.Toggle>
 
             <Accordion.Collapse eventKey="1">
-                <Card.Body>
-                    <Row>
-                        <Col md={4} className="accordion2Box">
+                    <Row  className="accordion2ContainerCollapse">
+                        <div md={4} className="accordion2Box">
                                 <h1 className="accordion2Tittle">130</h1>
                                 <h2 className="accordion2SubTittle">iniciativas de innovación</h2>
                                 <p className="accordion2Body">Desarrolladas por los 37
@@ -62,12 +61,9 @@ export const SecondAccordion = () => {
                                 desarrollo, considerando las
                                 etapas de un proceso de
                                 innovación pública. De ellas:</p>
-                        </Col>
-                        <Col md={4}>
+                        </div>
                             <img src={Fijo2} alt="gráfico" className="fijo2Style" />
-                        </Col>
                     </Row>
-                </Card.Body>
             </Accordion.Collapse>
         </>
     )

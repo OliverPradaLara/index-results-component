@@ -337,3 +337,11 @@ body {
     font-size: 31px;
     margin-left: 10px;
 }
+
+.accordionView {
+    color: 3243dsf;
+}
+
+.accordion2ContainerCollapse {
+    justify-content: center !important;
+}
