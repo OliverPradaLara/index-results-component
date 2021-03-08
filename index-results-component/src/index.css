@@ -13,6 +13,10 @@ body {
     background-color: #c63f17 !important;
 }
 
+.color-orange-two {
+    color: #ff7043;
+}
+
 .body-container {
     width: 100%;
     max-width: 1900px;
@@ -263,18 +267,59 @@ body {
     border-left: 2px dotted #797979 !important;
     border-right: 2px dotted #797979 !important;
 }
-.text-carrusel{
+
+.text-carrusel {
     padding: 3%;
 }
-.titulo-carrusel{
+
+.titulo-carrusel {
     font-size: 25px;
     font-weight: 600;
 }
-.descripcion-carrusel{
+
+.descripcion-carrusel {
     font-size: 23px;
     font-weight: 300;
 }
 
+
 /* .carousel-control-next-icon {
     background-image: url('https://ibb.co/Nmx2t37') !important;
 } */
+
+.fijo1Style {
+    width: 1500px;
+}
+
+.fijo2Style {
+    width: 950px;
+}
+
+.accordion2Card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accordion2Box {
+    width: 602px !important;
+}
+
+.accordion2Tittle {
+    font-size: 182px;
+    color: #ff7043;
+}
+
+.accordion2SubTittle {
+    font-size: 56px;
+    font-weight: bold;
+    width: 451px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    border-bottom: 5px dotted;
+}
+
+.accordion2Body {
+    width: 411px;
+    font-size: 31px;
+    margin-left: 10px;
+}

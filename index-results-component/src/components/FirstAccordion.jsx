@@ -55,7 +55,7 @@ export const FirstAccordion = () => {
             <Accordion.Collapse eventKey="2">
                 <Card.Body>
                     <div>
-                        <img src={Fijo1} alt="gráfico" />
+                        <img src={Fijo1} alt="gráfico" className="fijo1Style"/>
                     </div>
                     <div>
                         <a href="https://www.google.com/?hl=es" className="color-orange-one">+ ver servicios públicos participantes</a>

@@ -7,7 +7,7 @@ export const SecondAccordion = () => {
     const [drop, setDrop] = useState(true)
     return (
         <>
-            <Accordion.Toggle  className="bg-white" as={Card.Header} eventKey="1" onClick={() => {
+            <Accordion.Toggle className="bg-white" as={Card.Header} eventKey="1" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -52,12 +52,21 @@ export const SecondAccordion = () => {
 
             <Accordion.Collapse eventKey="1">
                 <Card.Body>
-                    <div>
-                        <img src={Fijo2} alt="gráfico" />
-                    </div>
-                    <div>
-                        <a href="https://www.google.com/?hl=es" className="color-orange-one">+ ver servicios públicos participantes</a>
-                    </div>
+                    <Row>
+                        <Col md={4} className="accordion2Box">
+                                <h1 className="accordion2Tittle">130</h1>
+                                <h2 className="accordion2SubTittle">iniciativas de innovación</h2>
+                                <p className="accordion2Body">Desarrolladas por los 37
+                                servicios públicos. Cada una de
+                                ellas tiene diverso nivel de
+                                desarrollo, considerando las
+                                etapas de un proceso de
+                                innovación pública. De ellas:</p>
+                        </Col>
+                        <Col md={4}>
+                            <img src={Fijo2} alt="gráfico" className="fijo2Style" />
+                        </Col>
+                    </Row>
                 </Card.Body>
             </Accordion.Collapse>
         </>
