@@ -15,12 +15,12 @@ export const CollaborationDetails = () => {
                     <>
                         <Row>
                             <Col md={12}>
-                                <div>
+                                <div className="p-5">
                                     <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
                                     dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
                                 </div>
                                 <div>
-                                    <img src={Grafico4} alt="" />
+                                    <img width="85%" src={Grafico4} alt="" />
                                 </div>
                             </Col>
                         </Row>
@@ -61,12 +61,12 @@ export const CollaborationDetails = () => {
                     <>
                         <Row>
                             <Col md={12}>
-                                <div>
+                                <div className="p-5">
                                     <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
                 dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
                                 </div>
-                                <div>
-                                    <img src={Grafico3} alt="" />
+                                <div className="text-center p-5">
+                                    <img width="85%" src={Grafico3} alt="" />
                                 </div>
                             </Col>
                         </Row>
@@ -75,9 +75,9 @@ export const CollaborationDetails = () => {
 
                                 <Col md={4}>
                                     <Card border="light">
-                                        <Card.Body>
-                                            <Card.Title>PARTICIPACIÓN DE USUARIOS</Card.Title>
-                                            <Card.Text>
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">PARTICIPACIÓN DE USUARIOS</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
                                                 Incentiva el uso de lenguaje claro e
                                                 inclusivo en comunicaciones y canales,
                                                 promueve mecanismos de
@@ -97,11 +97,11 @@ export const CollaborationDetails = () => {
                                 </Col>
                                 <Col md={4}>
                                     <Card border="light">
-                                        <Card.Body>
-                                            <Card.Title>
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">
                                                 COORDINACIÓN INTERINSTITUCIONAL
                     </Card.Title>
-                                            <Card.Text>
+                                            <Card.Text className="descripcion-resultado">
                                                 Busca medir la colaboración y eventual
                                                 interoperabilidad entre servicios. En
                                                 concreto, incentiva la participación de
@@ -118,9 +118,9 @@ export const CollaborationDetails = () => {
                                 </Col>
                                 <Col md={4}>
                                     <Card border="light" >
-                                        <Card.Body>
-                                            <Card.Title>GESTIÓN DEL ENTORNO</Card.Title>
-                                            <Card.Text>
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">GESTIÓN DEL ENTORNO</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
                                                 Mide la existencia de espacios para
                                                 colaborar con organizaciones que se
                                                 encuentran fuera de la esfera del
@@ -138,8 +138,8 @@ export const CollaborationDetails = () => {
                             </Row>
                         </Row>
                         <Row>
-                            <Col md={12}>
-                                <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
+                            <Col md={12} className="text-center pt-4 pb-4">
+                                <a  href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
                             </Col>
                         </Row>
 

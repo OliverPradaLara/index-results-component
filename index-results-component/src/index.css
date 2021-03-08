@@ -263,7 +263,17 @@ body {
     border-left: 2px dotted #797979 !important;
     border-right: 2px dotted #797979 !important;
 }
-
+.text-carrusel{
+    padding: 3%;
+}
+.titulo-carrusel{
+    font-size: 25px;
+    font-weight: 600;
+}
+.descripcion-carrusel{
+    font-size: 23px;
+    font-weight: 300;
+}
 
 /* .carousel-control-next-icon {
     background-image: url('https://ibb.co/Nmx2t37') !important;
