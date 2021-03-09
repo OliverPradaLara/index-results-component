@@ -338,10 +338,13 @@ body {
     margin-left: 10px;
 }
 
-.accordionView {
-    color: 3243dsf;
-}
 
 .accordion2ContainerCollapse {
     justify-content: center !important;
+}
+
+#basic-nav-dropdown{
+    color:#dc712d !important;
+    font-size: 18px;
+    font-weight: 600;
 }

@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <Row>
             <Col md={12}>
-                <Navbar bg="light" variant="light">
+                <Navbar className="pt-4 pb-4" bg="light" variant="light">
                     <Col md={4}>
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
@@ -30,8 +30,8 @@ export const Header = () => {
                             <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
                             <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
                             <Nav.Link className="text-center" href="#pricing"><b>{t("institution_categories")}</b></Nav.Link>
-                            <NavDropdown title={language ? "| ESP" : "| ENG"} id="basic-nav-dropdown">
-                                <NavDropdown.Item onClick={() => {
+                            <NavDropdown className="color-nav" title={language ? "| ESP" : "| ENG"} id="basic-nav-dropdown">
+                                <NavDropdown.Item  onClick={() => {
                                     setLanguage(true)
                                     i18n.changeLanguage("es")
                                 }}>{t("spanish")}</NavDropdown.Item>
