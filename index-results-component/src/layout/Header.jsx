@@ -1,9 +1,11 @@
 import React from 'react';
-import { Navbar, Nav, Row, Col,NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Row, Col, NavDropdown } from 'react-bootstrap';
 import indiceInnivacionGris from '../SVG/icons/indice-innovacion-publica-gris.svg'
 import laboratorioGobiernoGris from '../SVG/icons/Laboratorio-Gobierno-gris.svg'
+import { useTranslation } from 'react-i18next'
 
 export const Header = () => {
+    const { t } = useTranslation();
     return (
         <Row>
             <Col md={12}>
@@ -23,10 +25,10 @@ export const Header = () => {
                     <Col md={3} />
                     <Col md={5}>
                         <Nav className="mr-auto">
-                            <Nav.Link className="color-orange-one text-center" href="#home"><b>Resultados del índice</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#features"><b>Metodología de medición</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>Beneficios de participar</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>Categorías de instituciones</b></Nav.Link>
+                            <Nav.Link className="color-orange-one text-center" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                            <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology") }</b></Nav.Link>
+                            <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                            <Nav.Link className="text-center" href="#pricing"><b>{t("institution_categories") }</b></Nav.Link>
                             <NavDropdown title="| ESP" id="basic-nav-dropdown">
                                 <NavDropdown.Item  href="#">ESP</NavDropdown.Item>
                                 <NavDropdown.Item  href="#">ING</NavDropdown.Item>

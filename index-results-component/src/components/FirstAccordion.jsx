@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
 import Fijo1 from "../SVG/img/Fijo1.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from 'react-i18next'
+
 
 export const FirstAccordion = () => {
     const [drop, setDrop] = useState(true)
+    const { t } = useTranslation();
     return (
         <>
             <Accordion.Toggle className="pl-5 pr-5" as={Card.Header} eventKey="2" onClick={() => {
@@ -17,8 +20,8 @@ export const FirstAccordion = () => {
                             <>
                                 <Col md={10}>
                                     <h1>
-                                        <b>Cantidad de servicios públicos </b>
-                                                    <span className="sub-titulo">| Según rango de puntaje total del índice</span>
+                                        <b>{t("amount_of_utilities")}</b>
+                                                    <span className="sub-titulo">{t("according_to_total_score_range_of_the_index")} </span>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
@@ -30,8 +33,8 @@ export const FirstAccordion = () => {
                                 <>
                                     <Col md={10}>
                                         <h1>
-                                            <b>Cantidad de servicios públicos </b>
-                                            <span className="sub-titulo">| Según rango de puntaje total del índice sobre un máximo de 100 puntos.</span>
+                                            <b>{t("amount_of_utilities")}</b>
+                                            <span className="sub-titulo">{t("according_to_total_score_range_of_the_index100pt")}</span>
                                         </h1>
                                     </Col>
                                     <Col md={2} className="tittleText" >
@@ -46,7 +49,7 @@ export const FirstAccordion = () => {
                 <Row className="accordionView" >
                     <Col>
                         <p className="descripcion-carrusel">
-                            Año de referencia 2019 - 37 servicios participantes
+                            {t("reference_year_acc_1")}
                         </p>
                     </Col>
                 </Row>
@@ -58,7 +61,7 @@ export const FirstAccordion = () => {
                         <img width="85%" src={Fijo1} alt="gráfico" />
                     </div>
                     <div className="text-center pt-4 pb-4">
-                        <a href="https://www.google.com/?hl=es" className="color-orange-one">+ ver servicios públicos participantes</a>
+                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_info_acc_1")}</a>
                     </div>
                 </Card.Body>
             </Accordion.Collapse>

@@ -4,9 +4,12 @@ import Grafico3 from "../SVG/img/Grafico3.svg";
 import Grafico4 from "../SVG/img/Grafico4.svg";
 import { SecondCollaborationAnalysis } from './SecondCollaborationAnalysis'
 import {CarouselDetails} from './CarouselDetails'
+import { useTranslation } from 'react-i18next'
 
 export const CollaborationDetails = () => {
     const [view, setView] = useState(0)
+    const { t } = useTranslation();
+
     return (
         <>
         <CarouselDetails/>
@@ -16,8 +19,7 @@ export const CollaborationDetails = () => {
                         <Row>
                             <Col md={12}>
                                 <div className="p-5">
-                                    <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
-                                    dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
+                                    <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                                 <div>
                                     <img width="85%" src={Grafico4} alt="" />
@@ -30,7 +32,7 @@ export const CollaborationDetails = () => {
                                 <Card border="0">
                                     <Card.Body className="p-5">
                                         <Card.Title className="title-grafico">
-                                            INTERPRETACIÓN DEL GRÁFICO
+                                            {t("interpretation_of_the_graph")}
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
@@ -39,7 +41,7 @@ export const CollaborationDetails = () => {
                                 <Card border="0" >
                                     <Card.Body className="borde-left p-5">
                                         <Card.Title className="title-resultado">
-                                            COORDINACIÓN INTERINSTITUCIONAL
+                                            {t("collaborationCoordinationTittle")}
                                         </Card.Title>
                                         <Card.Text  className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
@@ -47,14 +49,14 @@ export const CollaborationDetails = () => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
-                                        <a onClick={() => setView(0)} className="color-orange-one">volver a gráfico principal</a>
+                                        <a onClick={() => setView(0)} className="color-orange-one">{t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
-                                <a href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
+                                <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                             </Col>
                         </Row>
                     </>) : (
@@ -62,8 +64,7 @@ export const CollaborationDetails = () => {
                         <Row>
                             <Col md={12}>
                                 <div className="p-5">
-                                    <p className="text-descripcion">Promedio de cada categoría de instituciones para las 3 dimensiones medidas en el Índice de Innovación Pública. Las
-                dimensiones tienen un puntaje máximo de 20, 40 y 40 puntos respectivamente, sumando un máximo de 100.</p>
+                                    <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                                 <div className="text-center p-5">
                                     <img width="85%" src={Grafico3} alt="" />
@@ -76,22 +77,11 @@ export const CollaborationDetails = () => {
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado">PARTICIPACIÓN DE USUARIOS</Card.Title>
+                                            <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                Incentiva el uso de lenguaje claro e
-                                                inclusivo en comunicaciones y canales,
-                                                promueve mecanismos de
-                                                participación, y considera el
-                                                involucramiento de usuarios de cada
-                                                entidad en las diversas fases de
-                                                innovación, como son: participación en
-                                                la identificación de brechas a través de
-                                                procesos de investigación,
-                                                participación como co-creadores de
-                                                soluciones, participación como
-                                                evaluadores de las soluciones, etc.
+                                                {t("collaborationUserText")}
             </Card.Text>
-                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">ver análisis</a>
+                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -99,38 +89,23 @@ export const CollaborationDetails = () => {
                                     <Card border="0">
                                         <Card.Body className="p-5">
                                             <Card.Title className="title-resultado">
-                                                COORDINACIÓN INTERINSTITUCIONAL
+                                                {t("collaborationCoordinationTittle")}
                     </Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                Busca medir la colaboración y eventual
-                                                interoperabilidad entre servicios. En
-                                                concreto, incentiva la participación de
-                                                distintos servicios en procesos
-                                                colaborativos de identificación de
-                                                oportunidades para innovar, co-
-                                                creación de soluciones,
-                                                implementación y/o evaluación
-                                                conjunta.
+                                                {t("collaborationCoordinationText")}
             </Card.Text>
-                                            <a onClick={() => setView(1)} className="color-orange-one">ver análisis</a>
+                                            <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col md={4}>
                                     <Card border="0" >
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado">GESTIÓN DEL ENTORNO</Card.Title>
+                                            <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                Mide la existencia de espacios para
-                                                colaborar con organizaciones que se
-                                                encuentran fuera de la esfera del
-                                                Estado, pudiendo ser tratarse de
-                                                entidades de la sociedad civil o sector
-                                                privado, a fin de incentivar la
-                                                incorporación de aprendizajes desde
-                                                una perspectiva de innovación abierta.
+                                                {t("collaborationManagmentText")}
                     </Card.Text>
-                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">ver análisis</a>
+                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
                                         </Card.Body>
                                     </Card>
@@ -139,7 +114,7 @@ export const CollaborationDetails = () => {
                         </Row>
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
-                                <a  href="https://www.google.com/?hl=es" className="color-orange-one">+ más información sobre las dimensiones</a>
+                                <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                             </Col>
                         </Row>
 
