@@ -3,13 +3,12 @@ import { Accordion, Card, Row, Col, Tab, Tabs, Nav } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GeneralTab } from '../components/GeneralTab'
 import { DimensionsTab } from '../views/DimensionsTab'
-// import i18next from '../i18n/index'
 import { useTranslation } from 'react-i18next'
 
 export const ThirdAccordion = () => {
-    const { t } = useTranslation();
     const [drop, setDrop] = useState(false)
     const [tabActive, setTabActive] = useState("general")
+    const { t } = useTranslation();
 
     return (
         <>

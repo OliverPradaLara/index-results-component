@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
 import Fijo2 from "../SVG/img/Fijo2.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from 'react-i18next'
 
 export const SecondAccordion = () => {
     const [drop, setDrop] = useState(true)
+    const { t } = useTranslation();
+
     return (
         <>
             <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="1" onClick={() => {
@@ -17,7 +20,7 @@ export const SecondAccordion = () => {
                             <>
                                 <Col md={10}>
                                     <h1>
-                                        <b>Catastro iniciativas de innovaciones desarrolladas</b>
+                                        <b>{t("cadastre_initiatives_of_innovations_developed")}</b>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
@@ -29,7 +32,7 @@ export const SecondAccordion = () => {
                                 <>
                                     <Col md={10}>
                                         <h1>
-                                            <b>Catastro iniciativas de innovaciones desarrolladas</b>
+                                            <b>{t("cadastre_initiatives_of_innovations_developed")}</b>
                                         </h1>
                                     </Col>
                                     <Col md={2} className="tittleText" >
@@ -44,7 +47,7 @@ export const SecondAccordion = () => {
                 <Row>
                     <Col>
                         <p className="descripcion-carrusel">
-                            Año de referencia 2019 - Servicios participantes
+                            {t("reference_year_acc_2")}
                         </p>
                     </Col>
                 </Row>
@@ -54,13 +57,8 @@ export const SecondAccordion = () => {
                     <Row  className="accordion2ContainerCollapse">
                         <div md={4} className="accordion2Box">
                                 <h1 className="accordion2Tittle">130</h1>
-                                <h2 className="accordion2SubTittle">iniciativas de innovación</h2>
-                                <p className="accordion2Body">Desarrolladas por los 37
-                                servicios públicos. Cada una de
-                                ellas tiene diverso nivel de
-                                desarrollo, considerando las
-                                etapas de un proceso de
-                                innovación pública. De ellas:</p>
+                                <h2 className="accordion2SubTittle">{t("innovation_initiatives")}</h2>
+                                <p className="accordion2Body">{t("text_acc_2")}</p>
                         </div>
                             <img src={Fijo2} alt="gráfico" className="fijo2Style" />
                     </Row>
