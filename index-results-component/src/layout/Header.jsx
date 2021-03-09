@@ -1,7 +1,7 @@
 import React from 'react';
-import { Navbar, Nav, Row, Col } from 'react-bootstrap';
-import  indiceInnivacionGris  from '../SVG/icons/indice-innovacion-publica-gris.svg'
-import  laboratorioGobiernoGris  from '../SVG/icons/Laboratorio-Gobierno-gris.svg'
+import { Navbar, Nav, Row, Col,NavDropdown } from 'react-bootstrap';
+import indiceInnivacionGris from '../SVG/icons/indice-innovacion-publica-gris.svg'
+import laboratorioGobiernoGris from '../SVG/icons/Laboratorio-Gobierno-gris.svg'
 
 export const Header = () => {
     return (
@@ -27,6 +27,10 @@ export const Header = () => {
                             <Nav.Link className="text-center" href="#features"><b>Metodología de medición</b></Nav.Link>
                             <Nav.Link className="text-center" href="#pricing"><b>Beneficios de participar</b></Nav.Link>
                             <Nav.Link className="text-center" href="#pricing"><b>Categorías de instituciones</b></Nav.Link>
+                            <NavDropdown title="| ESP" id="basic-nav-dropdown">
+                                <NavDropdown.Item  href="#">ESP</NavDropdown.Item>
+                                <NavDropdown.Item  href="#">ING</NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                     </Col>
                 </Navbar>
