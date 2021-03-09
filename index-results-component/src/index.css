@@ -345,3 +345,9 @@ body {
 .accordion2ContainerCollapse {
     justify-content: center !important;
 }
+
+#basic-nav-dropdown{
+    color:#c63f17 !important;
+    font-size: 18px;
+    font-weight: 600;
+}
