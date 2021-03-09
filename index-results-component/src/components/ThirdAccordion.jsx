@@ -22,8 +22,8 @@ export const ThirdAccordion = () => {
                             <>
                                 <Col md={10} >
                                     <h1>
-                                        <b>Resultados </b>
-                                        <span className="sub-titulo">| Por categorías de instituciones</span>
+                                        <b>{t("results_acc_3")}</b>
+                                        <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
@@ -35,12 +35,12 @@ export const ThirdAccordion = () => {
                                 <>
                                     <Col md={10}>
                                         <h1>
-                                            <b>Resultados </b>
-                                            <span className="sub-titulo">| Por categorías de instituciones</span>
+                                            <b>{t("results_acc_3")}</b>
+                                            <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                         </h1>
-                                        <h4 className="descripcion-carrusel pt-4 pb-4">A continuación, se presentan los resultados agrupados según categoría de instituciones.<br />
-                                        Considerar que los resultados entre instituciones sólo son comparables si forman parte de la<br />
-                                        misma categoría; éstas son: Pilares, Centralizadas o Nuevas.</h4>
+                                        <h4 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}<br />
+                                        {t("acc_3_tittle_2")}<br />
+                                        {t("acc_3_tittle_3")}</h4>
                                     </Col>
                                     <Col md={2} className="tittleText" >
                                         <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />

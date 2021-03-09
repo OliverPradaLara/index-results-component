@@ -1,12 +1,10 @@
 import React from 'react'
-
-//import Css
 import "../../css/footer/firstfooter/style.css"
-
 import cloud from '../../SVG/img/download.png'
-
+import { useTranslation } from 'react-i18next'
 
 export const UpFooter = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="contenedor-first-footer">
@@ -16,16 +14,16 @@ export const UpFooter = () => {
                             <img src={cloud} alt="Cloud" />
                         </div>
                         <div className="titulo">
-                            <h4>Descargas</h4>
+                            <h4>{t("downloads")}</h4>
                         </div>
                         <div className="descripcion">
-                            <p>(todos los documentos)</p>
+                            <p>({t("all_docs")})</p>
                         </div>
                     </div>
                     <div className="lista">
                         <ul>
-                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">Base de datos</span> <span>(.csv)</span></li>
-                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">Nota técnica de resultados</span> <span>(.pdf)</span></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">{t("database")}</span> <span>(.csv)</span></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> <span className="underline">{t("technical_note_of_results")}</span> <span>(.pdf)</span></li>
                         </ul>
                     </div>
                 </div>

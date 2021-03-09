@@ -7,9 +7,11 @@ import Ministerio from '../../SVG/icons/ministerio-secretaria-blanco.svg'
 import indiceInnovacionPublica from '../../SVG/icons/indice-innovacion-publica-blanco.svg'
 import cloud from '../../SVG/img/download.png'
 import { Row, Col } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
 
 export const PieFooter = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="contenedor-footer">
@@ -47,9 +49,9 @@ export const PieFooter = () => {
                 </Row>
                 <Row className="links">
                     <ul>
-                        <li><a href="#"><span className='color-orange-one'>ACERCA DEL ÍNDICE DE INNOVACIÓN PÚBLICA</span></a></li>
-                        <li><a href="#"><span className='color-orange-one'>POLÍTICAS DE USO</span></a></li>
-                        <li className="linksFooter" >SI ERES PARTE DE LAS INSTITUCIONES PARTICIPANTES <a className="color-orange-one" href="#">INGRESA ACÁ</a></li>
+                        <li><a href="#"><span className='color-orange-one'>{t("footer_down_1")}</span></a></li>
+                        <li><a href="#"><span className='color-orange-one'>{t("footer_down_2")}</span></a></li>
+                        <li className="linksFooter" >{(t("footer_down_3"))} <a className="color-orange-one" href="#">{t("footer_down_4")}</a></li>
                     </ul>
                 </Row>
             </div>
