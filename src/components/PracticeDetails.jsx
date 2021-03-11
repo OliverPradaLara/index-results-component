@@ -146,9 +146,9 @@ export const PracticeDetails = () => {
                                     <Col md={4}>
                                         <Card border="0">
                                             <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">ACTIVIDADES O PRÁCTICAS</Card.Title>
+                                                <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationUserText")}
+                                                    {t("description_Activities_or_practices")}
                                                 </Card.Text>
                                                 <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </Card.Body>
@@ -157,9 +157,9 @@ export const PracticeDetails = () => {
                                     <Col md={4}>
                                         <Card border="0">
                                             <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">PROCEDIMIENTOS</Card.Title>
+                                                <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationCoordinationText")}
+                                                    {t("description_Proceedings")}
                                                 </Card.Text>
                                                 <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </Card.Body>
@@ -168,9 +168,9 @@ export const PracticeDetails = () => {
                                     <Col md={4}>
                                         <Card border="0" >
                                             <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">PROCESOS</Card.Title>
+                                                <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationManagmentText")}
+                                                    {t("description_Processes")}
                                                 </Card.Text>
                                                 <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 

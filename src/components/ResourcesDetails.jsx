@@ -183,9 +183,9 @@ export const ResourcesDetails = () => {
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado">TALENTO HUMANO</Card.Title>
+                                            <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                {t("collaborationUserText")}
+                                                {t("description_Human_Talent")}
                                             </Card.Text>
                                             <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                         </Card.Body>
@@ -194,9 +194,9 @@ export const ResourcesDetails = () => {
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado">MARCO INSTITUCIONAL</Card.Title>
+                                            <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                {t("collaborationUserText")}
+                                                {t("description_Institutional_Frame")}
                                             </Card.Text>
                                             <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                         </Card.Body>
@@ -205,9 +205,9 @@ export const ResourcesDetails = () => {
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado"> RECURSOS DIGITALES </Card.Title>
+                                            <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                {t("collaborationCoordinationText")}
+                                                {t("description_Digital_Resources")}
                                             </Card.Text>
                                             <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                         </Card.Body>
@@ -216,9 +216,9 @@ export const ResourcesDetails = () => {
                                 <Col md={4}>
                                     <Card border="0" >
                                         <Card.Body className="p-5">
-                                            <Card.Title className="title-resultado">ESTRATEGIA Y GOBERNANZA</Card.Title>
+                                            <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
-                                                {t("collaborationManagmentText")}
+                                                {t("description_Strategy_and_Governability")}
                                             </Card.Text>
                                             <a onClick={() => setView(4)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
