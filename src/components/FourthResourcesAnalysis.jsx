@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap'
-import SubColab4 from "../SVG/img/Sub-Colab-04.svg";
+import SubRecursos5 from "../SVG/img/Sub-Recursos-05.svg";
 import { useTranslation } from 'react-i18next'
 
-export const ThirdCollaborationAnalysis = () => {
+export const FourthResourcesAnalysis = () => {
     const { t } = useTranslation();
 
     return (
@@ -14,7 +14,7 @@ export const ThirdCollaborationAnalysis = () => {
                         <p className="text-descripcion">{t("tittleDimensions")}</p>
                     </div>
                     <div>
-                        <img width="85%" src={SubColab4} alt="" />
+                        <img width="85%" src={SubRecursos5} alt="" />
                     </div>
                 </Col>
             </Row>

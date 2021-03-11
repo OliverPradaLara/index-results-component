@@ -1,7 +1,9 @@
 import { React, useState } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
 import Grafico2 from "./../SVG/img/Grafico2.svg";
-import { CollaborationDetails } from './../components/CollaborationDetails'
+import { CollaborationDetails } from '../components/CollaborationDetails'
+import { PracticeDetails } from '../components/PracticeDetails'
+import { ResourcesDetails } from '../components/ResourcesDetails'
 import { useTranslation } from 'react-i18next'
 
 export const DimensionsTab = () => {
@@ -12,6 +14,10 @@ export const DimensionsTab = () => {
         <>
             {
                 view === 1 ? (
+                    <ResourcesDetails />
+                ) : view === 2 ? (
+                    <PracticeDetails />
+                ) : view === 3 ? (
                     <CollaborationDetails />
                 ) : (
                     <>
@@ -35,7 +41,7 @@ export const DimensionsTab = () => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsInstitutionalsText")}
                                             </Card.Text>
-                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -46,7 +52,7 @@ export const DimensionsTab = () => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsProcessText")}
                                             </Card.Text>
-                                            <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -57,7 +63,7 @@ export const DimensionsTab = () => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsCollaborationText")}
                                             </Card.Text>
-                                            <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
 
                                         </Card.Body>
                                     </Card>
