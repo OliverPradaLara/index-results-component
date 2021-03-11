@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
-import Grafico3 from "../SVG/img/Grafico3.svg";
+import SubRecursos1 from "../SVG/img/Sub-Recursos-01.svg";
+
 import { FirstResourcesAnalysis } from "./FirstResourcesAnalysis";
 import { SecondResourcesAnalysis } from "./SecondResourcesAnalysis";
 import { ThirdResourcesAnalysis } from "./ThirdResourcesAnalysis";
@@ -174,7 +175,7 @@ export const ResourcesDetails = () => {
                                         <p className="text-descripcion">{t("tittleDimensions")}</p>
                                     </div>
                                     <div className="text-center p-5">
-                                        <img width="85%" src={Grafico3} alt="" />
+                                        <img width="85%" src={SubRecursos1} alt="" />
                                     </div>
                                 </Col>
                             </Row>
