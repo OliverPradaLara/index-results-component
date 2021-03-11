@@ -274,12 +274,12 @@ body {
 }
 
 .titulo-carrusel {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
 }
 
 .descripcion-carrusel {
-    font-size: 23px;
+    font-size: 28px;
     font-weight: 300 !important;
 }
 
@@ -348,4 +348,10 @@ body {
     color:#dc712d !important;
     font-size: 18px;
     font-weight: 600;
+}
+.box-h4 {
+    width: 70% !important;
+}
+.box-h4 h4{
+    width: 100%;
 }

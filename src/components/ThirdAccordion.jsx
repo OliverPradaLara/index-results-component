@@ -38,9 +38,9 @@ export const ThirdAccordion = () => {
                                             <b>{t("results_acc_3")}</b>
                                             <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                         </h1>
-                                        <h4 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}<br />
-                                        {t("acc_3_tittle_2")}<br />
-                                        {t("acc_3_tittle_3")}</h4>
+                                        <div className="box-h4">
+                                            <h4 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}</h4>
+                                        </div>
                                     </Col>
                                     <Col md={2} className="tittleText" >
                                         <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />
