@@ -4,16 +4,15 @@ import SubPracticas1 from "../SVG/img/Sub-Practicas-01.svg";
 import { FirstPracticeAnalysis } from "./FirstPracticeAnalysis";
 import { SecondPracticeAnalysis } from "./SecondPracticeAnalysis";
 import { ThirdPracticeAnalysis } from "./ThirdPracticeAnalysis";
-import { CarouselDetails } from './CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
 export const PracticeDetails = () => {
     const [view, setView] = useState(0)
+
     const { t } = useTranslation();
 
     return (
         <>
-            <CarouselDetails />
             {
                 view === 1 ? (
                     <>

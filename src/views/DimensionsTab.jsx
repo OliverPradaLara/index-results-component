@@ -1,9 +1,7 @@
 import { React, useState } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
 import Grafico2 from "./../SVG/img/Grafico2.svg";
-import { CollaborationDetails } from '../components/CollaborationDetails'
-import { PracticeDetails } from '../components/PracticeDetails'
-import { ResourcesDetails } from '../components/ResourcesDetails'
+import { CarouselDetails } from '../components/CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
 export const DimensionsTab = () => {
@@ -13,12 +11,8 @@ export const DimensionsTab = () => {
     return (
         <>
             {
-                view === 1 ? (
-                    <ResourcesDetails />
-                ) : view === 2 ? (
-                    <PracticeDetails />
-                ) : view === 3 ? (
-                    <CollaborationDetails />
+                view !== 0 ? (
+                    <CarouselDetails detail={view} />
                 ) : (
                     <>
                         <Row>

@@ -4,7 +4,6 @@ import Grafico3 from "../SVG/img/Grafico3.svg";
 import { FirstCollaborationAnalysis } from "./FirstCollaborationAnalysis";
 import { SecondCollaborationAnalysis } from "./SecondCollaborationAnalysis";
 import { ThirdCollaborationAnalysis } from "./ThirdCollaborationAnalysis";
-import { CarouselDetails } from './CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
 export const CollaborationDetails = () => {
@@ -13,7 +12,6 @@ export const CollaborationDetails = () => {
 
     return (
         <>
-            <CarouselDetails />
             {
                 view === 1 ? (
                     <>
@@ -150,7 +148,7 @@ export const CollaborationDetails = () => {
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("collaborationUserText")}
                                                 </Card.Text>
-                                                <a onClick={() => setView(1)}  className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </Card.Body>
                                         </Card>
                                     </Col>
@@ -174,7 +172,7 @@ export const CollaborationDetails = () => {
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("collaborationManagmentText")}
                                                 </Card.Text>
-                                                <a onClick={() => setView(3)}  className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
                                             </Card.Body>
                                         </Card>

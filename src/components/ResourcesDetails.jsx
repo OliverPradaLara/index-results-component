@@ -6,7 +6,6 @@ import { FirstResourcesAnalysis } from "./FirstResourcesAnalysis";
 import { SecondResourcesAnalysis } from "./SecondResourcesAnalysis";
 import { ThirdResourcesAnalysis } from "./ThirdResourcesAnalysis";
 import { FourthResourcesAnalysis } from "./FourthResourcesAnalysis";
-import { CarouselDetails } from './CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
 export const ResourcesDetails = () => {
@@ -15,7 +14,6 @@ export const ResourcesDetails = () => {
 
     return (
         <>
-            <CarouselDetails />
             {
                 view === 1 ? (
                     <>
