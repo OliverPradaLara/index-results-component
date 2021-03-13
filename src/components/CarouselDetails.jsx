@@ -91,7 +91,7 @@ export const CarouselDetails = (detail) => {
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("description_Strategy_and_Governability")}
                                                 </Card.Text>
-                                                <a onClick={() => { setDataView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a onClick={() => { setDataView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
                                             </Card.Body>
                                         </Card>
