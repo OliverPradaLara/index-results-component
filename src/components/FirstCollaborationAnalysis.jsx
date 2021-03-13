@@ -13,7 +13,7 @@ export const FirstCollaborationAnalysis = () => {
                     <div className="p-5">
                         <p className="text-descripcion">{t("tittleDimensions")}</p>
                     </div>
-                    <div>
+                    <div className="text-center p-5">
                         <img width="85%" src={SubColab2} alt="" />
                     </div>
                 </Col>

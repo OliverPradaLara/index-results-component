@@ -60,7 +60,9 @@ export const SecondAccordion = () => {
                                 <h2 className="accordion2SubTittle">{t("innovation_initiatives")}</h2>
                                 <p className="accordion2Body">{t("text_acc_2")}</p>
                         </div>
+                        <div className="text-center p-5">
                             <img src={Fijo2} alt="gráfico" className="fijo2Style" />
+                        </div>
                     </Row>
             </Accordion.Collapse>
         </>

@@ -13,7 +13,7 @@ export const FirstResourcesAnalysis = () => {
                     <div className="p-5">
                         <p className="text-descripcion">{t("tittleDimensions")}</p>
                     </div>
-                    <div>
+                    <div className="text-center p-5">
                         <img width="85%" src={SubRecursos2} alt="" />
                     </div>
                 </Col>

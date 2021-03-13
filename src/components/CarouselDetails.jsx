@@ -32,7 +32,7 @@ export const CarouselDetails = (detail) => {
                     detailView === 1 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -104,7 +104,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -169,7 +169,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -238,7 +238,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 2 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -302,7 +302,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -368,7 +368,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -443,7 +443,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 3 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -509,7 +509,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -581,7 +581,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -657,7 +657,7 @@ export const CarouselDetails = (detail) => {
 
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
@@ -701,7 +701,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
@@ -745,7 +745,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
@@ -789,7 +789,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
@@ -837,7 +837,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 12 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
@@ -881,7 +881,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
@@ -925,7 +925,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
@@ -969,7 +969,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
@@ -1016,7 +1016,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 13 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
@@ -1060,7 +1060,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
@@ -1104,7 +1104,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
@@ -1148,7 +1148,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
@@ -1195,7 +1195,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 14 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                            <Row className="d-flex justify-content-center">
+                            <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
@@ -1239,7 +1239,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
@@ -1283,7 +1283,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
@@ -1327,7 +1327,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
@@ -1375,7 +1375,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 21 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
@@ -1419,7 +1419,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
@@ -1463,7 +1463,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
@@ -1511,7 +1511,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 22 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
@@ -1555,7 +1555,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
@@ -1599,7 +1599,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                            <Row className="d-flex justify-content-center">
+                            <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
@@ -1646,7 +1646,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 23 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
@@ -1690,7 +1690,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
@@ -1734,7 +1734,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
@@ -1781,7 +1781,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 31 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
@@ -1825,7 +1825,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
@@ -1869,7 +1869,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
@@ -1916,7 +1916,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 32 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
@@ -1960,7 +1960,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
@@ -2004,7 +2004,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
@@ -2051,7 +2051,7 @@ export const CarouselDetails = (detail) => {
                     ) : (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
@@ -2095,7 +2095,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
@@ -2139,7 +2139,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>

@@ -371,3 +371,19 @@ body {
     transition: opacity .15s ease;
     height: 20%;
 }
+.card-header-tabs{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+}
+.card {
+    border: none !important;
+}
+.color-grey{
+    background-color:  #f7f7f7 !important;
+}
+.card-body{
+    padding-top: 0.67% !important;   
+    padding-left: 0 !important;   
+    padding-right: 0 !important;   
+}

@@ -59,7 +59,7 @@ export const ThirdAccordion = () => {
                     <Card>
                         <Nav variant="tabs" className="tabGeneralDimensions">
                             <Nav.Item className="tabHead" onClick={() => { setTabActive("general") }}>
-                                <Nav.Link eventKey="general" className={tabActive === "general" ? "bg-orange-one tabHeadGeneralsActive" : "tabHeadGeneral"}>General</Nav.Link>
+                                <Nav.Link eventKey="general" className={tabActive === "general" ? "bg-orange-one tabHeadGeneralsActive" : "tabHeadGeneral"}>{t("tab1")}</Nav.Link>
                             </Nav.Item>
                             <Nav.Item className="tabHead" onClick={() => { setTabActive("dimensions") }}>
                                 <Nav.Link eventKey="dimensions" className={tabActive === "dimensions" ? "bg-orange-one tabHeadDimensionsActive" : "tabHeadDimensions"}>{t('tab2')}</Nav.Link>

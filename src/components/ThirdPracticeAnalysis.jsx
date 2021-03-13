@@ -12,7 +12,7 @@ export const ThirdPracticeAnalysis = () => {
                     <div className="p-5">
                         <p className="text-descripcion">{t("tittleDimensions")}</p>
                     </div>
-                    <div>
+                    <div className="text-center p-5">
                         <img width="85%" src={SubPracticas3} alt="" />
                     </div>
                 </Col>

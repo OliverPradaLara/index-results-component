@@ -48,7 +48,8 @@ i18n
                     "return_to_main_graph": "return to main graph",
                     "spanish": "SPA",
                     "english": "ENG",
-                    "tab2": "Dimensions",
+                    "tab2": "DIMENSIONS",
+                    "tab1": "GENERAL",
                     "general_tittle": "Distribution of the score of the Public Innovation Index according to category of institutions out of a maximum of 100 points. Year of reference 2019 - 37 participating services.",
                     "pillars":"PILLARS",
                     "pillars_text":"Corresponds to 15 public services on the first measuring. These are characterized by a high budget, executed majorly in a decentralized manner. Some examples are: The health care fund (FONASA). And the internal revenue service IRS, in Spanish (S.I.I).",
@@ -172,7 +173,8 @@ i18n
                     "title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION": "SUBDIMENSIÓN COORDINACIÓN INTERINSTITUCIONAL",                   
                     "spanish": "ESP",                   
                     "english": "ING",
-                    "tab2": "Dimensiones"
+                    "tab2": "DIMENSIONES",
+                    "tab1": "GENERALES",
                 }
             }
         },
