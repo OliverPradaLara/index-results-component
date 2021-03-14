@@ -32,7 +32,7 @@ export const CarouselDetails = (detail) => {
                     detailView === 1 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -91,7 +91,7 @@ export const CarouselDetails = (detail) => {
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("description_Strategy_and_Governability")}
                                                 </Card.Text>
-                                                <a onClick={() => { setDataView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a onClick={() => { setDataView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
                                             </Card.Body>
                                         </Card>
@@ -104,7 +104,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -169,7 +169,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -238,7 +238,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 2 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -302,7 +302,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -368,7 +368,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -443,7 +443,7 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 3 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10}>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
@@ -509,7 +509,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
@@ -581,7 +581,7 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
                                             <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
@@ -657,15 +657,11 @@ export const CarouselDetails = (detail) => {
 
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN TALENTO HUMANO</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                            mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                            diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                            procesos de investigación, participación como co-creadores de soluciones, participación como
-                                            evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -705,16 +701,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN MARCO INSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de redes internas de colaboración para gestionar la innovación en el servicio,
-                                            es decir, incentiva la conformación de mesas o grupos de trabajo sistemáticos inter-áreas para
-                                            llevar a cabo iniciativas de innovación. Por otro lado, indaga acerca de la disponibilidad de datos
-                                            abiertos, o sea, la publicación de información más allá de la contenida en la Ley de
-                                            Transparencia, con alta periodicidad y en formato de datos diferentes y editables por parte del
-                                            servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Institutional_Frame")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -754,14 +745,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN RECURSOS DIGITALES</h3>
-                                            <p className="descripcion-carrusel">Incluye aspectos referidos específicamente a competencias de los equipos en ámbitos digitales,
-                                            la digitalización de trámites y ciertos procesos, junto con elementos clave de infraestructura
-                                            digital. Esta información es capturada principalmente de datos administrativos, de la División de
-                                            Gobierno Digital de Chile.</p>
+                                            <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Digital_Resources")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -801,15 +789,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ESTRATEGIA Y GOBERNANZA</h3>
-                                            <p className="descripcion-carrusel">Tiene por objetivo destacar aquellos servicios que consideran que la innovación es parte
-                                            fundamental de su estrategia y que además establecen una gobernanza para dichos efectos. La
-                                            existencia de ambos elementos es habilitante ya que en la medida que su relevancia es definida
-                                            de manera más clara y explícita, es posible que ésta se torne más habitual, transversal y
-                                            presente en el quehacer de la institución.</p>
+                                            <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Strategy_and_Governability")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -853,16 +837,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 12 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN MARCO INSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de redes internas de colaboración para gestionar la innovación en el servicio,
-                                            es decir, incentiva la conformación de mesas o grupos de trabajo sistemáticos inter-áreas para
-                                            llevar a cabo iniciativas de innovación. Por otro lado, indaga acerca de la disponibilidad de datos
-                                            abiertos, o sea, la publicación de información más allá de la contenida en la Ley de
-                                            Transparencia, con alta periodicidad y en formato de datos diferentes y editables por parte del
-                                            servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Institutional_Frame")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -902,14 +881,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN RECURSOS DIGITALES</h3>
-                                            <p className="descripcion-carrusel">Incluye aspectos referidos específicamente a competencias de los equipos en ámbitos digitales,
-                                            la digitalización de trámites y ciertos procesos, junto con elementos clave de infraestructura
-                                            digital. Esta información es capturada principalmente de datos administrativos, de la División de
-                                            Gobierno Digital de Chile.</p>
+                                            <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Digital_Resources")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -949,15 +925,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ESTRATEGIA Y GOBERNANZA</h3>
-                                            <p className="descripcion-carrusel">Tiene por objetivo destacar aquellos servicios que consideran que la innovación es parte
-                                            fundamental de su estrategia y que además establecen una gobernanza para dichos efectos. La
-                                            existencia de ambos elementos es habilitante ya que en la medida que su relevancia es definida
-                                            de manera más clara y explícita, es posible que ésta se torne más habitual, transversal y
-                                            presente en el quehacer de la institución.</p>
+                                            <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Strategy_and_Governability")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -997,15 +969,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN TALENTO HUMANO</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                            mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                            diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                            procesos de investigación, participación como co-creadores de soluciones, participación como
-                                            evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1048,14 +1016,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 13 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN RECURSOS DIGITALES</h3>
-                                            <p className="descripcion-carrusel">Incluye aspectos referidos específicamente a competencias de los equipos en ámbitos digitales,
-                                            la digitalización de trámites y ciertos procesos, junto con elementos clave de infraestructura
-                                            digital. Esta información es capturada principalmente de datos administrativos, de la División de
-                                            Gobierno Digital de Chile.</p>
+                                            <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Digital_Resources")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1095,15 +1060,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ESTRATEGIA Y GOBERNANZA</h3>
-                                            <p className="descripcion-carrusel">Tiene por objetivo destacar aquellos servicios que consideran que la innovación es parte
-                                            fundamental de su estrategia y que además establecen una gobernanza para dichos efectos. La
-                                            existencia de ambos elementos es habilitante ya que en la medida que su relevancia es definida
-                                            de manera más clara y explícita, es posible que ésta se torne más habitual, transversal y
-                                            presente en el quehacer de la institución.</p>
+                                            <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Strategy_and_Governability")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1143,15 +1104,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN TALENTO HUMANO</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                            mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                            diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                            procesos de investigación, participación como co-creadores de soluciones, participación como
-                                            evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1191,16 +1148,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN MARCO INSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de redes internas de colaboración para gestionar la innovación en el servicio,
-                                            es decir, incentiva la conformación de mesas o grupos de trabajo sistemáticos inter-áreas para
-                                            llevar a cabo iniciativas de innovación. Por otro lado, indaga acerca de la disponibilidad de datos
-                                            abiertos, o sea, la publicación de información más allá de la contenida en la Ley de
-                                            Transparencia, con alta periodicidad y en formato de datos diferentes y editables por parte del
-                                            servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Institutional_Frame")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1243,15 +1195,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 14 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                            <Row className="d-flex justify-content-center">
+                            <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ESTRATEGIA Y GOBERNANZA</h3>
-                                            <p className="descripcion-carrusel">Tiene por objetivo destacar aquellos servicios que consideran que la innovación es parte
-                                            fundamental de su estrategia y que además establecen una gobernanza para dichos efectos. La
-                                            existencia de ambos elementos es habilitante ya que en la medida que su relevancia es definida
-                                            de manera más clara y explícita, es posible que ésta se torne más habitual, transversal y
-                                            presente en el quehacer de la institución.</p>
+                                            <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Strategy_and_Governability")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1291,15 +1239,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN TALENTO HUMANO</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                            mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                            diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                            procesos de investigación, participación como co-creadores de soluciones, participación como
-                                            evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1339,16 +1283,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN MARCO INSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de redes internas de colaboración para gestionar la innovación en el servicio,
-                                            es decir, incentiva la conformación de mesas o grupos de trabajo sistemáticos inter-áreas para
-                                            llevar a cabo iniciativas de innovación. Por otro lado, indaga acerca de la disponibilidad de datos
-                                            abiertos, o sea, la publicación de información más allá de la contenida en la Ley de
-                                            Transparencia, con alta periodicidad y en formato de datos diferentes y editables por parte del
-                                            servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Institutional_Frame")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1388,14 +1327,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN RECURSOS DIGITALES</h3>
-                                            <p className="descripcion-carrusel">Incluye aspectos referidos específicamente a competencias de los equipos en ámbitos digitales,
-                                            la digitalización de trámites y ciertos procesos, junto con elementos clave de infraestructura
-                                            digital. Esta información es capturada principalmente de datos administrativos, de la División de
-                                            Gobierno Digital de Chile.</p>
+                                            <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Digital_Resources")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1439,16 +1375,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 21 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ACTIVIDADES O PRÁCTICAS</h3>
-                                            <p className="descripcion-carrusel">Son aquellas que se realizan de manera espontánea o esporádica dentro de los servicios y que, a
-                                                medida que se normalizan, permiten avanzar en la consolidación de capacidades. En específico,
-                                                mide la cantidad de iniciativas realizadas en el año y la calidad del proceso de innovación
-                                                llevado a cabo, es decir, si cumple con las etapas de un proceso de diseño experimental: diseño,
-                                                prototipado, testeo, ajustes, implementación, evaluación posterior y acciones de gestión del
-                                                cambio que puedan contribuir</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Activities_or_practices")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1488,15 +1419,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCEDIMIENTOS</h3>
-                                            <p className="descripcion-carrusel">Son un esfuerzo por organizar las actividades que pueden desarrollarse de manera esporádica.
-                                                En específico, se mide la existencia de procedimientos para identificar necesidades de usuarios/
-                                                as, desarrollar prototipos para ser puestos a prueba y evaluar el desempeño de las iniciativas de
-                                                innovación. La existencia de procedimientos en estos ámbitos es relevante puesto que orienta el
-                                                trabajo y supone una periodicidad en su ejecución</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Proceedings")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1536,15 +1463,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCESOS</h3>
-                                            <p className="descripcion-carrusel">Son el paso más avanzado en cuanto a la formalización de actividades bajo un flujo
-                                                sistemático, que guía de manera encadenada cada una de las tareas necesarias para llevar a
-                                                cabo una iniciativa de innovación en el servicio. En la medida que los procesos son más claros y
-                                                simples con respecto a los mecanismos a utilizar y los resultados esperados, se facilita incorporar
-                                                la capacidad de innovar de manera transversal en el servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Processes")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1588,15 +1511,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 22 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCEDIMIENTOS</h3>
-                                            <p className="descripcion-carrusel">Son un esfuerzo por organizar las actividades que pueden desarrollarse de manera esporádica.
-                                                En específico, se mide la existencia de procedimientos para identificar necesidades de usuarios/
-                                                as, desarrollar prototipos para ser puestos a prueba y evaluar el desempeño de las iniciativas de
-                                                innovación. La existencia de procedimientos en estos ámbitos es relevante puesto que orienta el
-                                                trabajo y supone una periodicidad en su ejecución</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Proceedings")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1636,15 +1555,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCESOS</h3>
-                                            <p className="descripcion-carrusel">Son el paso más avanzado en cuanto a la formalización de actividades bajo un flujo
-                                                sistemático, que guía de manera encadenada cada una de las tareas necesarias para llevar a
-                                                cabo una iniciativa de innovación en el servicio. En la medida que los procesos son más claros y
-                                                simples con respecto a los mecanismos a utilizar y los resultados esperados, se facilita incorporar
-                                                la capacidad de innovar de manera transversal en el servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Processes")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1684,16 +1599,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                            <Row className="d-flex justify-content-center">
+                            <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ACTIVIDADES O PRÁCTICAS</h3>
-                                            <p className="descripcion-carrusel">Son aquellas que se realizan de manera espontánea o esporádica dentro de los servicios y que, a
-                                                medida que se normalizan, permiten avanzar en la consolidación de capacidades. En específico,
-                                                mide la cantidad de iniciativas realizadas en el año y la calidad del proceso de innovación
-                                                llevado a cabo, es decir, si cumple con las etapas de un proceso de diseño experimental: diseño,
-                                                prototipado, testeo, ajustes, implementación, evaluación posterior y acciones de gestión del
-                                                cambio que puedan contribuir</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Activities_or_practices")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1736,15 +1646,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 23 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCESOS</h3>
-                                            <p className="descripcion-carrusel">Son el paso más avanzado en cuanto a la formalización de actividades bajo un flujo
-                                                sistemático, que guía de manera encadenada cada una de las tareas necesarias para llevar a
-                                                cabo una iniciativa de innovación en el servicio. En la medida que los procesos son más claros y
-                                                simples con respecto a los mecanismos a utilizar y los resultados esperados, se facilita incorporar
-                                                la capacidad de innovar de manera transversal en el servicio.</p>
+                                            <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Processes")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1784,16 +1690,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN ACTIVIDADES O PRÁCTICAS</h3>
-                                            <p className="descripcion-carrusel">Son aquellas que se realizan de manera espontánea o esporádica dentro de los servicios y que, a
-                                                medida que se normalizan, permiten avanzar en la consolidación de capacidades. En específico,
-                                                mide la cantidad de iniciativas realizadas en el año y la calidad del proceso de innovación
-                                                llevado a cabo, es decir, si cumple con las etapas de un proceso de diseño experimental: diseño,
-                                                prototipado, testeo, ajustes, implementación, evaluación posterior y acciones de gestión del
-                                                cambio que puedan contribuir</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Activities_or_practices")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1833,15 +1734,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PROCEDIMIENTOS</h3>
-                                            <p className="descripcion-carrusel">Son un esfuerzo por organizar las actividades que pueden desarrollarse de manera esporádica.
-                                                En específico, se mide la existencia de procedimientos para identificar necesidades de usuarios/
-                                                as, desarrollar prototipos para ser puestos a prueba y evaluar el desempeño de las iniciativas de
-                                                innovación. La existencia de procedimientos en estos ámbitos es relevante puesto que orienta el
-                                                trabajo y supone una periodicidad en su ejecución</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
+                                            <p className="descripcion-carrusel">{t("description_Proceedings")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1884,15 +1781,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 31 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PARTICIPACIÓN DE USUARIOS</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                                mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                                diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                                procesos de investigación, participación como co-creadores de soluciones, participación como
-                                                evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1932,13 +1825,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN COORDINACIÓN INTERINSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la colaboración y eventual interoperabilidad entre servicios. En concreto, incentiva la
-                                                participación de distintos servicios en procesos colaborativos de identificación de oportunidades
-                                                para innovar, co-creación de soluciones, implementación y/o evaluación conjunta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationCoordinationText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -1978,13 +1869,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN GESTIÓN DEL ENTORNO</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de espacios para colaborar con organizaciones que se encuentran fuera de la
-                                                esfera del Estado, pudiendo ser tratarse de entidades de la sociedad civil o sector privado, a fin
-                                                de incentivar la incorporación de aprendizajes desde una perspectiva de innovación abierta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationManagmentText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2027,13 +1916,11 @@ export const CarouselDetails = (detail) => {
                     ) : detailView === 32 ? (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN COORDINACIÓN INTERINSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la colaboración y eventual interoperabilidad entre servicios. En concreto, incentiva la
-                                                participación de distintos servicios en procesos colaborativos de identificación de oportunidades
-                                                para innovar, co-creación de soluciones, implementación y/o evaluación conjunta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationCoordinationText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2073,13 +1960,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN GESTIÓN DEL ENTORNO</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de espacios para colaborar con organizaciones que se encuentran fuera de la
-                                                esfera del Estado, pudiendo ser tratarse de entidades de la sociedad civil o sector privado, a fin
-                                                de incentivar la incorporación de aprendizajes desde una perspectiva de innovación abierta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationManagmentText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2119,15 +2004,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PARTICIPACIÓN DE USUARIOS</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                                mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                                diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                                procesos de investigación, participación como co-creadores de soluciones, participación como
-                                                evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2170,13 +2051,11 @@ export const CarouselDetails = (detail) => {
                     ) : (
                         <Carousel interval={null}>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN GESTIÓN DEL ENTORNO</h3>
-                                            <p className="descripcion-carrusel">Mide la existencia de espacios para colaborar con organizaciones que se encuentran fuera de la
-                                                esfera del Estado, pudiendo ser tratarse de entidades de la sociedad civil o sector privado, a fin
-                                                de incentivar la incorporación de aprendizajes desde una perspectiva de innovación abierta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationManagmentText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2216,15 +2095,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN PARTICIPACIÓN DE USUARIOS</h3>
-                                            <p className="descripcion-carrusel">Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve
-                                                mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las
-                                                diversas fases de innovación, como son: participación en la identificación de brechas a través de
-                                                procesos de investigación, participación como co-creadores de soluciones, participación como
-                                                evaluadores de las soluciones, etc.</p>
+                                            <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -2264,13 +2139,11 @@ export const CarouselDetails = (detail) => {
                                 </Row>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Row className="d-flex justify-content-center">
+                                <Row className="d-flex color-grey justify-content-center">
                                     <Col md={10} className>
                                         <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">SUBDIMENSIÓN COORDINACIÓN INTERINSTITUCIONAL</h3>
-                                            <p className="descripcion-carrusel">Mide la colaboración y eventual interoperabilidad entre servicios. En concreto, incentiva la
-                                                participación de distintos servicios en procesos colaborativos de identificación de oportunidades
-                                                para innovar, co-creación de soluciones, implementación y/o evaluación conjunta.</p>
+                                            <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
+                                            <p className="descripcion-carrusel">{t("collaborationCoordinationText")}</p>
                                         </div>
                                     </Col>
                                 </Row>
