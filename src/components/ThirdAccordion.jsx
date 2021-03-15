@@ -12,11 +12,11 @@ export const ThirdAccordion = () => {
 
     return (
         <>
-            <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="0" onClick={() => {
+            <Accordion.Toggle className="bg-white  pl-5 pr-5" as={Card.Header} eventKey="0" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
-                <Row className="pt-5">
+                <Row className="pt-5 borde-top">
                     {
                         drop ? (
                             <>

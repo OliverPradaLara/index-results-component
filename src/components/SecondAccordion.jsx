@@ -10,7 +10,7 @@ export const SecondAccordion = () => {
 
     return (
         <>
-            <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="1" onClick={() => {
+            <Accordion.Toggle className="bg-white borde-bottom pl-5 pr-5" as={Card.Header} eventKey="1" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 

@@ -116,7 +116,7 @@ i18n
                     "benefits_of_participating": "Beneficios de participar",
                     "institution_categories": "Categorías de instituciones",
                     "text_index_tittle": "Resultados del Índice",
-                    "text_index_text": "Podrás conocer  los resultados del Índice de Innovación Pública, es decir el desempeño de 37 servicios públicos chilenos  en cuanto a sus capacidades para innovar. Estos resultados están agrupados por categoríasde instituciones, y podrás  acceder al detalle de cada una de las 10 subdimensiones medidas",
+                    "text_index_text": "Podrás conocer  los resultados del Índice de Innovación Pública, es decir el desempeño de 37 servicios públicos chilenos  en cuanto a sus capacidades para innovar. Estos resultados están agrupados por categorías de instituciones, y podrás  acceder al detalle de cada una de las 10 subdimensiones medidas.",
                     "amount_of_utilities": "Cantidad de servicios públicos ",
                     "according_to_total_score_range_of_the_index": "| Según rango de puntaje total del índice",
                     "according_to_total_score_range_of_the_index100pt": "| Según rango de puntaje total del índice sobre un máximo de 100 puntos",

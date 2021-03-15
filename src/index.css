@@ -5,9 +5,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.navbar {
+
+    border-bottom: #d1cfcf solid 0.3px;
+}
+
+.padding-links-navbar {
+    padding-right: .3rem !important;
+}
 
 .color-orange-one {
     color: #dc712d !important;
+    text-decoration: underline;
 }
 
 .bg-orange-one {
@@ -103,7 +112,7 @@ body {
 .contenedor-footer {
     background: #000;
     width: 100%;
-    padding: 127px 32px 56px;
+    padding: 127px 80px 56px;
     margin-top: 0;
     height: 450px;
 }
@@ -207,7 +216,7 @@ body {
 }
 
 .textIndex {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .tabs {
@@ -277,13 +286,15 @@ body {
 
 .titulo-carrusel {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .descripcion-carrusel {
     font-size: 26px;
     font-weight: 300 !important;
+    padding-bottom: 50px;
 }
+
 
 .title-grafico {
     font-size: 28px !important;
@@ -294,9 +305,18 @@ body {
     border-left: 2px dotted #797979;
 }
 
+.borde-top {
+    border-top: 6px dotted lightgrey;
+    border-width:thick;
+}
+.borde-bottom {
+    border-bottom: none !important;
+}
+
 .sub-titulo {
     color: #797979;
-    font-weight: 300;
+    font-weight: 250;
+    font-size: 1.70rem;
 }
 
 
@@ -325,6 +345,7 @@ body {
 .accordion2Tittle {
     font-size: 152px;
     color: #ff7043;
+    padding-top: 65px;
 }
 
 .accordion2SubTittle {
@@ -333,7 +354,7 @@ body {
     width: 451px;
     margin-left: 10px;
     padding-bottom: 30px;
-    border-bottom: 5px dotted;
+    border-bottom: 5px dotted lightgrey;
 }
 
 .accordion2Body {
