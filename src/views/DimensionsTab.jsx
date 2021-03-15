@@ -35,8 +35,7 @@ export const DimensionsTab = (props) => {
                             </Col>
                         </Row>
                         <Row>
-                            <Row className="p-5">
-
+                            <Row className="p-5 box-dimensions-text">
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">

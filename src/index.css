@@ -260,8 +260,10 @@ body {
 }
 
 .descripcion-resultado {
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: #797979;
+    margin-top: -10px;
+    width: 105% !important;
 }
 
 .borde {
@@ -279,7 +281,7 @@ body {
 }
 
 .descripcion-carrusel {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 300 !important;
 }
 
@@ -307,7 +309,8 @@ body {
 }
 
 .fijo2Style {
-    width: 950px;
+    width: 800px;
+    margin-left: 38px;
 }
 
 .accordion2Card {
@@ -320,12 +323,12 @@ body {
 }
 
 .accordion2Tittle {
-    font-size: 182px;
+    font-size: 152px;
     color: #ff7043;
 }
 
 .accordion2SubTittle {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bold;
     width: 451px;
     margin-left: 10px;
@@ -335,8 +338,9 @@ body {
 
 .accordion2Body {
     width: 411px;
-    font-size: 31px;
+    font-size: 30px;
     margin-left: 10px;
+    margin-top: 37px;
 }
 
 
@@ -350,7 +354,7 @@ body {
     font-weight: 600;
 }
 .box-h4 {
-    width: 70% !important;
+    width: 102% !important;
 }
 .box-h4 h4{
     width: 100%;
@@ -386,4 +390,12 @@ body {
     padding-top: 0.67% !important;   
     padding-left: 0 !important;   
     padding-right: 0 !important;   
+}
+.box-dimensions-text{
+    width: 91% !important;
+    margin-left: 80px !important;
+}
+.box-subDimensions-text{
+    width: 96% !important;
+    margin-left: 90px !important;
 }

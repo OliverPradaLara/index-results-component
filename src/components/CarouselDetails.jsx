@@ -53,7 +53,7 @@ export const CarouselDetails = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="p-5 box-subDimensions-text">
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">
@@ -99,15 +99,6 @@ export const CarouselDetails = (props) => {
                                         </Card.Body>
                                     </Card>
                                 </Col>
-                                <Col md={4}>
-                                    <Card border="0" >
-                                        <Card.Body className="p-5">
-
-                                            <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
-
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
@@ -133,7 +124,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Row>
+                                <Row className="p-5 box-subDimensions-text">
 
                                     <Col md={4}>
                                         <Card border="0">
@@ -169,15 +160,6 @@ export const CarouselDetails = (props) => {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col md={4}>
-                                        <Card border="0" >
-                                            <Card.Body className="p-5">
-
-                                                <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
-
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
                                 </Row>
                             </Row>
                             <Row>
@@ -203,7 +185,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Row>
+                                <Row className="p-5 box-subDimensions-text">
 
                                     <Col md={4}>
                                         <Card border="0">
@@ -237,15 +219,6 @@ export const CarouselDetails = (props) => {
                                                     {t("collaborationManagmentText")}
                                                 </Card.Text>
                                                 <a onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={4}>
-                                        <Card border="0" >
-                                            <Card.Body className="p-5">
-
-                                                <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
 
                                             </Card.Body>
                                         </Card>

@@ -55,14 +55,14 @@ export const SecondAccordion = () => {
 
             <Accordion.Collapse className="pl-5 pr-5" eventKey="1">
                     <Row  className="accordion2ContainerCollapse">
-                        <div md={4} className="accordion2Box">
+                        <Col md={4} className="accordion2Box">
                                 <h1 className="accordion2Tittle">130</h1>
                                 <h2 className="accordion2SubTittle">{t("innovation_initiatives")}</h2>
                                 <p className="accordion2Body">{t("text_acc_2")}</p>
-                        </div>
-                        <div className="text-center p-5">
+                        </Col>
+                        <Col md={8} className="text-center p-5">
                             <img src={Fijo2} alt="gráfico" className="fijo2Style" />
-                        </div>
+                        </Col>
                     </Row>
             </Accordion.Collapse>
         </>

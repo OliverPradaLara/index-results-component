@@ -39,7 +39,7 @@ export const ThirdAccordion = () => {
                                             <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                         </h1>
                                         <div className="box-h4">
-                                            <h4 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}</h4>
+                                            <h6 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}</h6>
                                         </div>
                                     </Col>
                                     <Col md={2} className="tittleText" >

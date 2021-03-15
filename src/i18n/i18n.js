@@ -124,7 +124,7 @@ i18n
                     "more_info_acc_1": "+ ver servicios públicos participantes",
                     "cadastre_initiatives_of_innovations_developed": "Catastro iniciativas de innovaciones desarrolladas",
                     "reference_year_acc_2": "Año de referencia 2019 - Servicios participantes",
-                    "innovation_initiatives": "innovation initiatives",
+                    "innovation_initiatives": "iniciativas de innovación",
                     "text_acc_2": "Desarrolladas por los 37 servicios públicos. Cada una de ellas tiene diverso nivel de desarrollo, considerando las etapas de un proceso de innovación pública. De ellas:",
                     "results_acc_3": "Resultados ",
                     "by_categories_of_institutions": "| Por categorías de instituciones",
