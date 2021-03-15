@@ -10,7 +10,7 @@ export const GeneralTab = () => {
         <>
             <Row>
                 <Col md={12}>
-                    <div className="p-5">
+                    <div className="p-5 bg-light">
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
                     <div className="text-center p-5">

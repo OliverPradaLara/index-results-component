@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <Row>
             <Col md={12}>
-                <Navbar className="pt-4 pb-4" bg="light" variant="light">
+                <Navbar className="pt-4 pb-4 navbar" >
                     <Col md={4}>
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
@@ -27,9 +27,9 @@ export const Header = () => {
                     <Col md={5}>
                         <Nav className="mr-auto">
                             <Nav.Link className="color-orange-one text-center" href="#home"><b>{t("index_results")}</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>{t("institution_categories")}</b></Nav.Link>
+                            <Nav.Link className="text-center padding-links-navbar" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
+                            <Nav.Link className="text-center padding-links-navbar" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                            <Nav.Link className="text-center padding-links-navbar" href="#pricing"><b>{t("institution_categories")}</b></Nav.Link>
                             <NavDropdown className="color-nav" title={language ? "| ESP" : "| ENG"} id="basic-nav-dropdown">
                                 <NavDropdown.Item  onClick={() => {
                                     setLanguage(true)
