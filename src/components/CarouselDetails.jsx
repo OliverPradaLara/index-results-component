@@ -3,692 +3,269 @@ import { Carousel, Row, Col, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
 import SubRecursos1 from "../SVG/img/Sub-Recursos-01.svg";
-import { FirstResourcesAnalysis } from "./FirstResourcesAnalysis";
-import { SecondResourcesAnalysis } from "./SecondResourcesAnalysis";
-import { ThirdResourcesAnalysis } from "./ThirdResourcesAnalysis";
-import { FourthResourcesAnalysis } from "./FourthResourcesAnalysis";
+import { CarouselResources } from "./CarouselResources"
+import { CarouselPractice } from "./CarouselPractice"
+import { CarouselCollaboration } from "./CarouselCollaboration"
 
 import Grafico3 from "../SVG/img/Grafico3.svg";
-import { FirstCollaborationAnalysis } from "./FirstCollaborationAnalysis";
-import { SecondCollaborationAnalysis } from "./SecondCollaborationAnalysis";
-import { ThirdCollaborationAnalysis } from "./ThirdCollaborationAnalysis";
 
 import SubPracticas1 from "../SVG/img/Sub-Practicas-01.svg";
-import { FirstPracticeAnalysis } from "./FirstPracticeAnalysis";
-import { SecondPracticeAnalysis } from "./SecondPracticeAnalysis";
-import { ThirdPracticeAnalysis } from "./ThirdPracticeAnalysis";
-
-export const CarouselDetails = (detail) => {
+export const CarouselDetails = (props) => {
     const { t } = useTranslation();
-    let received = detail.detail
-    const [detailView, setDataView] = useState(received)
+
+    const dimensions = props.dimensions
+
+    const carouselResourcesCodes = [11, 12, 13, 14]
+    const carouselPracticeCodes = [21, 22, 23,]
+    const carouselCollaborationCodes = [31, 32, 33]
+
+    const [detailView, setDetailView] = useState(dimensions)
     console.log({ detailView })
-    //let _detailDefault = 
-    
+
+    const goBack = (dimension) => {
+        setDetailView(dimension)
+    }
+
     return (
         <Row>
             <Col md={12}>
-                {
-                    detailView === 1 || detailView === 2 || detailView === 3 ? (
-                        <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 1 ? 0 : detailView === 2 ? 1 : detailView === 3 ? 2 : ""} >
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
-                                            <p className="descripcion-carrusel">{t("dimensionsInstitutionalsText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12}>
-                                        <div className="p-5">
-                                            <p className="text-descripcion">{t("tittleDimensions")}</p>
-                                        </div>
-                                        <div className="text-center p-5">
-                                            <img width="85%" src={SubRecursos1} alt="" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={4}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Human_Talent")}
-                                                </Card.Text>
-                                                <a onClick={() => { setDataView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={4}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Institutional_Frame")}
-                                                </Card.Text>
-                                                <a onClick={() => { setDataView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={4}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Digital_Resources")}
-                                                </Card.Text>
-                                                <a onClick={() => { setDataView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={4}>
-                                        <Card border="0" >
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Strategy_and_Governability")}
-                                                </Card.Text>
-                                                <a onClick={() => { setDataView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
-                                            <p className="descripcion-carrusel">{t("dimensionsProcessText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-
-                                <Row>
-                                    <Col md={12}>
-                                        <div className="p-5">
-                                            <p className="text-descripcion">{t("tittleDimensions")}</p>
-                                        </div>
-                                        <div className="text-center p-5">
-                                            <img width="85%" src={SubPracticas1} alt="" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Row>
-
-                                        <Col md={4}>
-                                            <Card border="0">
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("description_Activities_or_practices")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Card border="0">
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("description_Proceedings")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Card border="0" >
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("description_Processes")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10}>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
-                                            <p className="descripcion-carrusel">{t("dimensionsCollaborationText")} </p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12}>
-                                        <div className="p-5">
-                                            <p className="text-descripcion">{t("tittleDimensions")}</p>
-                                        </div>
-                                        <div className="text-center p-5">
-                                            <img width="85%" src={Grafico3} alt="" />
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Row>
-
-                                        <Col md={4}>
-                                            <Card border="0">
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("collaborationUserText")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Card border="0">
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">
-                                                        {t("collaborationCoordinationTittle")}
-                                                    </Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("collaborationCoordinationText")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={4}>
-                                            <Card border="0" >
-                                                <Card.Body className="p-5">
-                                                    <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
-                                                    <Card.Text className="descripcion-resultado">
-                                                        {t("collaborationManagmentText")}
-                                                    </Card.Text>
-                                                    <a onClick={() => { setDataView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                        </Carousel>
-
-                    ) : detailView === 11 || detailView === 12 || detailView === 13 || detailView === 14 ? (
-                        <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 11 ? 0 : detailView === 12 ? 1 : detailView === 13 ? 2 : detailView === 14 ? 3 : ""} >
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_HUMAN_TALENT")}</h3>
-                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <FirstResourcesAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
+                {carouselResourcesCodes.includes(detailView) ? (
+                    <CarouselResources subDimensions={detailView} goBack={goBack} />
+                ) : carouselPracticeCodes.includes(detailView) ? (
+                    <CarouselPractice subDimensions={detailView} goBack={goBack} />
+                ) : carouselCollaborationCodes.includes(detailView) ? (
+                    <CarouselCollaboration subDimensions={detailView} goBack={goBack} />
+                ) : (
+                    <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 1 ? 0 : detailView === 2 ? 1 : detailView === 3 ? 2 : ""} >
+                        <Carousel.Item>
+                            <Row className="d-flex color-grey justify-content-center">
+                                <Col md={10} className>
+                                    <div className="text-carrusel">
+                                        <h3 className="titulo-carrusel">{t("tittleInstitutionals")}</h3>
+                                        <p className="descripcion-carrusel">{t("dimensionsInstitutionalsText")}</p>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={12}>
+                                    <div className="text-center p-5">
+                                        <img width="85%" src={SubRecursos1} alt="" />
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={4}>
+                                    <Card border="0">
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
+                                                {t("description_Human_Talent")}
                                             </Card.Text>
-                                                <a onClick={() => { setDataView(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_INSTITUTIONAL_FRAME_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Institutional_Frame")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <SecondResourcesAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_DIGITAL_RESOURCES_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Digital_Resources")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <ThirdResourcesAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_STRATEGY_AND_GOVERNANCE_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Strategy_and_Governability")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <FourthResourcesAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
+                                            <a onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col md={4}>
+                                    <Card border="0">
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
+                                                {t("description_Institutional_Frame")}
                                             </Card.Text>
-                                                <a onClick={() => { setDataView(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                        </Carousel>
+                                            <a onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col md={4}>
+                                    <Card border="0">
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
+                                                {t("description_Digital_Resources")}
+                                            </Card.Text>
+                                            <a onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col md={4}>
+                                    <Card border="0" >
+                                        <Card.Body className="p-5">
+                                            <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
+                                            <Card.Text className="descripcion-resultado">
+                                                {t("description_Strategy_and_Governability")}
+                                            </Card.Text>
+                                            <a onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
 
-                    ) : detailView === 21 || detailView === 22 || detailView === 23 ? (
-                        <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 21 ? 0 : detailView === 22 ? 1 : detailView === 23 ? 2 : ""}>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ACTIVITIES_OR_PRACTICES")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Activities_or_practices")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <FirstPracticeAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-            </Card.Text>
-                                                <a onClick={() => { setDataView(2) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_PROCEEDINGS")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Proceedings")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <SecondPracticeAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(2) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_PROCESS_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("description_Processes")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <ThirdPracticeAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(2) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                        </Carousel>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col md={4}>
+                                    <Card border="0" >
+                                        <Card.Body className="p-5">
 
-                    ) : detailView === 31 || detailView === 32 || detailView === 33 ? (
-                        <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 31 ? 0 : detailView === 32 ? 1 : detailView === 33 ? 2 : ""}>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_USER_PARTICIPATION_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("collaborationUserText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <FirstCollaborationAnalysis />
+                                            <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
+
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={12} className="text-center pt-4 pb-4">
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                </Col>
+                            </Row>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Row className="d-flex color-grey justify-content-center">
+                                <Col md={10} className>
+                                    <div className="text-carrusel">
+                                        <h3 className="titulo-carrusel">{t("tittleProcess")}</h3>
+                                        <p className="descripcion-carrusel">{t("dimensionsProcessText")}</p>
+                                    </div>
+                                </Col>
+                            </Row>
+
+                            <Row>
+                                <Col md={12}>
+                                    <div className="text-center p-5">
+                                        <img width="85%" src={SubPracticas1} alt="" />
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
                                 <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
+
+                                    <Col md={4}>
                                         <Card border="0">
                                             <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
+                                                <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
+                                                <Card.Text className="descripcion-resultado">
+                                                    {t("description_Activities_or_practices")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col md={5}>
+                                    <Col md={4}>
+                                        <Card border="0">
+                                            <Card.Body className="p-5">
+                                                <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
+                                                <Card.Text className="descripcion-resultado">
+                                                    {t("description_Proceedings")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col md={4}>
                                         <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
+                                            <Card.Body className="p-5">
+                                                <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
+                                                <Card.Text className="descripcion-resultado">
+                                                    {t("description_Processes")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col md={4}>
+                                        <Card border="0" >
+                                            <Card.Body className="p-5">
+
+                                                <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
+
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </Row>
+                            <Row>
+                                <Col md={12} className="text-center pt-4 pb-4">
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                </Col>
+                            </Row>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Row className="d-flex color-grey justify-content-center">
+                                <Col md={10}>
+                                    <div className="text-carrusel">
+                                        <h3 className="titulo-carrusel">{t("tittleCollaboration")}</h3>
+                                        <p className="descripcion-carrusel">{t("dimensionsCollaborationText")} </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={12}>
+                                    <div className="text-center p-5">
+                                        <img width="85%" src={Grafico3} alt="" />
+                                    </div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Row>
+
+                                    <Col md={4}>
+                                        <Card border="0">
+                                            <Card.Body className="p-5">
+                                                <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
+                                                <Card.Text className="descripcion-resultado">
+                                                    {t("collaborationUserText")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col md={4}>
+                                        <Card border="0">
+                                            <Card.Body className="p-5">
                                                 <Card.Title className="title-resultado">
                                                     {t("collaborationCoordinationTittle")}
                                                 </Card.Title>
                                                 <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-            </Card.Text>
-                                                <a onClick={() => { setDataView(3) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                                    {t("collaborationCoordinationText")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION")}</h3>
-                                            <p className="descripcion-carrusel">{t("collaborationCoordinationText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <SecondCollaborationAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
-                                            <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
+                                    <Col md={4}>
                                         <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(3) }} className="color-orange-one">{t("return_to_main_graph")}</a>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Row className="d-flex color-grey justify-content-center">
-                                    <Col md={10} className>
-                                        <div className="text-carrusel">
-                                            <h3 className="titulo-carrusel">{t("title_SUBDIMENSION_ENVIRONMENT_MANAGEMENT")}</h3>
-                                            <p className="descripcion-carrusel">{t("collaborationManagmentText")}</p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                                <ThirdCollaborationAnalysis />
-                                <Row>
-                                    <Col md={1} />
-                                    <Col md={3}>
-                                        <Card border="0">
                                             <Card.Body className="p-5">
-                                                <Card.Title className="title-grafico">
-                                                    {t("interpretation_of_the_graph")}
-                                                </Card.Title>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col md={5}>
-                                        <Card border="0" >
-                                            <Card.Body className="borde-left p-5">
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
+                                                <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
-                                                    Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
-                                                    ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
-                                                    mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
-                                                    auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                                <a onClick={() => { setDataView(3) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                                    {t("collaborationManagmentText")}
+                                                </Card.Text>
+                                                <a onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col md={4}>
+                                        <Card border="0" >
+                                            <Card.Body className="p-5">
+
+                                                <button onClick={() => { props.goBack() }} className="color-orange-one">ATRÁs</button>
+
                                             </Card.Body>
                                         </Card>
                                     </Col>
                                 </Row>
-                                <Row>
-                                    <Col md={12} className="text-center pt-4 pb-4">
-                                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
-                                    </Col>
-                                </Row>
-                            </Carousel.Item>
-                        </Carousel>
-                    ) : (<></>)
+                            </Row>
+                            <Row>
+                                <Col md={12} className="text-center pt-4 pb-4">
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                </Col>
+                            </Row>
+                        </Carousel.Item>
+                    </Carousel>
+
+
+                )
+
                 }
+                {/* <CarouselResources/> */}
+
             </Col>
         </Row >
     )
