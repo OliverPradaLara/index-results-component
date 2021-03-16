@@ -8,30 +8,37 @@ export const Header = () => {
     const [language, setLanguage] = useState(true)
     const { t, i18n } = useTranslation();
     return (
-        <Row>
-            <Col md={12}>
-                <Navbar className="pt-4 pb-4" bg="light" variant="light">
-                    <Col md={4}>
+        <>
+            <Navbar className="pt-4 pb-4" bg="light" variant="light">
+                <Row className="row-navbar">
+                    <Col md={6}>
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
-                                <Col md={4}>
-                                    <img width="100%" src={laboratorioGobiernoGris} />
+                                <Col md={6}>
+                                    <img className="img-laboratorio-gobierno" src={laboratorioGobiernoGris} />
                                 </Col>
-                                <Col md={4}>
-                                    <img width="100%" src={indiceInnivacionGris} />
+                                <Col md={6}>
+                                    <img className="img-indice-innovacion" src={indiceInnivacionGris} />
                                 </Col>
                             </Row>
                         </Navbar.Brand>
                     </Col>
-                    <Col md={3} />
-                    <Col md={5}>
-                        <Nav className="mr-auto">
-                            <Nav.Link className="color-orange-one text-center" href="#home"><b>{t("index_results")}</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
-                            <Nav.Link className="text-center" href="#pricing"><b>{t("institution_categories")}</b></Nav.Link>
+                    <div className="col-md-6 d-flex justify-content-end">
+                        <Nav className="d-flex justify-content-end">
+                            <Nav.Item>
+                                <Nav.Link className="color-orange-one text-center" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="text-center" href="#category"><b>{t("institution_categories")}</b></Nav.Link>
+                            </Nav.Item>
                             <NavDropdown className="color-nav" title={language ? "| ESP" : "| ENG"} id="basic-nav-dropdown">
-                                <NavDropdown.Item  onClick={() => {
+                                <NavDropdown.Item onClick={() => {
                                     setLanguage(true)
                                     i18n.changeLanguage("es")
                                 }}>{t("spanish")}</NavDropdown.Item>
@@ -41,9 +48,10 @@ export const Header = () => {
                                 }}>{t("english")}</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                    </Col>
-                </Navbar>
-            </Col>
-        </Row>
+                    </div>
+                </Row>
+            </Navbar>
+
+        </>
     )
 }

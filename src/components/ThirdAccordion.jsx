@@ -15,8 +15,8 @@ export const ThirdAccordion = () => {
             <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="0" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
-
-                <Row className="pt-5">
+ 
+                <Row className="pt-5 accordionView">
                     {
                         drop ? (
                             <>

@@ -38,7 +38,7 @@ export const PieFooter = () => {
                             <img src={indiceInnovacionPublica} alt="Indice Innovacion Pública" />
                         </div>
                     </Col>
-                    <Col md={4} className="logo-derecho">
+                    <Col md={4} className="logo-derecho float-right">
                         <div className="twitter">
                             <a className="text-white" target="_blank" href="https://twitter.com/labgobcl"><b><i className="fab fa-twitter"></i></b></a>
                         </div>

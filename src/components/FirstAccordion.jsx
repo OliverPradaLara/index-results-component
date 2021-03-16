@@ -14,7 +14,7 @@ export const FirstAccordion = () => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
-                <Row className="pt-5 accordionView">
+                <Row className="pt-4 accordionView">
                     {
                         drop ? (
                             <>
