@@ -43,7 +43,9 @@ export const DimensionsTab = (props) => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsInstitutionalsText")}
                                             </Card.Text>
-                                            <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <div className="text-center">
+                                                <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            </div>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -54,7 +56,9 @@ export const DimensionsTab = (props) => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsProcessText")}
                                             </Card.Text>
-                                            <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <div className="text-center">
+                                                <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            </div>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -65,8 +69,9 @@ export const DimensionsTab = (props) => {
                                             <Card.Text className="descripcion-resultado">
                                                 {t("dimensionsCollaborationText")}
                                             </Card.Text>
-                                            <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
-
+                                            <div className="text-center">
+                                                <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            </div>
                                         </Card.Body>
                                     </Card>
                                 </Col>

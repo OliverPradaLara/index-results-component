@@ -294,7 +294,7 @@ body {
 .descripcion-carrusel {
     font-size: 20px;
     font-weight: 300 !important;
-    padding-bottom: 50px;
+    margin-bottom: 0 !important;
 }
 
 

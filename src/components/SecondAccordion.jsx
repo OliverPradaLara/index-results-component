@@ -14,9 +14,8 @@ export const SecondAccordion = () => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
-                <Row className="pt-4 accordionView">
-                    {
-                        drop ? (
+                <Row className="pt-2 accordionView">
+                    {drop ? (
                             <>
                                 <Col md={10}>
                                     <h1>
@@ -45,7 +44,7 @@ export const SecondAccordion = () => {
                     </>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={12}>
                         <p className="descripcion-carrusel">
                             {t("reference_year_acc_2")}
                         </p>
@@ -54,22 +53,6 @@ export const SecondAccordion = () => {
             </Accordion.Toggle>
 
             <Accordion.Collapse className="pl-5 pr-5" eventKey="1">
-                {/* <Row className="accordion2ContainerCollapse pt-3">
-                    <div className="accordion2Box">
-                        <div className="title-acordion">
-                            <h1>130</h1>
-                        </div>
-                        <div className="subtitle-acordion pb-4">
-                            <h2>{t("innovation_initiatives")}</h2>
-                        </div>
-                        <div className="descripcion-acordion pt-4">
-                            <p>{t("text_acc_2")}</p>
-                        </div>
-                    </div>
-                    <div className="img-tamano text-center">
-                        <img src={Fijo2} alt="gráfico" className="fijo2Style" />
-                    </div>
-                </Row> */}
                     <Row  className="accordion2ContainerCollapse pb-4">
                         <Col md={4} className="accordion2Box">
                                 <h1 className="accordion2Tittle">130</h1>

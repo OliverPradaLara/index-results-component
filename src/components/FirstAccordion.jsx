@@ -14,7 +14,7 @@ export const FirstAccordion = () => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
-                <Row className="pt-4 accordionView">
+                <Row className="pt-2 accordionView">
                     {
                         drop ? (
                             <>
@@ -47,14 +47,14 @@ export const FirstAccordion = () => {
                     </>
                 </Row>
                 <Row className="accordionView" >
-                    <Col>
+                    <Col md={12}>
                         <p className="descripcion-carrusel ">
                             {t("reference_year_acc_1")}
                         </p>
                     </Col>
                 </Row>
             </Accordion.Toggle>
-
+            {/* //TODO: mejorar estructura */}
             <Accordion.Collapse className="accordionView pl-5 pr-5 bg-light" eventKey="2" >
                 <Card.Body>
                     <div className="text-center p-5">
