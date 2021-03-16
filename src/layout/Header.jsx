@@ -26,7 +26,7 @@ export const Header = () => {
                     <div className="col-md-6 d-flex justify-content-end">
                         <Nav className="d-flex justify-content-end">
                             <Nav.Item>
-                                <Nav.Link className="color-orange-one text-center" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                                <Nav.Link className="color-orange-one text-center text_decoration" href="#home"><b>{t("index_results")}</b></Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
@@ -37,7 +37,7 @@ export const Header = () => {
                             <Nav.Item>
                                 <Nav.Link className="text-center" href="#category"><b>{t("institution_categories")}</b></Nav.Link>
                             </Nav.Item>
-                            <NavDropdown className="color-nav" title={language ? "| ESP" : "| ENG"} id="basic-nav-dropdown">
+                        <NavDropdown className="color-nav posicion-class" title={language ? `| ESP` : "| ENG"} id="basic-nav-dropdown">
                                 <NavDropdown.Item onClick={() => {
                                     setLanguage(true)
                                     i18n.changeLanguage("es")

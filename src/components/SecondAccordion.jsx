@@ -10,7 +10,7 @@ export const SecondAccordion = () => {
 
     return (
         <>
-            <Accordion.Toggle className="bg-white pl-5 pr-5" as={Card.Header} eventKey="1" onClick={() => {
+            <Accordion.Toggle className="bg-white borde-bottom pl-5 pr-5" as={Card.Header} eventKey="1" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -54,7 +54,7 @@ export const SecondAccordion = () => {
             </Accordion.Toggle>
 
             <Accordion.Collapse className="pl-5 pr-5" eventKey="1">
-                <Row className="accordion2ContainerCollapse pt-3">
+                {/* <Row className="accordion2ContainerCollapse pt-3">
                     <div className="accordion2Box">
                         <div className="title-acordion">
                             <h1>130</h1>
@@ -69,7 +69,17 @@ export const SecondAccordion = () => {
                     <div className="img-tamano text-center">
                         <img src={Fijo2} alt="gráfico" className="fijo2Style" />
                     </div>
-                </Row>
+                </Row> */}
+                    <Row  className="accordion2ContainerCollapse pb-4">
+                        <Col md={4} className="accordion2Box">
+                                <h1 className="accordion2Tittle">130</h1>
+                                <h2 className="accordion2SubTittle">{t("innovation_initiatives")}</h2>
+                                <p className="accordion2Body">{t("text_acc_2")}</p>
+                        </Col>
+                        <Col md={8} className="text-center img-tamano">
+                            <img  src={Fijo2} alt="gráfico" className="fijo2Style" />
+                        </Col>
+                    </Row>
             </Accordion.Collapse>
         </>
     )

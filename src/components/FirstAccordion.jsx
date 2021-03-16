@@ -10,7 +10,7 @@ export const FirstAccordion = () => {
     const { t } = useTranslation();
     return (
         <>
-            <Accordion.Toggle className="pl-5 pr-5" as={Card.Header} eventKey="2" onClick={() => {
+            <Accordion.Toggle className="pl-5 pr-5 borde-bottom" as={Card.Header} eventKey="2" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
 
@@ -21,7 +21,7 @@ export const FirstAccordion = () => {
                                 <Col md={10}>
                                     <h1>
                                         <b>{t("amount_of_utilities")}</b>
-                                                    <span className="sub-titulo">{t("according_to_total_score_range_of_the_index")} </span>
+                                        <span className="sub-titulo">{t("according_to_total_score_range_of_the_index")} </span>
                                     </h1>
                                 </Col>
                                 <Col md={2} className="tittleText">
@@ -48,17 +48,17 @@ export const FirstAccordion = () => {
                 </Row>
                 <Row className="accordionView" >
                     <Col>
-                        <p className="descripcion-carrusel">
+                        <p className="descripcion-carrusel ">
                             {t("reference_year_acc_1")}
                         </p>
                     </Col>
                 </Row>
             </Accordion.Toggle>
 
-            <Accordion.Collapse className="accordionView pl-5 pr-5" eventKey="2">
+            <Accordion.Collapse className="accordionView pl-5 pr-5 bg-light" eventKey="2" >
                 <Card.Body>
                     <div className="text-center p-5">
-                        <img width="85%" src={Fijo1} alt="gráfico" />
+                        <img width="85%" src={Fijo1} alt="gráfico"  />
                     </div>
                     <div className="text-center pt-4 pb-4">
                         <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_info_acc_1")}</a>

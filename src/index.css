@@ -4,9 +4,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.navbar {
+
+    border-bottom: #d1cfcf solid 0.3px;
+}
+
+.padding-links-navbar {
+    padding-right: .3rem !important;
+}
 
 .color-orange-one {
     color: #dc712d !important;
+    text-decoration: underline;
 }
 
 .bg-orange-one {
@@ -102,7 +111,7 @@ body {
 .contenedor-footer {
     background: #000;
     width: 100%;
-    padding: 127px 32px 56px;
+    padding: 127px 80px 56px;
     margin-top: 0;
     height: 450px;
 }
@@ -262,8 +271,10 @@ body {
 }
 
 .descripcion-resultado {
-    font-size: 20px !important;
+    font-size: 18px !important;
     color: #797979;
+    margin-top: -10px;
+    width: 105% !important;
 }
 
 .borde {
@@ -277,13 +288,15 @@ body {
 
 .titulo-carrusel {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .descripcion-carrusel {
     font-size: 20px;
     font-weight: 300 !important;
+    padding-bottom: 50px;
 }
+
 
 .title-grafico {
     font-size: 28px !important;
@@ -294,10 +307,19 @@ body {
     border-left: 2px dotted #797979;
 }
 
+.borde-top {
+    border-top: 6px dotted lightgrey;
+    border-width:thick;
+}
+.borde-bottom {
+    border-bottom: none !important;
+}
+
 .sub-titulo {
     font-size: 24px;
     color: #797979;
-    font-weight: 300;
+    font-weight: 250;
+    font-size: 1.70rem;
 }
 
 
@@ -311,6 +333,8 @@ body {
 
 .fijo2Style {
     width: 100%;
+    /* width: 800px; */
+    margin-left: 38px;
 }
 
 .accordion2Card {
@@ -321,8 +345,8 @@ body {
 .accordion2Box {
     width: 30%;
 }
-.img-tamano{
-    width: 50%;
+.img-tamano img{
+    width: 74%;
 }
 .accordion2Box h1{
     font-size: 500%;
@@ -344,21 +368,23 @@ body {
 .accordion2Tittle {
     font-size: 200%;
     color: #ff7043;
+    padding-top: 65px;
 }
 
 .accordion2SubTittle {
-    font-size: 56px;
-    font-weight: bold;
+    font-size: 45px !important;
+    font-weight: 900 !important;
     width: 451px;
     margin-left: 10px;
     padding-bottom: 30px;
-    border-bottom: 5px dotted;
+    border-bottom: 5px dotted lightgrey;
 }
 
 .accordion2Body {
     width: 411px;
-    font-size: 31px;
+    font-size: 24px;
     margin-left: 10px;
+    margin-top: 37px;
 }
 
 
@@ -377,7 +403,7 @@ body {
     font-weight: 600;
 }
 .box-h4 {
-    width: 70% !important;
+    width: 102% !important;
 }
 .box-h4 h4{
     width: 100%;
@@ -416,6 +442,7 @@ body {
 }
 .row-navbar{
     width: 100%;
+    text-decoration: none;
 }
 .img-laboratorio-gobierno{
     width: 130px;
@@ -428,4 +455,28 @@ body {
 .accordionView h1 {
     font-size: 25px;
     font-weight: 600 !important;
+}
+.box-dimensions-text{
+    width: 91% !important;
+    margin-left: 80px !important;
+}
+.box-subDimensions-text{
+    width: 96% !important;
+    margin-left: 90px !important;
+}
+.nav-link {
+    text-decoration: none !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.posicion-class{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px !important;
+}
+
+.posicion-class a {
+    font-size: 16px !important;
+    font-weight: 300 !important;
 }

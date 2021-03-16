@@ -4,30 +4,38 @@ import Grafico2 from "./../SVG/img/Grafico2.svg";
 import { CarouselDetails } from '../components/CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
-export const DimensionsTab = () => {
+export const DimensionsTab = (props) => {
     const [view, setView] = useState(0)
     const { t } = useTranslation();
+    const back = () => {
+        setView(0)
+    }
 
     return (
         <>
             {
                 view !== 0 ? (
-                    <CarouselDetails detail={view} />
+                    <CarouselDetails dimensions={view} goBack={back} />
                 ) : (
                     <>
                         <Row>
-                            <Col md={12}>
-                                <div className="p-5">
+                            <Col md={1} />
+                            <Col md={10}>
+                                <div className="p-4 mt-4">
                                     <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
+                            </Col>
+                            <Col md={1} />
+                        </Row>
+                        <Row>
+                            <Col md={12}>
                                 <div className="text-center p-5">
                                     <img width="85%" src={Grafico2} alt="" />
                                 </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Row className="p-5">
-
+                            <Row className="p-5 box-dimensions-text">
                                 <Col md={4}>
                                     <Card border="0">
                                         <Card.Body className="p-5">

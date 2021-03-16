@@ -10,9 +10,6 @@ export const FirstResourcesAnalysis = () => {
         <>
             <Row>
                 <Col md={12}>
-                    <div className="p-5">
-                        <p className="text-descripcion">{t("tittleDimensions")}</p>
-                    </div>
                     <div className="text-center p-5">
                         <img width="85%" src={SubRecursos2} alt="" />
                     </div>
