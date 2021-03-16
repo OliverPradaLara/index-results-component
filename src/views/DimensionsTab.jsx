@@ -76,13 +76,13 @@ export const DimensionsTab = (props) => {
                         <Row>
                         </Row>
                         <Row className="text-center subir">
-                            <Col md={4} className="text-center p-5">
+                            <Col md={5} className="text-center p-5">
                                 <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                             </Col>
-                            <Col md={4} className="text-center p-5">
+                            <Col md={3} className="text-center pt-5 pb-5 pl-1 pr-5">
                                 <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                             </Col>
-                            <Col md={4} className="text-center p-5">
+                            <Col md={3} className="text-center p-5">
                                 <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                             </Col>
 
