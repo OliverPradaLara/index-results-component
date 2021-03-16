@@ -480,3 +480,8 @@ body {
     font-size: 16px !important;
     font-weight: 300 !important;
 }
+
+.subir{
+    position: relative;
+    top: -50px !important;
+}
