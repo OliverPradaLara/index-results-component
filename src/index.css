@@ -4,8 +4,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.navbar {
 
+.navbar {
     border-bottom: #d1cfcf solid 0.3px;
 }
 
@@ -28,7 +28,7 @@ body {
 
 .body-container {
     width: 100%;
-    font-family: "Brown Light","Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue", sans-serif; 
+    font-family: "Brown Light", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     margin: 0 auto;
 }
 
@@ -122,18 +122,14 @@ body {
     flex-direction: row;
 }
 
-.contenedor-footer .all-logos .logo-izquierdo,
-.contenedor-footer .all-logos .logo-centro,
-.contenedor-footer .all-logos .logo-derecho {
+.contenedor-footer .all-logos .logo-izquierdo, .contenedor-footer .all-logos .logo-centro, .contenedor-footer .all-logos .logo-derecho {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo,
-.contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno,
-.contenedor-footer .all-logos .logo-izquierdo .ministerio {
+.contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
     width: 33%;
 }
 
@@ -150,10 +146,7 @@ body {
     width: 70%;
 }
 
-.contenedor-footer .all-logos .logo-derecho .twitter,
-.contenedor-footer .all-logos .logo-derecho .instagram,
-.contenedor-footer .all-logos .logo-derecho .in,
-.contenedor-footer .all-logos .logo-derecho .facebook {
+.contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
     width: 20%;
     font-size: 400%;
     color: #fff;
@@ -207,16 +200,17 @@ body {
     justify-content: center;
     text-align: center;
 }
+
 .tittleColor {
     font-size: 50px !important;
-    color:  #6d6a6a;
+    color: #6d6a6a;
     padding-top: 50px;
     font-weight: bold;
-
 }
+
 .textIndex {
     font-size: 22px;
-    color:#6d6a6a;
+    color: #6d6a6a;
     font-weight: 500;
     padding: 0px 30px;
 }
@@ -236,8 +230,7 @@ body {
     width: 50%;
 }
 
-.tabHeadGeneral,
-.tabHeadDimensions {
+.tabHeadGeneral, .tabHeadDimensions {
     font-size: 20px;
     font-weight: bold;
     color: #000000 !important;
@@ -248,8 +241,7 @@ body {
     background-color: #eaeaea;
 }
 
-.tabHeadGeneralsActive,
-.tabHeadDimensionsActive {
+.tabHeadGeneralsActive, .tabHeadDimensionsActive {
     font-size: 20px;
     font-weight: bold;
     color: #fff !important;
@@ -297,7 +289,6 @@ body {
     margin-bottom: 0 !important;
 }
 
-
 .title-grafico {
     font-size: 28px !important;
     font-weight: 600 !important;
@@ -309,8 +300,9 @@ body {
 
 .borde-top {
     border-top: 6px dotted lightgrey;
-    border-width:thick;
+    border-width: thick;
 }
+
 .borde-bottom {
     border-bottom: none !important;
 }
@@ -321,7 +313,6 @@ body {
     font-weight: 250;
     font-size: 1.70rem;
 }
-
 
 /* .carousel-control-next-icon {
     background-image: url('https://ibb.co/Nmx2t37') !important;
@@ -345,26 +336,32 @@ body {
 .accordion2Box {
     width: 30%;
 }
-.img-tamano img{
+
+.img-tamano img {
     width: 75%;
 }
-.accordion2Box h1{
+
+.accordion2Box h1 {
     font-size: 500%;
     font-weight: 700;
     color: #e95224;
 }
-.accordion2Box h2{
+
+.accordion2Box h2 {
     font-size: 270%;
     font-weight: 500;
 }
-.descripcion-acordion{
+
+.descripcion-acordion {
     border-top: 2px dotted #797979;
 }
-.descripcion-acordion p{
+
+.descripcion-acordion p {
     font-size: 120%;
     font-weight: 200;
     line-height: 25px;
 }
+
 .accordion2Tittle {
     font-size: 200%;
     color: #ff7043;
@@ -388,7 +385,6 @@ body {
     padding-top: 20px;
 }
 
-
 .accordion2ContainerCollapse {
     width: 100% !important;
     margin-left: 0 !important;
@@ -398,15 +394,17 @@ body {
     align-items: center;
 }
 
-#basic-nav-dropdown{
-    color:#dc712d !important;
+#basic-nav-dropdown {
+    color: #dc712d !important;
     font-size: 18px;
     font-weight: 600;
 }
+
 .box-h4 {
     width: 102% !important;
 }
-.box-h4 h4{
+
+.box-h4 h4 {
     width: 100%;
 }
 
@@ -425,53 +423,66 @@ body {
     transition: opacity .15s ease;
     height: 20%;
 }
-.card-header-tabs{
+
+.card-header-tabs {
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-top: 0 !important;
 }
+
 .card {
     border: none !important;
 }
-.color-grey{
-    background-color:  #f7f7f7 !important;
+
+.color-grey {
+    background-color: #f7f7f7 !important;
 }
-.card-body{
-    padding-top: 0.67% !important;   
-    padding-left: 0 !important;   
-    padding-right: 0 !important;   
+
+.card-body {
+    padding-top: 0.67% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
-.row-navbar{
+
+.row-navbar {
     width: 100%;
     text-decoration: none;
 }
-.img-laboratorio-gobierno{
+
+.img-laboratorio-gobierno {
     width: 130px;
     height: 50px;
 }
-.img-indice-innovacion{
+
+.img-indice-innovacion {
     width: 160px;
     height: 60px;
 }
+
 .accordionView h1 {
     font-size: 25px;
     font-weight: 600 !important;
 }
-.box-dimensions-text{
+
+.box-dimensions-text {
     width: 91% !important;
     margin-left: 80px !important;
 }
-.box-subDimensions-text{
+
+.box-subDimensions-text {
     width: 96% !important;
     margin-left: 90px !important;
 }
+
 .nav-link {
     text-decoration: none !important;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
     display: none !important;
 }
-.posicion-class{
+
+.posicion-class {
     display: flex;
     align-items: center;
     padding-bottom: 10px !important;
@@ -482,7 +493,17 @@ body {
     font-weight: 300 !important;
 }
 
-.subir{
+.subir {
     position: relative;
     top: -50px !important;
+}
+
+@media (max-width: 900px) {
+    .img-laboratorio-gobierno {
+        display: none;
+    }
+    .center-translation {
+        display: flex;
+        align-self: center;
+    }
 }
