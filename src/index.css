@@ -305,6 +305,8 @@ body {
 
 .borde-bottom {
     border-bottom: none !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .sub-titulo {
@@ -323,9 +325,9 @@ body {
 }
 
 .fijo2Style {
-    width: 100%;
+    width: 100% !important; 
     /* width: 800px; */
-    margin-left: 38px;
+   
 }
 
 .accordion2Card {
@@ -342,14 +344,22 @@ body {
 }
 
 .accordion2Box h1 {
-    font-size: 500%;
+    font-size: 480%;
     font-weight: 700;
     color: #e95224;
 }
 
 .accordion2Box h2 {
-    font-size: 270%;
+    font-size: 250%;
     font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 5px dotted lightgrey;
+}
+.accordion2Box p {
+    font-size: 140%;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 20px;
 }
 
 .descripcion-acordion {
@@ -362,14 +372,14 @@ body {
     line-height: 25px;
 }
 
-.accordion2Tittle {
-    font-size: 200%;
+/* .accordion2Tittle {
+    font-size: 500%;
     color: #ff7043;
     font-weight: 800 !important;
-}
+} */
 
-.accordion2SubTittle {
-    font-size: 42px !important;
+/* .accordion2SubTittle {
+    font-size: 270%!important;
     font-weight: 900 !important;
     width: 451px;
     margin: 0 !important;
@@ -379,11 +389,11 @@ body {
 
 .accordion2Body {
     width: 411px;
-    font-size: 22px;
+    font-size: 0% !important;
     margin: 0 !important;
     line-height: 27px;
     padding-top: 20px;
-}
+} */
 
 .accordion2ContainerCollapse {
     width: 100% !important;
@@ -497,6 +507,10 @@ body {
     position: relative;
     top: -50px !important;
 }
+.size-box{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
@@ -505,5 +519,73 @@ body {
     .center-translation {
         display: flex;
         align-self: center;
+    }
+    .ub-logo{
+        z-index: 1;
+        
+    }
+    .navbar-toggler{
+        z-index: 2;
+    }
+    .row-navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tittleColor {
+        font-size: 33px !important;
+        padding-top: 30px;
+        margin-bottom: 0px !important;
+    }
+    
+    .textIndex {
+        font-size: 15px;
+        padding: 0px;
+        margin-bottom: 0px !important;
+    }
+    .title-acordion{
+        font-size: 15px !important;
+    }
+    .sub-titulo{
+        font-size: 15px !important;
+
+    }
+    .borde-bottom{
+        padding: 0px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .svg-inline--fa.fa-w-14 {
+        width: 0.3em;
+    }
+    .descripcion-carrusel{
+        font-size: 12px;
+    }
+    .text-ancor{
+        font-size: 12px !important;
+    }
+    .size-box{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .accordion2Box{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .accordion2Box h1 {
+        font-size: 280%;
+    }
+    
+    .accordion2Box h2 {
+        font-size: 110%;
+        padding-bottom: 15px;
+    }
+    .accordion2Box p {
+        font-size: 90%;
+        line-height: 20px;
+        padding-top: 15px;
     }
 }

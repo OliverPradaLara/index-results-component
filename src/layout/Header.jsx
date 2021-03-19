@@ -11,13 +11,13 @@ export const Header = () => {
         <>
             <Navbar expand="lg" collapseOnSelect className="pt-4 pb-4" bg="light" variant="light">
                 <Row className="row-navbar">
-                    <Col md={6}>
+                    <Col md={6} sm={2} xs={2} className="ub-logo">
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
                                 <Col md={6}>
                                     <img className="img-laboratorio-gobierno" src={laboratorioGobiernoGris} />
                                 </Col>
-                                <Col md={6}>
+                                <Col md={6} xs={2}>
                                     <img className="img-indice-innovacion" src={indiceInnivacionGris} />
                                 </Col>
                             </Row>
