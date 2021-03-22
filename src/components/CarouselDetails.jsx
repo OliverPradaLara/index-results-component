@@ -48,7 +48,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12}>
-                                    <div className="text-center p-5">
+                                    <div className="graphic-acc-3">
                                         <img width="85%" src={SubRecursos1} alt="" />
                                     </div>
                                 </Col>
@@ -118,7 +118,7 @@ export const CarouselDetails = (props) => {
 
                             <Row>
                                 <Col md={12}>
-                                    <div className="text-center p-5">
+                                    <div className="graphic-acc-3">
                                         <img width="85%" src={SubPracticas1} alt="" />
                                     </div>
                                 </Col>
@@ -179,7 +179,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12}>
-                                    <div className="text-center p-5">
+                                    <div className="graphic-acc-3">
                                         <img width="85%" src={Grafico3} alt="" />
                                     </div>
                                 </Col>
