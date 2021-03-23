@@ -128,18 +128,14 @@ body {
     flex-direction: row;
 }
 
-.contenedor-footer .all-logos .logo-izquierdo, 
-.contenedor-footer .all-logos .logo-centro, 
-.contenedor-footer .all-logos .logo-derecho {
+.contenedor-footer .all-logos .logo-izquierdo, .contenedor-footer .all-logos .logo-centro, .contenedor-footer .all-logos .logo-derecho {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, 
-.contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, 
-.contenedor-footer .all-logos .logo-izquierdo .ministerio {
+.contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
     width: 33%;
 }
 
@@ -156,10 +152,7 @@ body {
     width: 70%;
 }
 
-.contenedor-footer .all-logos .logo-derecho .twitter, 
-.contenedor-footer .all-logos .logo-derecho .instagram, 
-.contenedor-footer .all-logos .logo-derecho .in, 
-.contenedor-footer .all-logos .logo-derecho .facebook {
+.contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
     width: 20%;
     font-size: 400%;
     color: #fff;
@@ -533,6 +526,10 @@ body {
     padding: 3rem!important;
 }
 
+.interpretation-card {
+    padding: 3rem !important;
+}
+
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
         display: none;
@@ -604,43 +601,40 @@ body {
         line-height: 20px;
         padding-top: 15px;
     }
-    .header-card{
+    .header-card {
         padding-left: 2% !important;
         padding-right: 2% !important;
     }
     .borde-top {
         padding-top: 4%;
     }
-    .contenedor-footer .all-logos .logo-izquierdo{
-        padding:0;
+    .contenedor-footer .all-logos .logo-izquierdo {
+        padding: 0;
         padding-bottom: 5%;
     }
-    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, 
-    .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, 
-    .contenedor-footer .all-logos .logo-izquierdo .ministerio {
+    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
         text-align: center;
     }
     .contenedor-footer .all-logos .logo-centro {
         padding: 0;
         padding-bottom: 7%;
-
     }
     .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica {
-       text-align: center;
+        text-align: center;
     }
     .contenedor-footer .all-logos .logo-derecho {
         width: 100% !important;
         padding: 0;
         text-align: center;
     }
-    .contenedor-footer .all-logos .logo-derecho .twitter{
-        font-size:150% ;
-    } 
-    .contenedor-footer .all-logos .logo-derecho .instagram{
+    .contenedor-footer .all-logos .logo-derecho .twitter {
+        font-size: 150%;
+    }
+    .contenedor-footer .all-logos .logo-derecho .instagram {
         font-size: 450%;
         height: 40px;
-    } 
-    .contenedor-footer .all-logos .logo-derecho .in{
+    }
+    .contenedor-footer .all-logos .logo-derecho .in {
         font-size: 450%;
         height: 40px;
     }
@@ -648,15 +642,11 @@ body {
         font-size: 150%;
         color: #fff;
     }
-    .contenedor-footer .all-logos .logo-derecho .twitter, 
-    .contenedor-footer .all-logos .logo-derecho .instagram, 
-    .contenedor-footer .all-logos .logo-derecho .in, 
-    .contenedor-footer .all-logos .logo-derecho .facebook {
+    .contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
     }
     .contenedor-footer .links {
         padding: 0;
@@ -665,14 +655,12 @@ body {
         display: flex;
         flex-direction: column;
     }
-    
     .contenedor-footer .links ul {
         width: 90% !important;
         padding: 0;
         margin: 0;
         flex-direction: column;
     }
-    
     .contenedor-footer .links ul li {
         font-size: 12px;
         padding-bottom: 4%;
@@ -686,7 +674,6 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
     .contenedor-first-footer .contenedor .descargas {
         width: 100%;
         padding-bottom: 9%;
@@ -699,24 +686,19 @@ body {
         padding-top: 6%;
         padding-bottom: 2%;
     }
-    
     .contenedor-first-footer .contenedor .lista ul {
         width: 90%;
         padding: 0;
         margin: 0;
     }
-    
     .contenedor-first-footer .contenedor .lista ul li {
         font-size: 15px;
         font-weight: 600;
         padding-bottom: 3%;
     }
-    
     .contenedor-first-footer .contenedor .lista ul li .underline {
         font-size: 17px;
     }
-    
-    
     .borde-accordion-3-r {
         padding: 0px 4% 0px 4%;
     }
@@ -748,15 +730,34 @@ body {
     .graphic-acc-3 {
         text-align: center!important;
         padding: 0% !important;
+        margin-bottom: 4%;
     }
     .titulo-carrusel {
         font-size: 20px;
         font-weight: 100;
     }
     .descripcion-resultado {
-        font-size: 16px !important;
+        font-size: 12px !important;
         color: #797979;
         margin-top: -10px;
         width: 105% !important;
+    }
+    .borde {
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .borde-left {
+        border-left: none;
+    }
+    .title-grafico {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .interpretation-card {
+        padding: 1rem !important;
+    }
+    .box-subDimensions-text {
+        width: 200% !important;
+        margin-left: none !important;
     }
 }

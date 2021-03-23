@@ -28,7 +28,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={1} />
                             <Col md={3}>
                                 <Card border="0">
-                                    <Card.Body className="p-5">
+                                    <Card.Body className="interpretation-card">
                                         <Card.Title className="title-grafico">
                                             {t("interpretation_of_the_graph")}
                                         </Card.Title>
@@ -37,7 +37,7 @@ export const CarouselCollaboration = (props) => {
                             </Col>
                             <Col md={5}>
                                 <Card border="0" >
-                                    <Card.Body className="borde-left p-5">
+                                    <Card.Body className="borde-left interpretation-card">
                                         
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
@@ -70,7 +70,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={1} />
                             <Col md={3}>
                                 <Card border="0">
-                                    <Card.Body className="p-5">
+                                    <Card.Body className="interpretation-card">
                                         <Card.Title className="title-grafico">
                                             {t("interpretation_of_the_graph")}
                                         </Card.Title>
@@ -79,7 +79,7 @@ export const CarouselCollaboration = (props) => {
                             </Col>
                             <Col md={5}>
                                 <Card border="0" >
-                                    <Card.Body className="borde-left p-5">
+                                    <Card.Body className="borde-left interpretation-card">
                                         
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
@@ -112,7 +112,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={1} />
                             <Col md={3}>
                                 <Card border="0">
-                                    <Card.Body className="p-5">
+                                    <Card.Body className="interpretation-card">
                                         <Card.Title className="title-grafico">
                                             {t("interpretation_of_the_graph")}
                                         </Card.Title>
@@ -121,7 +121,7 @@ export const CarouselCollaboration = (props) => {
                             </Col>
                             <Col md={5}>
                                 <Card border="0" >
-                                    <Card.Body className="borde-left p-5">
+                                    <Card.Body className="borde-left interpretation-card">
                                         
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet

@@ -53,10 +53,10 @@ export const CarouselDetails = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className="p-5 box-subDimensions-text">
+                            <Row className="interpretation-card">
                                 <Col md={4}>
                                     <Card border="0">
-                                        <Card.Body className="p-5">
+                                        <Card.Body className="interpretation-card">
                                             <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
                                                 {t("description_Human_Talent")}
@@ -67,7 +67,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                                 <Col md={4}>
                                     <Card border="0">
-                                        <Card.Body className="p-5">
+                                        <Card.Body className="interpretation-card">
                                             <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
                                                 {t("description_Institutional_Frame")}
@@ -78,7 +78,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                                 <Col md={4}>
                                     <Card border="0">
-                                        <Card.Body className="p-5">
+                                        <Card.Body className="interpretation-card">
                                             <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
                                                 {t("description_Digital_Resources")}
@@ -89,7 +89,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                                 <Col md={4}>
                                     <Card border="0" >
-                                        <Card.Body className="p-5">
+                                        <Card.Body className="interpretation-card">
                                             <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
                                             <Card.Text className="descripcion-resultado">
                                                 {t("description_Strategy_and_Governability")}
@@ -124,11 +124,11 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Row className="p-5 box-subDimensions-text">
+                                <Row className="interpretation-card">
 
                                     <Col md={4}>
                                         <Card border="0">
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("description_Activities_or_practices")}
@@ -139,7 +139,7 @@ export const CarouselDetails = (props) => {
                                     </Col>
                                     <Col md={4}>
                                         <Card border="0">
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("description_Proceedings")}
@@ -150,7 +150,7 @@ export const CarouselDetails = (props) => {
                                     </Col>
                                     <Col md={4}>
                                         <Card border="0" >
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("description_Processes")}
@@ -185,11 +185,11 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Row className="p-5 box-subDimensions-text">
+                                <Row className="interpretation-card">
 
                                     <Col md={4}>
                                         <Card border="0">
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("collaborationUserText")}
@@ -200,7 +200,7 @@ export const CarouselDetails = (props) => {
                                     </Col>
                                     <Col md={4}>
                                         <Card border="0">
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">
                                                     {t("collaborationCoordinationTittle")}
                                                 </Card.Title>
@@ -213,7 +213,7 @@ export const CarouselDetails = (props) => {
                                     </Col>
                                     <Col md={4}>
                                         <Card border="0" >
-                                            <Card.Body className="p-5">
+                                            <Card.Body className="interpretation-card">
                                                 <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
                                                 <Card.Text className="descripcion-resultado">
                                                     {t("collaborationManagmentText")}
