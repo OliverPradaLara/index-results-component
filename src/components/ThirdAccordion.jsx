@@ -12,29 +12,29 @@ export const ThirdAccordion = () => {
 
     return (
         <>
-            <Accordion.Toggle className="bg-white  pl-5 pr-5" as={Card.Header} eventKey="0" onClick={() => {
+            <Accordion.Toggle className="bg-white header-card" as={Card.Header} eventKey="0" onClick={() => {
                 drop ? setDrop(false) : setDrop(true)
             }}>
  
-                <Row className="pt-5 accordionView borde-top">
+                <Row className="accordionView borde-top">
                     {
                         drop ? (
                             <>
-                                <Col md={10} >
-                                    <h1>
+                                <Col md={10} sm={9} xs={9}>
+                                    <h1  className="title-acordion">
                                         <b>{t("results_acc_3")}</b>
                                         <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                     </h1>
                                 </Col>
-                                <Col md={2} className="tittleText">
+                                <Col md={2} sm={3} xs={3} className="tittleText size-svg">
                                     <FontAwesomeIcon icon={["fas", "chevron-down"]} size="4x" color="#dc712d" />
                                 </Col>
                             </>
                         ) :
                             (
                                 <>
-                                    <Col md={10}>
-                                        <h1>
+                                    <Col  md={10} sm={9} xs={9}>
+                                        <h1 className="title-acordion">
                                             <b>{t("results_acc_3")}</b>
                                             <span className="sub-titulo">{t("by_categories_of_institutions")}</span>
                                         </h1>
@@ -42,7 +42,7 @@ export const ThirdAccordion = () => {
                                             <h6 className="descripcion-carrusel pt-4 pb-4">{t("acc_3_tittle_1")}</h6>
                                         </div>
                                     </Col>
-                                    <Col md={2} className="tittleText" >
+                                    <Col md={2} sm={3} xs={3} className="tittleText" >
                                         <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />
                                     </Col>
                                 </>
