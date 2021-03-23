@@ -320,8 +320,6 @@ body {
 
 .borde-bottom {
     border-bottom: none !important;
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
 }
 
 .sub-titulo {
@@ -483,7 +481,12 @@ body {
     width: 160px;
     height: 60px;
 }
-
+.accordionView{
+ padding-left: 1.5%;   
+ padding-right: 1.5%;   
+ padding-top: 0.5%;   
+ padding-bottom: 0.5%;   
+}
 .accordionView h1 {
     font-size: 25px;
     font-weight: 600 !important;
