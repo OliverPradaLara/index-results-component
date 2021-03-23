@@ -312,6 +312,7 @@ body {
 }
 
 .borde-top {
+    padding-top: 2%;
     border-top: 6px dotted lightgrey;
     border-width: thick;
     padding-top: 2%;
@@ -319,8 +320,8 @@ body {
 
 .borde-bottom {
     border-bottom: none !important;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
 }
 
 .sub-titulo {
@@ -339,9 +340,8 @@ body {
 }
 
 .fijo2Style {
-    width: 100% !important; 
+    width: 100% !important;
     /* width: 800px; */
-   
 }
 
 .accordion2Card {
@@ -369,6 +369,7 @@ body {
     padding-bottom: 20px;
     border-bottom: 5px dotted lightgrey;
 }
+
 .accordion2Box p {
     font-size: 140%;
     font-weight: 300;
@@ -521,9 +522,15 @@ body {
     position: relative;
     top: -50px !important;
 }
-.size-box{
+
+.size-box {
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+.graphic-acc-3 {
+    text-align: center!important;
+    padding: 3rem!important;
 }
 
 @media (max-width: 900px) {
@@ -534,14 +541,13 @@ body {
         display: flex;
         align-self: center;
     }
-    .ub-logo{
+    .ub-logo {
         z-index: 1;
-        
     }
-    .navbar-toggler{
+    .navbar-toggler {
         z-index: 2;
     }
-    .row-navbar{
+    .row-navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -551,48 +557,44 @@ body {
         padding-top: 30px;
         margin-bottom: 0px !important;
     }
-    
     .textIndex {
         font-size: 15px;
         padding: 0px;
         margin-bottom: 0px !important;
     }
-    .title-acordion{
+    .title-acordion {
         font-size: 15px !important;
     }
-    .sub-titulo{
+    .sub-titulo {
         font-size: 15px !important;
-
     }
-    .borde-bottom{
-        padding: 0px !important;
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+    .borde-bottom {
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .svg-inline--fa.fa-w-14 {
         width: 0.3em;
     }
-    .descripcion-carrusel{
+    .descripcion-carrusel {
         font-size: 12px;
     }
-    .text-ancor{
+    .text-ancor {
         font-size: 12px !important;
     }
-    .size-box{
+    .size-box {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-    .accordion2Box{
+    .accordion2Box {
         text-align: center;
         padding-bottom: 20px;
     }
-
     .accordion2Box h1 {
         font-size: 280%;
     }
-    
     .accordion2Box h2 {
         font-size: 110%;
         padding-bottom: 15px;
@@ -715,4 +717,36 @@ body {
     }
     
     
+    .borde-accordion-3-r {
+        padding: 0px 4% 0px 4%;
+    }
+    .tabHeadGeneral, .tabHeadDimensions {
+        font-size: 12px;
+        font-weight: bold;
+        color: #000000 !important;
+        height: 75px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background-color: #eaeaea;
+    }
+    .tabHeadGeneralsActive, .tabHeadDimensionsActive {
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff !important;
+        height: 75px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px #c63f17 solid !important;
+    }
+    .text-descripcion {
+        font-size: 100%;
+        font-weight: 400;
+        color: #797979;
+    }
+    .graphic-acc-3 {
+        text-align: center!important;
+        padding: 0% !important;
+    }
 }

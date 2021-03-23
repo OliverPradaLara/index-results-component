@@ -13,7 +13,7 @@ export const GeneralTab = () => {
                     <div className="p-5 bg-light">
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
-                    <div className="text-center p-5">
+                    <div className="graphic-acc-3">
                         <img width="85%" src={Grafico1} alt= "gráfico" />
                     </div>
                 </Col>
