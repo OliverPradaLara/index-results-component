@@ -43,7 +43,7 @@ export const SecondAccordion = () => {
                     <>
                     </>
                 </Row>
-                <Row>
+                <Row className="accordionView">
                     <Col md={12}>
                         <p className="descripcion-carrusel">
                             {t("reference_year_acc_2")}
