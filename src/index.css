@@ -474,12 +474,14 @@ body {
     width: 160px;
     height: 60px;
 }
-.accordionView{
- padding-left: 1.5%;   
- padding-right: 1.5%;   
- padding-top: 0.5%;   
- padding-bottom: 0.5%;   
+
+.accordionView {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
+
 .accordionView h1 {
     font-size: 25px;
     font-weight: 600 !important;
@@ -487,7 +489,7 @@ body {
 
 .box-dimensions-text {
     width: 91% !important;
-    margin-left: 80px !important;
+    margin-left: 4% !important;
 }
 
 .box-subDimensions-text {
@@ -531,6 +533,26 @@ body {
 
 .interpretation-card {
     padding: 3rem !important;
+}
+
+.dimensions-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-a-dimensions-top {
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.row-a-dimensions-bottom {
+    height: 50%;
+}
+
+.col-a-dimensions {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 @media (max-width: 900px) {
@@ -762,5 +784,9 @@ body {
     .box-subDimensions-text {
         width: 200% !important;
         margin-left: none !important;
+    }
+    .box-dimensions-text {
+        width: 91% !important;
+        margin-left: 0px !important;
     }
 }

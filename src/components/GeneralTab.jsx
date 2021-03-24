@@ -14,14 +14,14 @@ export const GeneralTab = () => {
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
                     <div className="graphic-acc-3">
-                        <img width="85%" src={Grafico1} alt= "gráfico" />
+                        <img width="85%" src={Grafico1} alt="gráfico" />
                     </div>
                 </Col>
             </Row>
             <Row className="p-5">
                 <Col md={4}>
-                    <Card border="0">
-                        <Card.Body className="p-5">
+                    <Card >
+                        <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("pillars")}</Card.Title>
                             <Card.Text className="descripcion-resultado">
                                 {t("pillars_text")}
@@ -29,9 +29,9 @@ export const GeneralTab = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={4}>
-                    <Card border="0">
-                        <Card.Body className="borde p-5">
+                <Col md={4} className="borde">
+                    <Card>
+                        <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("centralized")}</Card.Title>
                             <Card.Text className="descripcion-resultado">
                                 {t("centralized_text")}
@@ -40,8 +40,8 @@ export const GeneralTab = () => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="borde" border="0" >
-                        <Card.Body className="p-5">
+                    <Card >
+                        <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("new")}</Card.Title>
                             <Card.Text className="descripcion-resultado">
                                 {t("new_text")}
@@ -52,7 +52,7 @@ export const GeneralTab = () => {
             </Row>
             <Row>
                 <Col className="text-center pt-4 pb-4" md={12}>
-                    <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_category")}</a>
+                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_category")}</a>
                 </Col>
             </Row>
         </>
