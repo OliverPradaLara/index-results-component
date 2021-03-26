@@ -555,6 +555,10 @@ body {
     flex-direction: column;
 }
 
+.right {
+    justify-content: flex-end;
+}
+
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
         display: none;
@@ -627,8 +631,8 @@ body {
         padding-top: 15px;
     }
     .header-card {
-        padding-left: 2% !important;
-        padding-right: 2% !important;
+        padding-left: 6% !important;
+        padding-right: 7% !important;
     }
     .borde-top {
         padding-top: 4%;

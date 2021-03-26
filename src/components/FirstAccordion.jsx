@@ -24,7 +24,7 @@ export const FirstAccordion = () => {
                                         <span className="sub-titulo">{t("according_to_total_score_range_of_the_index")} </span>
                                     </h1>
                                 </Col>
-                                <Col md={2} sm={3} xs={3} className="tittleText size-svg">
+                                <Col md={2} sm={3} xs={3} className="tittleText right size-svg">
                                     <FontAwesomeIcon icon={["fas", "chevron-down"]} size="4x" color="#dc712d" />
                                 </Col>
                             </>
@@ -37,7 +37,7 @@ export const FirstAccordion = () => {
                                             <span className="sub-titulo">{t("according_to_total_score_range_of_the_index100pt")}</span>
                                         </h1>
                                     </Col>
-                                    <Col md={2} sm={3} xs={3} className="tittleText " >
+                                    <Col md={2} sm={3} xs={3} className="tittleText right" >
                                         <FontAwesomeIcon icon={["fas", "chevron-up"]} size="4x" color="#dc712d" />
                                     </Col>
                                 </>
