@@ -6,15 +6,14 @@ import { ThirdAccordion } from './../components/ThirdAccordion'
 
 export const AccordionComponent = () => {
     return (
-        <Row>
-            <Col md={12}>
-                <Accordion defaultActiveKey="0" >
+        <Row className="acc-width acc-margin-row">
+            <Col md={12} className="acc-padding-col" >
+                <Accordion  defaultActiveKey="0" >
                     <FirstAccordion />
                 </Accordion>
                 <Accordion defaultActiveKey="0" >
                     <SecondAccordion />
                 </Accordion>
-
                 <Accordion defaultActiveKey="0"  >
                     <ThirdAccordion />
                 </Accordion>

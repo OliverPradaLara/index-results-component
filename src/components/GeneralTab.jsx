@@ -8,9 +8,9 @@ export const GeneralTab = () => {
 
     return (
         <>
-            <Row>
+            <Row className="acc-width">
                 <Col md={12}>
-                    <div className="p-5 bg-light">
+                    <div className="p-4 mt-4 bg-light">
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
                     <div className="graphic-acc-3">
@@ -18,7 +18,7 @@ export const GeneralTab = () => {
                     </div>
                 </Col>
             </Row>
-            <Row className="p-5">
+            <Row className="p-5 acc-width">
                 <Col md={4}>
                     <Card >
                         <Card.Body className="box-dimensions-text">
@@ -50,7 +50,7 @@ export const GeneralTab = () => {
                     </Card>
                 </Col>
             </Row>
-            <Row>
+            <Row className="acc-width">
                 <Col className="text-center pt-4 pb-4" md={12}>
                     <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_category")}</a>
                 </Col>

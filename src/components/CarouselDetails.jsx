@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Carousel, Row, Col, Card } from 'react-bootstrap'
+import { Carousel, Row, Col, Card, Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
 import SubRecursos1 from "../SVG/img/Sub-Recursos-01.svg";
@@ -101,6 +101,13 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row>
+                                <Col md={12} className="text-center" >
+                                    <Button onClick={() => props.goBack()} className="goBack-button" >
+                                        Volver al gráfico principal
+                                    </Button>
+                                </Col>
+                            </Row>
+                            <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
                                     <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
@@ -161,6 +168,13 @@ export const CarouselDetails = (props) => {
                                         </Card>
                                     </Col>
                                 </Row>
+                            </Row>
+                            <Row>
+                                <Col md={12} className="text-center" >
+                                    <Button onClick={() => props.goBack()} className="goBack-button" >
+                                        Volver al gráfico principal
+                                    </Button>
+                                </Col>
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
@@ -226,6 +240,13 @@ export const CarouselDetails = (props) => {
                                 </Row>
                             </Row>
                             <Row>
+                                <Col md={12} className="text-center" >
+                                    <Button onClick={() => props.goBack()} className="goBack-button" >
+                                        Volver al gráfico principal
+                                    </Button>
+                                </Col>
+                            </Row>
+                            <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
                                     <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
@@ -235,10 +256,7 @@ export const CarouselDetails = (props) => {
 
 
                 )
-
                 }
-                {/* <CarouselResources/> */}
-
             </Col>
         </Row >
     )

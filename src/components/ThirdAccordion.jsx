@@ -55,7 +55,7 @@ export const ThirdAccordion = () => {
             <Accordion.Collapse className="" eventKey="0">
 
                 <Tab.Container defaultActiveKey="general">
-                    <Card>
+                    <Card className="acc-width" >
                         <Nav variant="tabs" className="tabGeneralDimensions">
                             <Nav.Item className="tabHead" onClick={() => { setTabActive("general") }}>
                                 <Nav.Link eventKey="general" className={tabActive === "general" ? "bg-orange-one tabHeadGeneralsActive" : "tabHeadGeneral"}>{t("tab1")}</Nav.Link>
@@ -66,7 +66,7 @@ export const ThirdAccordion = () => {
 
                         </Nav>
                         <Card.Body>
-                            <Tab.Content>
+                            <Tab.Content className="tab-container">
                                 <Tab.Pane eventKey="general">
                                     <GeneralTab />
                                 </Tab.Pane>

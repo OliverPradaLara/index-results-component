@@ -4,9 +4,9 @@ import { AccordionComponent } from '../views/Accordion'
 
 export const Body = () => {
     return (
-        <>
+        <div>
             <TextIndex />
             <AccordionComponent />
-        </>
+        </div>
     )
 }

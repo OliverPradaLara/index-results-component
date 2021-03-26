@@ -18,21 +18,21 @@ export const DimensionsTab = (props) => {
                     <CarouselDetails dimensions={view} goBack={back} />
                 ) : (
                     <>
-                        <Row>
+                        <Row className="acc-width">
                             <Col md={12}>
                                 <div className="p-4 mt-4">
                                     <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className="acc-width">
                             <Col md={12}>
                                 <div className="graphic-acc-3">
                                     <img width="85%" src={Grafico2} alt="" />
                                 </div>
                             </Col>
                         </Row>
-                        <Row className=" box-dimensions-text">
+                        <Row className=" box-dimensions-text acc-width">
                             <Col md={4} className="interpretation-card dimensions-cards">
                                 <Row className="row-a-dimensions-top">
                                     <Col>
