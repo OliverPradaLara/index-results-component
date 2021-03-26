@@ -9,8 +9,8 @@ export const Layout = ({ onStateChange }) => {
 
     return (
         <>
+            <Header />
             <Container className="body-container" fluid>
-                <Header />
                 <Body />
                 <Footer />
             </Container>

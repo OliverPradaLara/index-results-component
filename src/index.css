@@ -26,8 +26,13 @@ body {
     color: #ff7043;
 }
 
+.container-fluid{
+    padding: 0!important;
+}
+
 .body-container {
     width: 100%;
+    max-width: 1366px;
     font-family: "Brown Light", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     margin: 0 auto;
 }
@@ -152,10 +157,14 @@ body {
     width: 70%;
 }
 
-.contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
+.contenedor-footer .all-logos .logo-derecho .twitter, 
+.contenedor-footer .all-logos .logo-derecho .instagram, 
+.contenedor-footer .all-logos .logo-derecho .in, 
+.contenedor-footer .all-logos .logo-derecho .facebook {
     width: 20%;
     font-size: 400%;
     color: #fff;
+    text-align: center;
 }
 
 .contenedor-footer .links {
@@ -641,8 +650,10 @@ body {
         padding: 0;
         padding-bottom: 5%;
     }
-    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
-        text-align: center;
+    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo,
+     .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, 
+     .contenedor-footer .all-logos .logo-izquierdo .ministerio {
+        text-align: center !important;
     }
     .contenedor-footer .all-logos .logo-centro {
         padding: 0;
