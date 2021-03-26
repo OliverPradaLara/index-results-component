@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Row, Col, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Row, Col, NavDropdown, Container } from 'react-bootstrap';
 import indiceInnivacionGris from '../SVG/icons/indice-innovacion-publica-gris.svg'
 import laboratorioGobiernoGris from '../SVG/icons/Laboratorio-Gobierno-gris.svg'
 import { useTranslation } from 'react-i18next'
@@ -8,8 +8,8 @@ export const Header = () => {
     const [language, setLanguage] = useState(true)
     const { t, i18n } = useTranslation();
     return (
-        <>
-            <Navbar expand="lg" collapseOnSelect className="pt-4 pb-4" bg="light" variant="light">
+        <Navbar expand="lg" collapseOnSelect className="pt-4 pb-4" bg="light" variant="light">
+            <Container className="body-container" fluid>
                 <Row className="row-navbar">
                     <Col md={6} sm={2} xs={2} className="ub-logo">
                         <Navbar.Brand href="#home" className="align-left">
@@ -55,8 +55,8 @@ export const Header = () => {
                         </Navbar.Collapse>
                     </Col>
                 </Row>
-            </Navbar>
+            </Container>
+        </Navbar>
 
-        </>
     )
 }
