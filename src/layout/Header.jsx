@@ -28,16 +28,16 @@ export const Header = () => {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="d-flex justify-content-end">
                                 <Nav.Item>
-                                    <Nav.Link className="color-orange-one text-center text_decoration" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                                    <Nav.Link className="color-orange-one text-center text_decoration nav-item-nav" href="#home"><b>{t("index_results")}</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="text-center" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
+                                    <Nav.Link className="text-center nav-item-nav" href="#features"><b>{t("measurement_methodology")}</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="text-center" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                                    <Nav.Link className="text-center nav-item-nav" href="#pricing"><b>{t("benefits_of_participating")} </b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="text-center" href="#category"><b>{t("institution_categories")}</b></Nav.Link>
+                                    <Nav.Link className="text-center nav-item-nav" href="#category"><b>{t("institution_categories")}</b></Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item className="center-translation">
                                     <NavDropdown className="color-nav posicion-class" title={language ? `| ESP` : "| ENG"} id="basic-nav-dropdown">
