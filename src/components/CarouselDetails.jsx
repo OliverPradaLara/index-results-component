@@ -103,7 +103,7 @@ export const CarouselDetails = (props) => {
                             <Row>
                                 <Col md={12} className="text-center" >
                                     <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        Volver al gráfico principal
+                                        {t("return_to_main_graph")}
                                     </Button>
                                 </Col>
                             </Row>
@@ -172,7 +172,7 @@ export const CarouselDetails = (props) => {
                             <Row>
                                 <Col md={12} className="text-center" >
                                     <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        Volver al gráfico principal
+                                        {t("return_to_main_graph")}
                                     </Button>
                                 </Col>
                             </Row>
@@ -242,7 +242,7 @@ export const CarouselDetails = (props) => {
                             <Row>
                                 <Col md={12} className="text-center" >
                                     <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        Volver al gráfico principal
+                                        {t("return_to_main_graph")}
                                     </Button>
                                 </Col>
                             </Row>

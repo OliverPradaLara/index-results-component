@@ -90,7 +90,7 @@ i18n
                     "title_SUBDIMENSION_PROCEEDINGS": "SUBDIMENSION PROCEEDINGS",
                     "title_USER_PARTICIPATION_SUBDIMENSION": "USER PARTICIPATION SUBDIMENSION",
                     "title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION": "COORDINATION BETWEEN INSTITUTIONS SUBDIMENSION",
-                
+                    "return_to_main_graph": "Return to Main Graph"
                 }
             },
             es: {
@@ -175,6 +175,7 @@ i18n
                     "english": "ING",
                     "tab2": "DIMENSIONES",
                     "tab1": "GENERALES",
+                    "return_to_main_graph": "Volver al Gráfico Principal"
                 }
             }
         },
