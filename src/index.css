@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: "Brown Light"; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -31,9 +30,9 @@ body {
 }
 
 .body-container {
+    font-family: "Brown Light" !important;
     width: 100%;
     max-width: 1920px;
-    font-family: "Brown Light", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
     margin: 0 auto;
 }
 

@@ -12,7 +12,6 @@ export const TextIndex = () => {
                         <h1 className="tittleColor">
                             <b>{t("text_index_tittle")}</b>
                         </h1>
-                        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
                     </Col>
                 </Row>
             </Card>
