@@ -11,7 +11,7 @@ export const ThirdCollaborationAnalysis = () => {
             <Row>
                 <Col md={12}>
                     <div className="graphic-acc-3">
-                        <img width="85%" src={SubColab4} alt="" />
+                        <img width="80%" src={SubColab4} alt="" />
                     </div>
                 </Col>
             </Row>

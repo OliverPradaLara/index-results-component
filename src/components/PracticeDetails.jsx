@@ -132,7 +132,7 @@ export const PracticeDetails = () => {
                             <Row>
                                 <Col md={12}>
                                     <div className="text-center p-5">
-                                        <img width="85%" src={SubPracticas1} alt="" />
+                                        <img width="80%" src={SubPracticas1} alt="" />
                                     </div>
                                 </Col>
                             </Row>

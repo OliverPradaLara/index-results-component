@@ -170,7 +170,7 @@ export const ResourcesDetails = () => {
                             <Row>
                                 <Col md={12}>
                                     <div className="text-center p-5">
-                                        <img width="85%" src={SubRecursos1} alt="" />
+                                        <img width="80%" src={SubRecursos1} alt="" />
                                     </div>
                                 </Col>
                             </Row>

@@ -14,7 +14,7 @@ export const GeneralTab = () => {
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
                     <div className="graphic-acc-3">
-                        <img width="85%" src={Grafico1} alt="gráfico" />
+                        <img width="80%" src={Grafico1} alt="gráfico" />
                     </div>
                 </Col>
             </Row>

@@ -11,7 +11,7 @@ export const ThirdResourcesAnalysis = () => {
             <Row>
                 <Col md={12}>
                     <div className="graphic-acc-3">
-                        <img width="85%" src={SubRecursos4} alt="" />
+                        <img width="80%" src={SubRecursos4} alt="" />
                     </div>
                 </Col>
             </Row>

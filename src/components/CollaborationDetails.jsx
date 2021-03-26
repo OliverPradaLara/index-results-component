@@ -131,7 +131,7 @@ export const CollaborationDetails = () => {
                             <Row>
                                 <Col md={12}>
                                     <div className="text-center p-5">
-                                        <img width="85%" src={Grafico3} alt="" />
+                                        <img width="80%" src={Grafico3} alt="" />
                                     </div>
                                 </Col>
                             </Row>

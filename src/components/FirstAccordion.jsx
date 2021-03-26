@@ -58,7 +58,7 @@ export const FirstAccordion = () => {
             <Accordion.Collapse className="accordionViewbg-light" eventKey="2" >
                 <Card.Body>
                     <div className="text-center">
-                        <img width="85%" src={Fijo1} alt="gráfico"  />
+                        <img width="80%" src={Fijo1} alt="gráfico"  />
                     </div>
                     <div className="text-center pt-4 pb-4 text-ancor">
                         <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_info_acc_1")}</a>
