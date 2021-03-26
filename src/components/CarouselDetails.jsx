@@ -296,6 +296,7 @@ export const CarouselDetails = (props) => {
                                                     {t("collaborationManagmentText")}
                                                 </Card.Text>
                                             </Col>
+                                            
                                         </Row>
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
