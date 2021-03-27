@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Col } from 'react-bootstrap'
 import SubRecursos3 from "../SVG/img/Sub-Recursos-03.svg";
-import { useTranslation } from 'react-i18next'
 
 export const SecondResourcesAnalysis = () => {
-    const { t } = useTranslation();
-
+   
     return (
         <>
             <Row>

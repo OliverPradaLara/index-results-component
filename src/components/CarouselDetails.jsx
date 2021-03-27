@@ -66,7 +66,7 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                <a onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                 <a href="/#" onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
@@ -84,7 +84,7 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                <a onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                 <a href="/#" onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
@@ -102,7 +102,7 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                <a onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                 <a href="/#" onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
@@ -120,7 +120,7 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                <a onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                 <a href="/#" onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
@@ -135,7 +135,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>
@@ -173,7 +173,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -191,7 +191,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -209,7 +209,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -225,7 +225,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>
@@ -262,7 +262,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -282,7 +282,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -301,7 +301,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                    <a onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                     <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -317,7 +317,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>

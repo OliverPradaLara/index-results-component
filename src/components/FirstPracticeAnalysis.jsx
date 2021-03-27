@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Row, Col } from 'react-bootstrap'
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 import SubPracticas2 from "../SVG/img/Sub-Practicas-02.svg";
-import { useTranslation } from 'react-i18next'
+
 
 export const FirstPracticeAnalysis = () => {
-    const { t } = useTranslation();
+
 
     return (
         <>

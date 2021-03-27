@@ -28,7 +28,7 @@ export const DimensionsTab = (props) => {
                         <Row className="acc-width">
                             <Col md={12}>
                                 <div className="graphic-acc-3">
-                                    <img width="80%" src={Grafico2} alt="" />
+                                    <img width="80%" src={Grafico2} alt="grafico2" />
                                 </div>
                             </Col>
                         </Row>
@@ -45,7 +45,7 @@ export const DimensionsTab = (props) => {
                                 <Row className="row-a-dimensions-bottom">
                                     <Col className="col-a-dimensions">
                                         <div className="text-center">
-                                            <a onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a href="/#" onClick={() => setView(1)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                                         </div>
                                     </Col>
                                 </Row>
@@ -62,7 +62,7 @@ export const DimensionsTab = (props) => {
                                 <Row className="row-a-dimensions-bottom">
                                     <Col className="col-a-dimensions">
                                         <div className="text-center">
-                                            <a onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a href="/#" onClick={() => setView(2)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                                         </div>
                                     </Col>
                                 </Row>
@@ -79,7 +79,7 @@ export const DimensionsTab = (props) => {
                                 <Row className="row-a-dimensions-bottom">
                                     <Col className="col-a-dimensions">
                                         <div className="text-center">
-                                            <a onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
+                                            <a href="/#" onClick={() => setView(3)} className="color-orange-one">{t("dimensionsdetailsTittle")}</a>
                                         </div>
                                     </Col>
                                 </Row>

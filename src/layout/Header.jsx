@@ -15,10 +15,10 @@ export const Header = () => {
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
                                 <Col md={6}>
-                                    <img className="img-laboratorio-gobierno" src={laboratorioGobiernoGris} />
+                                    <img className="img-laboratorio-gobierno"  alt="Laboratorio" src={laboratorioGobiernoGris} />
                                 </Col>
                                 <Col md={6} xs={2}>
-                                    <img className="img-indice-innovacion" src={indiceInnivacionGris} />
+                                    <img className="img-indice-innovacion" alt="Indice" src={indiceInnivacionGris} />
                                 </Col>
                             </Row>
                         </Navbar.Brand>

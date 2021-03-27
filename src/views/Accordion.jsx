@@ -1,8 +1,8 @@
 import React from 'react';
-import { Accordion, Card, Row, Col } from 'react-bootstrap'
-import { FirstAccordion } from './../components/FirstAccordion'
-import { SecondAccordion } from './../components/SecondAccordion'
-import { ThirdAccordion } from './../components/ThirdAccordion'
+import { Accordion, Row, Col } from 'react-bootstrap';
+import { FirstAccordion } from './../components/FirstAccordion';
+import { SecondAccordion } from './../components/SecondAccordion';
+import { ThirdAccordion } from './../components/ThirdAccordion';
 
 export const AccordionComponent = () => {
     return (

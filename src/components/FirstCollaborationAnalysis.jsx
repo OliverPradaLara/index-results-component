@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Col } from 'react-bootstrap'
 import SubColab2 from "../SVG/img/Sub-Colab-02.svg";
-import { useTranslation } from 'react-i18next'
+
 
 export const FirstCollaborationAnalysis = () => {
-    const { t } = useTranslation();
+   
 
     return (
         <>
