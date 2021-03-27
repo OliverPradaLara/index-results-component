@@ -128,9 +128,10 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
-                                    <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        {t("return_to_main_graph")}
-                                    </Button>
+                                    {/* <Button onClick={() => props.goBack()} className="goBack-button" >
+                                    <b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}
+                                    </Button> */}
+                                     <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>
@@ -179,7 +180,7 @@ export const CarouselDetails = (props) => {
                                         </Row>
                                     </Col>
 
-                                    <Col md={4} className="interpretation-card dimensions-cards">
+                                    <Col md={4} className="interpretation-card border-letf-right dimensions-cards">
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
@@ -218,9 +219,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
-                                    <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        {t("return_to_main_graph")}
-                                    </Button>
+                                <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>
@@ -310,9 +309,7 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
-                                    <Button onClick={() => props.goBack()} className="goBack-button" >
-                                        {t("return_to_main_graph")}
-                                    </Button>
+                                   <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>

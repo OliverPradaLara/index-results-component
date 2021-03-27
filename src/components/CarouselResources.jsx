@@ -46,7 +46,7 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                             </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -86,8 +86,8 @@ export const CarouselResources = (props) => {
                                             ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
-                                </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                        </Card.Text>
+                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i> </b>{t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -128,7 +128,7 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -169,7 +169,7 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                             </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one">{t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>

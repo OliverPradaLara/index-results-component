@@ -65,7 +65,7 @@ export const ThirdAccordion = () => {
                             </Nav.Item>
 
                         </Nav>
-                        <Card.Body>
+                        <Card.Body className="body-padding">
                             <Tab.Content className="tab-container">
                                 <Tab.Pane eventKey="general">
                                     <GeneralTab />

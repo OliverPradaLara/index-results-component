@@ -20,7 +20,7 @@ export const DimensionsTab = (props) => {
                     <>
                         <Row className="acc-width">
                             <Col md={12}>
-                                <div className="p-4 mt-4">
+                                <div className="p-4 comp-pad-general">
                                     <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                             </Col>

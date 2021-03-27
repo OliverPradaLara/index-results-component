@@ -16,7 +16,7 @@ body {
 }
 
 .color-orange-one {
-    color: #dc712d !important;
+    color: #FF7043 !important;
     text-decoration: underline;
 }
 
@@ -250,7 +250,7 @@ body {
 .tabGeneralDimensions {
     max-width: 100%;
     justify-content: space-around;
-    border-bottom: 5px #e95224 solid !important;
+    border-bottom: 5px #C63F17 solid !important;
 }
 
 .tabHead {
@@ -288,6 +288,7 @@ body {
 
 .title-resultado {
     font-size: 20px !important;
+    font-weight: 600 !important;
 }
 
 .descripcion-resultado {
@@ -308,7 +309,7 @@ body {
 
 .titulo-carrusel {
     font-size: 28px;
-    font-weight: 100;
+    font-weight: 600;
 }
 
 .descripcion-carrusel {
@@ -327,10 +328,9 @@ body {
 }
 
 .borde-top {
-    padding-top: 2%;
     border-top: 6px dotted lightgrey;
     border-width: thick;
-    padding-top: 2%;
+    padding-top: 3% !important;
 }
 
 .borde-bottom {
@@ -473,7 +473,7 @@ body {
 }
 
 .color-grey {
-    background-color: #f7f7f7 !important;
+    background-color: #F7F7F7 !important;
 }
 
 .card-body {
@@ -587,8 +587,7 @@ body {
     align-items: center;
 }
 .goBack-button{
-    color: #fff !important;
-    background-color: #c63f17 !important;
+    color: #FF7043 !important;
     border-color: #c63f17 !important;
 }
 .slide .carousel-control-prev{
@@ -610,6 +609,17 @@ body {
     position: relative;
     height: 20% !important;
     top: 6% !important;
+}
+.comp-pad-general{
+    background-color: #F7F7F7;
+}
+.body-padding{
+    padding: 0 !important;
+    padding-top: 0.9rem !important;
+}
+.border-letf-right{
+    border-left: 2px dotted #6D6A6A;
+    border-right: 2px dotted #6D6A6A;
 }
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
@@ -687,7 +697,7 @@ body {
         padding-right: 7% !important;
     }
     .borde-top {
-        padding-top: 4%;
+        padding-top: 6% !important;
     }
     .contenedor-footer .all-logos .logo-izquierdo {
         padding: 0;
