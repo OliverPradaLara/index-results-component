@@ -56,7 +56,7 @@ body {
 .contenedor-first-footer .contenedor .descargas {
     width: 40%;
     text-align: center;
-    border-right: 5px solid #dc712d;
+    border-right: 5px solid #FF7043;
 }
 
 .contenedor-first-footer .contenedor .descargas .imagen {
@@ -80,7 +80,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
-    color: #dc712d;
+    color:#FF7043;
     text-decoration: underline;
 }
 
@@ -105,7 +105,7 @@ body {
     font-weight: 600;
     font-style: normal;
     text-decoration: underline;
-    color: #dc712d;
+    color:#FF7043;
 }
 
 .contenedor-first-footer .contenedor .lista ul li span {
@@ -285,7 +285,7 @@ body {
 .text-descripcion {
     font-size: 25px;
     font-weight: 400;
-    color: #797979;
+    color: #6D6A6A;
 }
 
 .title-resultado {
@@ -295,14 +295,14 @@ body {
 
 .descripcion-resultado {
     font-size: 18px !important;
-    color: #797979;
+    color: #6D6A6A;
     margin-top: -10px;
     width: 105% !important;
 }
 
 .borde {
-    border-left: 2px dotted #797979 !important;
-    border-right: 2px dotted #797979 !important;
+    border-left: 2px dotted #6D6A6A !important;
+    border-right: 2px dotted #6D6A6A !important;
 }
 
 .text-carrusel {
@@ -326,7 +326,7 @@ body {
 }
 
 .borde-left {
-    border-left: 2px dotted #797979;
+    border-left: 2px dotted #6D6A6A;
 }
 
 .borde-top {
@@ -341,7 +341,7 @@ body {
 
 .sub-titulo {
     font-size: 24px;
-    color: #797979;
+    color: #6D6A6A;
     font-weight: 250;
     font-size: 1.70rem;
 }
@@ -375,7 +375,7 @@ body {
 .accordion2Box h1 {
     font-size: 480%;
     font-weight: 700;
-    color: #e95224;
+    color: #FF7043;
 }
 
 .accordion2Box h2 {
@@ -393,7 +393,7 @@ body {
 }
 
 .descripcion-acordion {
-    border-top: 2px dotted #797979;
+    border-top: 2px dotted #6D6A6A;
 }
 
 .descripcion-acordion p {
@@ -435,7 +435,7 @@ body {
 }
 
 #basic-nav-dropdown {
-    color: #dc712d !important;
+    color: #FF7043 !important;
     font-size: 18px;
     font-weight: 600;
 }
@@ -530,9 +530,11 @@ body {
 }
 
 .posicion-class {
-    display: flex;
+    height: 100%;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: center ;
     align-items: center;
-    padding-bottom: 10px !important;
 }
 
 .posicion-class a {
@@ -772,7 +774,7 @@ body {
         padding-bottom: 9%;
         text-align: center;
         border-right: none;
-        border-bottom: 5px solid #dc712d;
+        border-bottom: 5px solid #FF7043;
     }
     .contenedor-first-footer .contenedor .lista {
         width: 100%;
@@ -819,7 +821,7 @@ body {
     .text-descripcion {
         font-size: 100%;
         font-weight: 400;
-        color: #797979;
+        color: #6D6A6A;
     }
     .graphic-acc-3 {
         text-align: center!important;
@@ -833,7 +835,7 @@ body {
     }
     .descripcion-resultado {
         font-size: 12px !important;
-        color: #797979;
+        color: #6D6A6A;
         margin-top: -10px;
         width: 105% !important;
     }
