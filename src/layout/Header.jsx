@@ -8,7 +8,7 @@ export const Header = () => {
     const [language, setLanguage] = useState(true)
     const { t, i18n } = useTranslation();
     return (
-        <Navbar expand="lg" collapseOnSelect className="pt-4 pb-4" bg="light" variant="light">
+        <Navbar expand="lg" collapseOnSelect className="pt-2 pb-2 pl-5 pr-5" bg="light" variant="light">
             <Container className="body-container" fluid>
                 <Row className="row-navbar">
                     <Col md={6} sm={2} xs={2} className="ub-logo">
