@@ -1,12 +1,11 @@
-import React from 'react'
-import { Carousel, Row, Col, Card } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
-
+import React from 'react';
+import { Carousel, Row, Col, Card } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import { FirstResourcesAnalysis } from "./FirstResourcesAnalysis";
 import { SecondResourcesAnalysis } from "./SecondResourcesAnalysis";
 import { ThirdResourcesAnalysis } from "./ThirdResourcesAnalysis";
 import { FourthResourcesAnalysis } from "./FourthResourcesAnalysis";
-import { useState } from 'react'
+
 
 export const CarouselResources = (props) => {
     const subDimensions = props.subDimensions
@@ -46,7 +45,7 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                             </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -87,7 +86,8 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                         </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i> </b>{t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i> </b>{t("return_to_main_graph")}</a>
+
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -128,7 +128,8 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -169,7 +170,8 @@ export const CarouselResources = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                             </Card.Text>
-                                        <a onClick={() => { props.goBack(1) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(1) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+
                                     </Card.Body>
                                 </Card>
                             </Col>

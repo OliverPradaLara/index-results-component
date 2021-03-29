@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Carousel, Row, Col, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
@@ -44,14 +44,15 @@ export const CarouselPractice = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
             </Card.Text>
-                                        <a onClick={() => { props.goBack(2) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(2) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
-                                <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                 <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                             </Col>
                         </Row>
                     </Carousel.Item>
@@ -85,14 +86,15 @@ export const CarouselPractice = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
-                                        <a onClick={() => { props.goBack(2) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a href="/#" onClick={() => { props.goBack(2) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                    
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
-                                <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                 <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                             </Col>
                         </Row>
                     </Carousel.Item>
@@ -126,14 +128,15 @@ export const CarouselPractice = (props) => {
                                             mollis dapibus, mi nisi accumsan ipsum, eu efficitur urna sapien sed metus. Nullam
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
-                                        <a onClick={() => { props.goBack(2) }} className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                        <a onClick={() => { props.goBack(2) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Row>
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
-                                <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                 <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                             </Col>
                         </Row>
                     </Carousel.Item>
