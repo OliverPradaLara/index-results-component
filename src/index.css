@@ -1,6 +1,5 @@
-
 body {
-    font-family: 'Brown Light', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif !important;
+    font-family: 'Brown Light', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -80,7 +79,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
-    color:#FF7043;
+    color: #FF7043;
     text-decoration: underline;
 }
 
@@ -105,7 +104,7 @@ body {
     font-weight: 600;
     font-style: normal;
     text-decoration: underline;
-    color:#FF7043;
+    color: #FF7043;
 }
 
 .contenedor-first-footer .contenedor .lista ul li span {
@@ -531,9 +530,9 @@ body {
 
 .posicion-class {
     height: 100%;
-    display: flex ;
-    flex-direction: row ;
-    justify-content: center ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -590,11 +589,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.goBack-button{
+
+.goBack-button {
     color: #FF7043 !important;
     border-color: #c63f17 !important;
 }
-.slide .carousel-control-prev{
+
+.slide .carousel-control-prev {
     height: 200px !important;
 }
 
@@ -604,7 +605,8 @@ body {
     height: 20% !important;
     top: 6% !important;
 }
-.slide .carousel-control-next{
+
+.slide .carousel-control-next {
     height: 200px !important;
 }
 
@@ -614,17 +616,21 @@ body {
     height: 20% !important;
     top: 6% !important;
 }
-.comp-pad-general{
+
+.comp-pad-general {
     background-color: #F7F7F7;
 }
-.body-padding{
+
+.body-padding {
     padding: 0 !important;
     padding-top: 0.9rem !important;
 }
-.border-letf-right{
+
+.border-letf-right {
     border-left: 2px dotted #6D6A6A;
     border-right: 2px dotted #6D6A6A;
 }
+
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
         display: none;
@@ -824,10 +830,7 @@ body {
         color: #6D6A6A;
     }
     .graphic-acc-3 {
-        text-align: center!important;
-        padding: 0% !important;
-        padding-top: 8% !important;
-        margin-bottom: 4%;
+        display: none;
     }
     .titulo-carrusel {
         font-size: 20px;
@@ -864,18 +867,23 @@ body {
     .slide .carousel-control-prev-icon {
         top: -6% !important;
     }
-
     .slide .carousel-control-next-icon {
         top: -6% !important;
     }
+    .accordion2ContainerCollapse {
+        display: none !important;
+    }
+     
 }
+
 @media (min-width: 1260px) {
-    .nav-item-nav{
+    .nav-item-nav {
         width: 80%;
     }
 }
+
 @media (min-width: 1920px) {
-    .nav-item-nav{
+    .nav-item-nav {
         width: 80%;
     }
 }
