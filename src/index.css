@@ -722,6 +722,7 @@ body {
     }
     .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica {
         text-align: center;
+        width: 80%;
     }
     .contenedor-footer .all-logos .logo-derecho {
         width: 100% !important;
