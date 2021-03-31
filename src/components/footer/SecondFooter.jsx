@@ -52,9 +52,9 @@ export const PieFooter = () => {
                 </Row>
                 <Row className="links">
                     <ul>
-                        <li><a href="https://indice.lab.gob.cl/about"><span className='color-orange-one'>{t("footer_down_1")}</span></a></li>
-                        <li><a href="https://indice.lab.gob.cl/privacy-policies"><span className='color-orange-one'>{t("footer_down_2")}</span></a></li>
-                        <li className="linksFooter" >{(t("footer_down_3"))} <a className="color-orange-one" href="https://indice.lab.gob.cl/login">{t("footer_down_4")}</a></li>
+                        <li><a href="https://indice.lab.gob.cl/about"><span className='color-orange-two'>{t("footer_down_1")}</span></a></li>
+                        <li><a href="https://indice.lab.gob.cl/privacy-policies"><span className='color-orange-two'>{t("footer_down_2")}</span></a></li>
+                        <li className="color-orange-two" >{(t("footer_down_3"))} <a className="linksFooter" href="https://indice.lab.gob.cl/login">{t("footer_down_4")}</a></li>
                     </ul>
                 </Row>
             </div>
