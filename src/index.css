@@ -6,7 +6,7 @@ body {
     background-color: #fff !important;
 }
 
-.tabResponsive{
+.tabResponsive {
     display: none;
 }
 
@@ -900,6 +900,7 @@ body {
     .graficoAcc1R {
         text-align: center;
         display: block;
+        margin-top: 10%;
     }
     .img-tamano img {
         display: none !important;
@@ -908,14 +909,13 @@ body {
         display: block !important;
         width: 75%;
     }
-    .tabResponsive{
+    .tabResponsive {
         text-align: center!important;
         margin-bottom: 25px;
         display: block;
         align-self: center;
-
     }
-    .tabCardBorder{
+    .tabCardBorder {
         border-top: 6px dotted lightgray !important;
         border-bottom: 6px dotted lightgray !important;
         margin-top: 10%;
@@ -923,7 +923,7 @@ body {
         margin-bottom: 13%;
         padding-bottom: 6%;
     }
-    .centerGraphicDimesions{
+    .centerGraphicDimesions {
         align-self: center;
     }
 }
