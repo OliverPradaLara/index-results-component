@@ -1,6 +1,9 @@
 import { React, useState } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
 import Grafico2 from "./../SVG/img/Grafico2.svg";
+import dimensiones1R from "./../SVG/img/dimensiones1R.svg";
+import dimensiones2R from "./../SVG/img/dimensiones2R.svg";
+import dimensiones3R from "./../SVG/img/dimensiones3R.svg";
 import { CarouselDetails } from '../components/CarouselDetails'
 import { useTranslation } from 'react-i18next'
 
@@ -34,6 +37,11 @@ export const DimensionsTab = (props) => {
                         </Row>
                         <Row className=" box-dimensions-text acc-width">
                             <Col md={4} className="interpretation-card dimensions-cards">
+                                <Row className="centerGraphicDimesions">
+                                    <div className="tabResponsive">
+                                        <img width="80%" src={dimensiones2R} alt="gráfico" />
+                                    </div>
+                                </Row>
                                 <Row className="row-a-dimensions-top">
                                     <Col>
                                         <Card.Title className="title-resultado">{t("tittleInstitutionals")}</Card.Title>
@@ -51,6 +59,11 @@ export const DimensionsTab = (props) => {
                                 </Row>
                             </Col>
                             <Col md={4} className="interpretation-card borde dimensions-cards">
+                                <Row className="centerGraphicDimesions" >
+                                    <div className="tabResponsive">
+                                        <img width="80%" src={dimensiones1R} alt="gráfico" />
+                                    </div>
+                                </Row>
                                 <Row className="row-a-dimensions-top">
                                     <Col>
                                         <Card.Title className="title-resultado">{t("tittleProcess")}</Card.Title>
@@ -68,6 +81,11 @@ export const DimensionsTab = (props) => {
                                 </Row>
                             </Col>
                             <Col md={4} className="interpretation-card dimensions-cards">
+                                <Row className="centerGraphicDimesions" >
+                                    <div className="tabResponsive">
+                                        <img width="80%" src={dimensiones3R} alt="gráfico" />
+                                    </div>
+                                </Row>
                                 <Row className="row-a-dimensions-top">
                                     <Col>
                                         <Card.Title className="title-resultado">{t("tittleCollaboration")}</Card.Title>

@@ -9,6 +9,20 @@ import { CarouselCollaboration } from "./CarouselCollaboration"
 
 import Grafico3 from "../SVG/img/Grafico3.svg";
 
+import talentoHumanoR from "../SVG/img/talentoHumanoR.svg";
+import marcoInstitucionalR from "../SVG/img/marcoInstitucionalR.svg";
+import recursosDigitalesR from "../SVG/img/recursosDigitalesR.svg";
+import estrategiaGobernanzaR from "../SVG/img/estrategiaGobernanzaR.svg";
+
+import actividadesPracticasR from "../SVG/img/actividadesPracticasR.svg";
+import procedimientosR from "../SVG/img/procedimientosR.svg";
+import procesosR from "../SVG/img/procesosR.svg";
+
+import participacionUsuariosR from "../SVG/img/participacionUsuariosR.svg";
+import coordinacionInterinstitucionalR from "../SVG/img/coordinacionInterinstitucionalR.svg";
+import gestionDelEntorno from "../SVG/img/gestionDelEntorno.svg";
+
+
 import SubPracticas1 from "../SVG/img/Sub-Practicas-01.svg";
 export const CarouselDetails = (props) => {
     const { t } = useTranslation();
@@ -55,6 +69,11 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row className="interpretation-card">
                                 <Col md={4} className="interpretation-card dimensions-cards">
+                                    <Row className="centerGraphicDimesions">
+                                        <div className="tabResponsive">
+                                            <img width="80%" src={talentoHumanoR} alt="gráfico" />
+                                        </div>
+                                    </Row>
                                     <Row className="row-a-dimensions-top">
                                         <Col>
                                             <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
@@ -66,13 +85,18 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                 <a href="/#" onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a href="/#" onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
                                 </Col>
 
                                 <Col md={4} className="interpretation-card dimensions-cards">
+                                    <Row className="centerGraphicDimesions">
+                                        <div className="tabResponsive">
+                                            <img width="80%" src={marcoInstitucionalR} alt="gráfico" />
+                                        </div>
+                                    </Row>
                                     <Row className="row-a-dimensions-top">
                                         <Col>
                                             <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
@@ -84,13 +108,18 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                 <a href="/#" onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a href="/#" onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
                                 </Col>
 
                                 <Col md={4} className="interpretation-card dimensions-cards">
+                                    <Row className="centerGraphicDimesions">
+                                        <div className="tabResponsive">
+                                            <img width="80%" src={recursosDigitalesR} alt="gráfico" />
+                                        </div>
+                                    </Row>
                                     <Row className="row-a-dimensions-top">
                                         <Col>
                                             <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
@@ -102,13 +131,18 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                 <a href="/#" onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a href="/#" onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
                                 </Col>
 
                                 <Col md={4} className="interpretation-card dimensions-cards">
+                                    <Row className="centerGraphicDimesions">
+                                        <div className="tabResponsive">
+                                            <img width="80%" src={estrategiaGobernanzaR} alt="gráfico" />
+                                        </div>
+                                    </Row>
                                     <Row className="row-a-dimensions-top">
                                         <Col>
                                             <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
@@ -120,7 +154,7 @@ export const CarouselDetails = (props) => {
                                     <Row className="row-a-dimensions-bottom">
                                         <Col className="col-a-dimensions">
                                             <div className="text-center">
-                                                 <a href="/#" onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                <a href="/#" onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
                                         </Col>
                                     </Row>
@@ -131,12 +165,12 @@ export const CarouselDetails = (props) => {
                                     {/* <Button onClick={() => props.goBack()} className="goBack-button" >
                                     <b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}
                                     </Button> */}
-                                     <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                    <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>
@@ -163,6 +197,11 @@ export const CarouselDetails = (props) => {
                             <Row>
                                 <Row className="interpretation-card">
                                     <Col md={4} className="interpretation-card dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={actividadesPracticasR} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
@@ -174,13 +213,18 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </Col>
 
                                     <Col md={4} className="interpretation-card border-letf-right dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={procedimientosR} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
@@ -192,13 +236,18 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </Col>
 
                                     <Col md={4} className="interpretation-card dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={procesosR} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
@@ -210,7 +259,7 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -219,12 +268,12 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
-                                <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                    <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>
@@ -250,6 +299,11 @@ export const CarouselDetails = (props) => {
                             <Row>
                                 <Row className="interpretation-card">
                                     <Col md={4} className="interpretation-card dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={participacionUsuariosR} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
@@ -261,13 +315,18 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </Col>
 
                                     <Col md={4} className="interpretation-card dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={coordinacionInterinstitucionalR} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">
@@ -281,13 +340,18 @@ export const CarouselDetails = (props) => {
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </Col>
 
                                     <Col md={4} className="interpretation-card dimensions-cards">
+                                        <Row className="centerGraphicDimesions">
+                                            <div className="tabResponsive">
+                                                <img width="80%" src={gestionDelEntorno} alt="gráfico" />
+                                            </div>
+                                        </Row>
                                         <Row className="row-a-dimensions-top">
                                             <Col>
                                                 <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
@@ -295,12 +359,12 @@ export const CarouselDetails = (props) => {
                                                     {t("collaborationManagmentText")}
                                                 </Card.Text>
                                             </Col>
-                                            
+
                                         </Row>
                                         <Row className="row-a-dimensions-bottom">
                                             <Col className="col-a-dimensions">
                                                 <div className="text-center">
-                                                     <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
+                                                    <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -309,12 +373,12 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
-                                   <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
+                                    <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center pt-4 pb-4">
-                                     <a  href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
+                                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
                                 </Col>
                             </Row>
                         </Carousel.Item>

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
 import Grafico1 from "../SVG/img/Grafico1.svg";
+import generales1R from "../SVG/img/generales1R.svg";
+import generales2R from "../SVG/img/generales2R.svg";
+import generales3R from "../SVG/img/generales3R.svg";
 import { useTranslation } from 'react-i18next'
 
 export const GeneralTab = () => {
@@ -21,6 +24,9 @@ export const GeneralTab = () => {
             <Row className="p-5 acc-width">
                 <Col md={4}>
                     <Card >
+                        <div className="tabResponsive">
+                            <img width="80%" src={generales1R} alt="gráfico" />
+                        </div>
                         <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("pillars")}</Card.Title>
                             <Card.Text className="descripcion-resultado">
@@ -29,8 +35,11 @@ export const GeneralTab = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={4} className="borde">
+                <Col md={4} className="borde tabCardBorder">
                     <Card>
+                        <div className="tabResponsive">
+                            <img width="80%" src={generales2R} alt="gráfico" />
+                        </div>
                         <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("centralized")}</Card.Title>
                             <Card.Text className="descripcion-resultado">
@@ -41,6 +50,9 @@ export const GeneralTab = () => {
                 </Col>
                 <Col md={4}>
                     <Card >
+                        <div className="tabResponsive">
+                            <img width="80%" src={generales3R} alt="gráfico" />
+                        </div>
                         <Card.Body className="box-dimensions-text">
                             <Card.Title className="title-resultado">{t("new")}</Card.Title>
                             <Card.Text className="descripcion-resultado">

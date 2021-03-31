@@ -6,6 +6,10 @@ body {
     background-color: #fff !important;
 }
 
+.tabResponsive{
+    display: none;
+}
+
 .navbar {
     border-bottom: #d1cfcf solid 0.3px;
 }
@@ -371,6 +375,10 @@ body {
     width: 75%;
 }
 
+.img-tamanoR img {
+    display: none;
+}
+
 .accordion2Box h1 {
     font-size: 480%;
     font-weight: 700;
@@ -631,6 +639,14 @@ body {
     border-right: 2px dotted #6D6A6A;
 }
 
+.graficoAcc1 {
+    text-align: center!important;
+}
+
+.graficoAcc1R {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .img-laboratorio-gobierno {
         display: none;
@@ -863,7 +879,6 @@ body {
     }
     .box-dimensions-text {
         width: 91% !important;
-        margin-left: 0px !important;
     }
     .slide .carousel-control-prev-icon {
         top: -6% !important;
@@ -872,9 +887,45 @@ body {
         top: -6% !important;
     }
     .accordion2ContainerCollapse {
+        width: 100% !important;
+        margin-left: 0 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .graficoAcc1 {
         display: none !important;
     }
-     
+    .graficoAcc1R {
+        text-align: center;
+        display: block;
+    }
+    .img-tamano img {
+        display: none !important;
+    }
+    .img-tamanoR img {
+        display: block !important;
+        width: 75%;
+    }
+    .tabResponsive{
+        text-align: center!important;
+        margin-bottom: 25px;
+        display: block;
+        align-self: center;
+
+    }
+    .tabCardBorder{
+        border-top: 6px dotted lightgray !important;
+        border-bottom: 6px dotted lightgray !important;
+        margin-top: 10%;
+        padding-top: 15%;
+        margin-bottom: 13%;
+        padding-bottom: 6%;
+    }
+    .centerGraphicDimesions{
+        align-self: center;
+    }
 }
 
 @media (min-width: 1260px) {

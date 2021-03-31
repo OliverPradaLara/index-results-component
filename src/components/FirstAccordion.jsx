@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
 import Fijo1 from "../SVG/img/Fijo1.svg";
+import graficoAcordeonR from "../SVG/img/graficoAcordeonR.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'
 
@@ -32,7 +33,7 @@ export const FirstAccordion = () => {
                             (
                                 <>
                                     <Col md={10} sm={9} xs={9}>
-                                        <h1 className="title-acordion"> 
+                                        <h1 className="title-acordion">
                                             <b>{t("amount_of_utilities")}</b>
                                             <span className="sub-titulo">{t("according_to_total_score_range_of_the_index100pt")}</span>
                                         </h1>
@@ -57,8 +58,11 @@ export const FirstAccordion = () => {
             {/* //TODO: mejorar estructura */}
             <Accordion.Collapse className="accordionViewbg-light" eventKey="2" >
                 <Card.Body>
-                    <div className="text-center">
-                        <img width="80%" src={Fijo1} alt="gráfico"  />
+                    <div className="graficoAcc1">
+                        <img width="80%" src={Fijo1} alt="gráfico" />
+                    </div>
+                    <div className="graficoAcc1R">
+                        <img width="80%" src={graficoAcordeonR} alt="gráfico" />
                     </div>
                     <div className="text-center pt-4 pb-4 text-ancor">
                         <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_info_acc_1")}</a>
