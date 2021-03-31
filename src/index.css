@@ -25,7 +25,7 @@ body {
 }
 
 .color-orange-two {
-    color: #ff7043;
+    color: #ff7043 !important;
 }
 
 .container-fluid {
@@ -201,6 +201,7 @@ body {
 
 .linksFooter {
     color: #fff;
+    text-decoration: underline !important;
 }
 
 .textIndexHeader {
@@ -625,7 +626,17 @@ body {
     border-left: 2px dotted #6D6A6A;
     border-right: 2px dotted #6D6A6A;
 }
+.contenedor-footer .links ul li{
+    font-weight: 700;
+}
 @media (max-width: 900px) {
+    .contenedor-footer .all-logos .logo-izquierdo img {
+        width: 68.4%;
+    }
+    .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica img {
+        width: 80%;
+    }
+    
     .img-laboratorio-gobierno {
         display: none;
     }
@@ -724,18 +735,18 @@ body {
         text-align: center;
     }
     .contenedor-footer .all-logos .logo-derecho .twitter {
-        font-size: 150%;
+        font-size: 250%;
     }
     .contenedor-footer .all-logos .logo-derecho .instagram {
-        font-size: 450%;
+        font-size: 750%;
         height: 40px;
     }
     .contenedor-footer .all-logos .logo-derecho .in {
-        font-size: 450%;
+        font-size: 750%;
         height: 40px;
     }
     .contenedor-footer .all-logos .logo-derecho .facebook {
-        font-size: 150%;
+        font-size: 250%;
         color: #fff;
     }
     .contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
@@ -758,10 +769,13 @@ body {
         flex-direction: column;
     }
     .contenedor-footer .links ul li {
-        font-size: 12px;
-        padding-bottom: 4%;
+        font-size: 14px;
+        font-weight: 700 !important;
         list-style-type: none;
         text-align: center;
+    }
+    .contenedor-footer .links ul li a{
+        text-decoration: none;
     }
     .contenedor-first-footer .contenedor {
         width: 100%;
