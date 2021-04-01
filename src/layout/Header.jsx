@@ -8,22 +8,22 @@ export const Header = () => {
     const [language, setLanguage] = useState(true)
     const { t, i18n } = useTranslation();
     return (
-        <Navbar expand="lg" collapseOnSelect className="pt-2 pb-2 pl-5 pr-5" bg="light" variant="light">
+        <Navbar expand="lg" collapseOnSelect className="pt-2 pb-2 pl-2 pr-2" bg="light" variant="light">
             <Container className="body-container" fluid>
                 <Row className="row-navbar">
-                    <Col md={6} sm={2} xs={2} className="ub-logo">
+                    <Col md={6} sm={6} xs={6} className="ub-logo">
                         <Navbar.Brand href="#home" className="align-left">
                             <Row>
                                 <Col md={6}>
                                     <img className="img-laboratorio-gobierno"  alt="Laboratorio" src={laboratorioGobiernoGris} />
                                 </Col>
-                                <Col md={6} xs={2}>
+                                <Col md={6} xs={12}>
                                     <img className="img-indice-innovacion" alt="Indice" src={indiceInnivacionGris} />
                                 </Col>
                             </Row>
                         </Navbar.Brand>
                     </Col>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle  aria-controls="responsive-navbar-nav" className="btn-toggler" />
                     <Col md={6} className="d-flex justify-content-end">
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="d-flex justify-content-end">

@@ -651,7 +651,14 @@ body {
 .contenedor-footer .links ul li{
     font-weight: 700;
 }
+.ub-logo {
+    z-index: 1;
+}
+.btn-toggler {
+    z-index: 2;
+}
 @media (max-width: 900px) {
+    
     .contenedor-footer .all-logos .logo-izquierdo img {
         width: 68.4%;
     }
@@ -667,15 +674,18 @@ body {
         align-self: center;
     }
     .ub-logo {
-        z-index: 1;
-    }
-    .navbar-toggler {
+        float: right;
         z-index: 2;
+    }
+    .btn-toggler {
+        z-index: 1;
+        float: left;
+        border-color: transparent !important;
     }
     .row-navbar {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: row-reverse;
+        justify-content: space-around;
     }
     .tittleColor {
         font-size: 33px !important;
@@ -939,6 +949,15 @@ body {
     }
     .centerGraphicDimesions {
         align-self: center;
+    }
+    .body-container .row-navbar .d-flex .navbar-collapse .navbar-nav .nav-item a{
+        text-align: left !important;
+        color: #616261;
+        border-bottom: 1px solid #6d6a6a;
+        font-size: 14px !important;
+    }
+    .body-container .row-navbar .d-flex .navbar-collapse .navbar-nav .posicion-class a{
+        width: 100% !important;
     }
 }
 
