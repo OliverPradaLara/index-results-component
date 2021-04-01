@@ -14,6 +14,10 @@ body {
     display: block;
 }
 
+.isResponsive{
+    display: none;
+}
+
 .navbar {
     border-bottom: #d1cfcf solid 0.3px;
 }
@@ -966,7 +970,9 @@ body {
     .isDesktop{
         display: none !important;
     }
-    
+    .isResponsive{
+        display: block;
+    }
 }
 
 @media (min-width: 1260px) {
