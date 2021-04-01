@@ -7,22 +7,22 @@ export const TextIndex = () => {
     return (
         <>
             <Card >
-                <Row className="tittleText">
+                <div className="tittleText">
                     <Col md={6} sm={12} xs={12}>
                         <h1 className="tittleColor">
                             <b>{t("text_index_tittle")}</b>
                         </h1>
                     </Col>
-                </Row>
+                </div>
             </Card>
             <Card >
-                <Row className="tittleText mt-4 mb-5 ">
+                <div className="tittleText mt-4 mb-5 ">
                     <Col md={8} sm={12} xs={12}>
                         <p className="textIndex">
                             {t("text_index_text")}
                         </p>
                     </Col>
-                </Row>
+                </div>
             </Card>
         </>
     )

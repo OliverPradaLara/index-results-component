@@ -732,20 +732,27 @@ body {
         padding-right: 0px !important;
     }
     .accordion2Box {
-        text-align: center;
+        text-align: left;
         padding-bottom: 20px;
+        padding-left: 5% !important;
     }
     .accordion2Box h1 {
-        font-size: 280%;
+        font-size: 170px;
+        margin-bottom: -10px;
     }
     .accordion2Box h2 {
-        font-size: 110%;
+        font-size: 50px;
         padding-bottom: 15px;
+        font-weight: bold;
+        border-bottom: none;
+        margin-bottom: -10px;
     }
     .accordion2Box p {
-        font-size: 90%;
-        line-height: 20px;
+        font-size: 130%;
         padding-top: 15px;
+        padding-bottom: 25px;
+        line-height: 30px;
+        border-bottom: 5px dotted lightgrey;    
     }
     .header-card {
         padding-left: 6% !important;
