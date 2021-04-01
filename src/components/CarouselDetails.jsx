@@ -26,6 +26,9 @@ import gestionDelEntorno from "../SVG/img/gestionDelEntorno.svg";
 import SubPracticas1 from "../SVG/img/Sub-Practicas-01.svg";
 //Molecula
 import AnalisisAcordion from './Moleculas/AnalisisAcordion';
+//Organismos
+import SubDimensionesCard from './Organismos/SubDimensionesCard';
+
 
 
 
@@ -74,53 +77,39 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row className="interpretation-card">
-                                <Col md={4} className="interpretation-card dimensions-cards">
-                                    <Row className="centerGraphicDimesions">
-                                        <div className="tabResponsive">
-                                            <img width="80%" src={talentoHumanoR} alt="gráfico" />
-                                        </div>
-                                    </Row>
-                                    <Row className="row-a-dimensions-top">
-                                        <Col>
-                                            <Card.Title className="title-resultado">{t("title_Human_Talent")}</Card.Title>
-                                            <Card.Text className="descripcion-resultado">
-                                                {t("description_Human_Talent")}
-                                            </Card.Text>
-                                        </Col>
-                                    </Row>
-                                    <Row className="row-a-dimensions-bottom">
-                                        <Col className="col-a-dimensions">
-                                            <div className="text-center isDesktop">
-                                                <a href="/#" onClick={() => { setDetailView(11) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </div>
-                                            <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Human_Talent")} analisis={ t("dimensionsAnalysisText") } />
-                                        </Col>
-                                    </Row>
-                                </Col>
+                                <SubDimensionesCard 
+                                    imagen={ talentoHumanoR } 
+                                    titulo={ t("title_Human_Talent") } 
+                                    descripcion={ t("description_Human_Talent") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Human_Talent") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(11) } }
+                                />
+                
+                                <SubDimensionesCard 
+                                    imagen={ marcoInstitucionalR } 
+                                    titulo={ t("title_Institutional_Frame") } 
+                                    descripcion={ t("description_Institutional_Frame") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Institutional_Frame") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(12) } }
+                                />
 
-                                <Col md={4} className="interpretation-card dimensions-cards">
-                                    <Row className="centerGraphicDimesions">
-                                        <div className="tabResponsive">
-                                            <img width="80%" src={marcoInstitucionalR} alt="gráfico" />
-                                        </div>
-                                    </Row>
-                                    <Row className="row-a-dimensions-top">
-                                        <Col>
-                                            <Card.Title className="title-resultado">{t("title_Institutional_Frame")}</Card.Title>
-                                            <Card.Text className="descripcion-resultado">
-                                                {t("description_Institutional_Frame")}
-                                            </Card.Text>
-                                        </Col>
-                                    </Row>
-                                    <Row className="row-a-dimensions-bottom">
-                                        <Col className="col-a-dimensions">
-                                            <div className="text-center isDesktop">
-                                                <a href="/#" onClick={() => { setDetailView(12) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </div>
-                                            <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Institutional_Frame")} analisis={ t("dimensionsAnalysisText") } />
-                                        </Col>
-                                    </Row>
-                                </Col>
+                                <SubDimensionesCard 
+                                    imagen={ recursosDigitalesR } 
+                                    titulo={ t("title_Digital_Resources") } 
+                                    descripcion={ t("description_Digital_Resources") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Digital_Resources") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(13) } }
+                                />
+                            
 
                                 <Col md={4} className="interpretation-card dimensions-cards">
                                     <Row className="centerGraphicDimesions">
