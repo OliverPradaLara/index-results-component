@@ -97,7 +97,11 @@ i18n
                     "title_SUBDIMENSION_PROCEEDINGS": "SUBDIMENSION PROCEEDINGS",
                     "title_USER_PARTICIPATION_SUBDIMENSION": "USER PARTICIPATION SUBDIMENSION",
                     "title_COORDINATION_BETWEEN_INSTITUTIONS_SUBDIMENSION": "COORDINATION BETWEEN INSTITUTIONS SUBDIMENSION",
-                    "return_to_main_graph": "Return to Main Graph"
+                    "return_to_main_graph": "Return to Main Graph",
+                    "graphic_interpretation_collaboration_managment":"The importance of incorporating new perspectives to the problems of the Estano is not limited to the work of other public institutions or of users or beneficiaries, it is also essential to incorporate civil society, academia and the private sector. These instances, as can be seen, are rare and therefore we must encourage them. The development of open innovation competitions are an excellent opportunity to achieve this type of activity.",
+                    "graphic_interpretation_collaboration_coordination": "Collaboration translates into more than generating collaboration agreements between services, it also includes the development of innovation initiatives that incorporate experiences from other public departments, in order to counteract the logic of disconnected silos, characteristic of public administration.",
+                    "graphic_interpretation_collaboration_user": "The services provide evidence that they have made progress in including the perspective of the users or beneficiaries, however it is important to continue developing this capacity. It is also important to advance in the incorporation of users or beneficiaries in the testing and piloting processes, in order to ensure that innovation initiatives effectively respond to their needs and expectations.",
+
                 }
             },
             es: {
@@ -150,8 +154,11 @@ i18n
                     "collaborationCoordinationTittle": " COORDINACIÓN INTERINSTITUCIONAL",
                     "collaborationManagmentTittle": "GESTION DEL ENTORNO",
                     "collaborationUserText": "Incentiva el uso de lenguaje claro e inclusivo en comunicaciones y canales, promueve mecanismos de participación, y considera el involucramiento de usuarios de cada entidad en las diversas fases de innovación, como son: participación en la identificación de brechas a través de procesos de investigación, participación como co-creadores de soluciones, participación como evaluadores de las soluciones, etc",
+                    "graphic_interpretation_collaboration_user":"Los servicios dan evidencia de que han avanzado en el incluir la perspectiva de las personas usuarias o beneficiarias, sin embargo es importante continuar desarrollando esta capacidad. Es importante asimismo, avanzar en la incorporación de personas usuarias o beneficiarias en los procesos de testeo y pilotaje, de manera de lograr que las iniciativas de innovación efectivamente respondan a sus necesidades y expectativas.",
                     "collaborationCoordinationText": "Busca medir la colaboración y eventual interoperabilidad entre servicios. En concreto, incentiva la participación de distintos servicios en procesos colaborativos de identificación de oportunidades para innovar, co- creación de soluciones, implementación y/o evaluación conjunta.",
+                    "graphic_interpretation_collaboration_coordination":"La colaboración se traduce en más que generar convenios de colaboración entre servicios, incluye también el desarrollo de iniciaitivas de innovación que incorporen experiencias de otras depdendencias públicas, a fin de contrarrestar la lógica de silos desconectados, característica de la administración pública.",
                     "collaborationManagmentText": "Mide la existencia de espacios para colaborar con organizaciones que se encuentran fuera de la esfera del Estado, pudiendo ser tratarse de entidades de la sociedad civil o sector privado, a fin de incentivar la incorporación de aprendizajes desde una perspectiva de innovación abierta.",
+                    "graphic_interpretation_collaboration_managment":"La importancia de incorporar perspectivas nuevas a las problemáticas del Estano no se limitan al trabajo de otras instituciones públicas o de las personas usuarias o beneficiarias, es fundamental también incorporar a la sociedad civil, la academia y el sector privado. Estas instancias, tal como se observa, son escasas y por ello debemos fomentarlas. El desarollo de concursos de innovación abierta son una excelente oportunidad para lograr este tipo de actividades.",
                     "interpretation_of_the_graph": " INTERPRETACIÓN DEL GRÁFICO",
                     "return_to_main_graph": "volver a gráfico principal",
                     "title_Human_Talent": "TALENTO HUMANO",

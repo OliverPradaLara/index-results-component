@@ -330,6 +330,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_user")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -355,6 +356,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_coordination")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -379,6 +381,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_managment")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
