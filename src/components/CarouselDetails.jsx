@@ -60,6 +60,7 @@ export const CarouselDetails = (props) => {
                     <CarouselCollaboration subDimensions={detailView} goBack={goBack} />
                 ) : (
                     <Carousel wrap={true} interval={null} defaultActiveIndex={detailView === 1 ? 0 : detailView === 2 ? 1 : detailView === 3 ? 2 : ""} >
+                        {/* Recursos Institucionales */}
                         <Carousel.Item>
                             <Row className="d-flex color-grey justify-content-center">
                                 <Col md={10} className>
@@ -77,87 +78,49 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                             <Row className="interpretation-card">
-                                <SubDimensionesCard 
-                                    imagen={ talentoHumanoR } 
-                                    titulo={ t("title_Human_Talent") } 
-                                    descripcion={ t("description_Human_Talent") } 
-                                    textolink={ t("dimensionsAnalysisText") } 
-                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
-                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Human_Talent") }
-                                    analisistexto={ t("dimensionsAnalysisText") }
-                                    onclick={ () => { setDetailView(11) } }
-                                />
-                
-                                <SubDimensionesCard 
-                                    imagen={ marcoInstitucionalR } 
-                                    titulo={ t("title_Institutional_Frame") } 
-                                    descripcion={ t("description_Institutional_Frame") } 
-                                    textolink={ t("dimensionsAnalysisText") } 
-                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
-                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Institutional_Frame") }
-                                    analisistexto={ t("dimensionsAnalysisText") }
-                                    onclick={ () => { setDetailView(12) } }
+                                <SubDimensionesCard
+                                    imagen={talentoHumanoR}
+                                    titulo={t("title_Human_Talent")}
+                                    descripcion={t("description_Human_Talent")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Human_Talent")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(11) }}
                                 />
 
-                                <SubDimensionesCard 
-                                    imagen={ recursosDigitalesR } 
-                                    titulo={ t("title_Digital_Resources") } 
-                                    descripcion={ t("description_Digital_Resources") } 
-                                    textolink={ t("dimensionsAnalysisText") } 
-                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
-                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_Digital_Resources") }
-                                    analisistexto={ t("dimensionsAnalysisText") }
-                                    onclick={ () => { setDetailView(13) } }
+                                <SubDimensionesCard
+                                    imagen={marcoInstitucionalR}
+                                    titulo={t("title_Institutional_Frame")}
+                                    descripcion={t("description_Institutional_Frame")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Institutional_Frame")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(12) }}
                                 />
-                            
 
-                                <Col md={4} className="interpretation-card dimensions-cards">
-                                    <Row className="centerGraphicDimesions">
-                                        <div className="tabResponsive">
-                                            <img width="80%" src={recursosDigitalesR} alt="gráfico" />
-                                        </div>
-                                    </Row>
-                                    <Row className="row-a-dimensions-top">
-                                        <Col>
-                                            <Card.Title className="title-resultado">{t("title_Digital_Resources")}</Card.Title>
-                                            <Card.Text className="descripcion-resultado">
-                                                {t("description_Digital_Resources")}
-                                            </Card.Text>
-                                        </Col>
-                                    </Row>
-                                    <Row className="row-a-dimensions-bottom">
-                                        <Col className="col-a-dimensions">
-                                            <div className="text-center isDesktop">
-                                                <a href="/#" onClick={() => { setDetailView(13) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </div>
-                                            <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Digital_Resources")} analisis={ t("dimensionsAnalysisText") } />
-                                        </Col>
-                                    </Row>
-                                </Col>
+                                <SubDimensionesCard
+                                    imagen={recursosDigitalesR}
+                                    titulo={t("title_Digital_Resources")}
+                                    descripcion={t("description_Digital_Resources")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Digital_Resources")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(13) }}
+                                />
 
-                                <Col md={4} className="interpretation-card dimensions-cards">
-                                    <Row className="centerGraphicDimesions">
-                                        <div className="tabResponsive">
-                                            <img width="80%" src={estrategiaGobernanzaR} alt="gráfico" />
-                                        </div>
-                                    </Row>
-                                    <Row className="row-a-dimensions-top">
-                                        <Col>
-                                            <Card.Title className="title-resultado">{t("title_Strategy_and_Governability")}</Card.Title>
-                                            <Card.Text className="descripcion-resultado">
-                                                {t("description_Strategy_and_Governability")}
-                                            </Card.Text>
-                                        </Col>
-                                    </Row>
-                                    <Row className="row-a-dimensions-bottom">
-                                        <Col className="col-a-dimensions">
-                                            <div className="text-center isDesktop">
-                                                <a href="/#" onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                            </div>
-                                            <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Strategy_and_Governability")} analisis={ t("dimensionsAnalysisText") } />
-                                        </Col>
-                                    </Row>
-                                </Col>
+                                <SubDimensionesCard
+                                    imagen={estrategiaGobernanzaR}
+                                    titulo={t("title_Strategy_and_Governability")}
+                                    descripcion={t("description_Strategy_and_Governability")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Strategy_and_Governability")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(14) }}
+                                />
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
@@ -173,9 +136,7 @@ export const CarouselDetails = (props) => {
                                 </Col>
                             </Row>
                         </Carousel.Item>
-
-
-
+                        {/* Procesos Y Practicas */}
                         <Carousel.Item>
                             <Row className="d-flex color-grey justify-content-center">
                                 <Col md={10} className>
@@ -185,7 +146,6 @@ export const CarouselDetails = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-
                             <Row>
                                 <Col md={12}>
                                     <div className="graphic-acc-3">
@@ -193,80 +153,39 @@ export const CarouselDetails = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row>
-                                <Row className="interpretation-card">
-                                    <Col md={4} className="interpretation-card dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={actividadesPracticasR} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">{t("title_Activities_or_practices")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Activities_or_practices")}
-                                                </Card.Text>
-                                            </Col>
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Activities_or_practices")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
+                            <Row className="interpretation-card">
+                                <SubDimensionesCard
+                                    imagen={actividadesPracticasR}
+                                    titulo={t("title_Activities_or_practices")}
+                                    descripcion={t("description_Activities_or_practices")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Activities_or_practices")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(21) }}
+                                />
 
-                                    <Col md={4} className="interpretation-card border-letf-right dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={procedimientosR} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">{t("title_Proceedings")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Proceedings")}
-                                                </Card.Text>
-                                            </Col>
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Proceedings")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
+                                <SubDimensionesCard
+                                    imagen={procedimientosR}
+                                    titulo={t("title_Proceedings")}
+                                    descripcion={t("description_Proceedings")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Proceedings")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(22) }}
+                                />
 
-                                    <Col md={4} className="interpretation-card dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={procesosR} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">{t("title_Processes")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("description_Processes")}
-                                                </Card.Text>
-                                            </Col>
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Processes")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                </Row>
+                                <SubDimensionesCard
+                                    imagen={procesosR}
+                                    titulo={t("title_Processes")}
+                                    descripcion={t("description_Processes")}
+                                    textolink={t("dimensionsAnalysisText")}
+                                    titulointerpretaciongrafico={t("interpretation_of_the_graph")}
+                                    descripcioninterpretaciongrafico={t("graphic_interpretation_Processes")}
+                                    analisistexto={t("dimensionsAnalysisText")}
+                                    onclick={() => { setDetailView(23) }}
+                                />
                             </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
@@ -319,7 +238,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_user")} analisis={ t("dimensionsAnalysisText") } />
+                                                <AnalisisAcordion titulo={t("interpretation_of_the_graph")} descripcion={t("graphic_interpretation_collaboration_user")} analisis={t("dimensionsAnalysisText")} />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -345,7 +264,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_coordination")} analisis={ t("dimensionsAnalysisText") } />
+                                                <AnalisisAcordion titulo={t("interpretation_of_the_graph")} descripcion={t("graphic_interpretation_collaboration_coordination")} analisis={t("dimensionsAnalysisText")} />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -370,7 +289,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_managment")} analisis={ t("dimensionsAnalysisText") } />
+                                                <AnalisisAcordion titulo={t("interpretation_of_the_graph")} descripcion={t("graphic_interpretation_collaboration_managment")} analisis={t("dimensionsAnalysisText")} />
                                             </Col>
                                         </Row>
                                     </Col>
