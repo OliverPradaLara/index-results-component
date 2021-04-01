@@ -300,80 +300,39 @@ export const CarouselDetails = (props) => {
                             </Row>
                             <Row>
                                 <Row className="interpretation-card">
-                                    <Col md={4} className="interpretation-card dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={participacionUsuariosR} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">{t("collaborationUserTittle")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationUserText")}
-                                                </Card.Text>
-                                            </Col>
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(31) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_user")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
 
-                                    <Col md={4} className="interpretation-card dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={coordinacionInterinstitucionalR} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">
-                                                    {t("collaborationCoordinationTittle")}
-                                                </Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationCoordinationText")}
-                                                </Card.Text>
-                                            </Col>
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(32) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_coordination")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
+                                    <SubDimensionesCard 
+                                    imagen={ participacionUsuariosR } 
+                                    titulo={ t("collaborationUserTittle") } 
+                                    descripcion={ t("collaborationUserText") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_collaboration_user") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(31) } }
+                                    />
+                                    
+                                    <SubDimensionesCard 
+                                    imagen={ coordinacionInterinstitucionalR } 
+                                    titulo={ t("collaborationCoordinationTittle") } 
+                                    descripcion={ t("collaborationCoordinationText") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_collaboration_coordination") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(32) } }
+                                    />
 
-                                    <Col md={4} className="interpretation-card dimensions-cards">
-                                        <Row className="centerGraphicDimesions">
-                                            <div className="tabResponsive">
-                                                <img width="80%" src={gestionDelEntorno} alt="gráfico" />
-                                            </div>
-                                        </Row>
-                                        <Row className="row-a-dimensions-top">
-                                            <Col>
-                                                <Card.Title className="title-resultado">{t("collaborationManagmentTittle")}</Card.Title>
-                                                <Card.Text className="descripcion-resultado">
-                                                    {t("collaborationManagmentText")}
-                                                </Card.Text>
-                                            </Col>
-
-                                        </Row>
-                                        <Row className="row-a-dimensions-bottom">
-                                            <Col className="col-a-dimensions">
-                                                <div className="text-center isDesktop">
-                                                    <a href="/#" onClick={() => { setDetailView(33) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
-                                                </div>
-                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_collaboration_managment")} analisis={ t("dimensionsAnalysisText") } />
-                                            </Col>
-                                        </Row>
-                                    </Col>
+                                    <SubDimensionesCard 
+                                    imagen={ gestionDelEntorno } 
+                                    titulo={ t("collaborationManagmentTittle") } 
+                                    descripcion={ t("collaborationManagmentText") } 
+                                    textolink={ t("dimensionsAnalysisText") } 
+                                    titulointerpretaciongrafico={ t("interpretation_of_the_graph") }
+                                    descripcioninterpretaciongrafico={ t("graphic_interpretation_collaboration_managment") }
+                                    analisistexto={ t("dimensionsAnalysisText") }
+                                    onclick={ () => { setDetailView(33) } }
+                                    />
                                 </Row>
                             </Row>
                             <Row>
