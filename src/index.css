@@ -299,13 +299,14 @@ body {
 .title-resultado {
     font-size: 20px !important;
     font-weight: 600 !important;
+    padding-bottom: 10px;
 }
 
 .descripcion-resultado {
     font-size: 18px !important;
-    color: #6D6A6A;
+    color: #000;
     margin-top: -10px;
-    width: 105% !important;
+    width: 100% !important;
 }
 
 .borde {
@@ -661,6 +662,49 @@ body {
 .btn-toggler {
     z-index: 2;
 }
+
+.card-arrow{
+    border-bottom: none !important;
+}
+
+.card-arrow .block-analisis{
+    width: 100%;
+    height: 40px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-arrow .btn-link{
+    text-decoration: none;
+}
+.card-arrow .btn-link:hover{
+    text-decoration: none;
+}
+
+.card-arrow .block-analisis .texto-analisis-acordion{
+    color: #FF7043;
+    text-decoration: underline;
+}
+
+.card-description-analysis .title{
+    border-bottom: 3px dotted #B3B3B3;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.card-description-analysis .title h4{
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+.card-description-analysis .descripcion{
+   padding-top: 30px;
+}
+.display-element{
+    display: none;
+}
+
+
 @media (max-width: 900px) {
     
     .contenedor-footer .all-logos .logo-izquierdo img {
@@ -882,8 +926,8 @@ body {
         font-weight: 100;
     }
     .descripcion-resultado {
-        font-size: 12px !important;
-        color: #6D6A6A;
+        font-size: 16px !important;
+        color: #000;
         margin-top: -10px;
         width: 100% !important;
     }
@@ -965,6 +1009,9 @@ body {
     }
     .isDesktop{
         display: none !important;
+    }
+    .display-element{
+        display: block;
     }
     
 }

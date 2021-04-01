@@ -24,10 +24,9 @@ import gestionDelEntorno from "../SVG/img/gestionDelEntorno.svg";
 
 
 import SubPracticas1 from "../SVG/img/Sub-Practicas-01.svg";
-//Molecula
-import AnalisisAcordion from './Moleculas/AnalisisAcordion';
+
 //Organismos
-import SubDimensionesCard from './Organismos/SubDimensionesCard';
+import SubDimensionesCard from './Moleculas/SubDimensionesCard';
 
 
 

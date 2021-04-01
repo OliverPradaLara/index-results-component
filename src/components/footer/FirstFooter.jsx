@@ -1,5 +1,4 @@
 import React from 'react'
-import "../../css/footer/firstfooter/style.css"
 import cloud from '../../SVG/img/download.png'
 import { useTranslation } from 'react-i18next'
 

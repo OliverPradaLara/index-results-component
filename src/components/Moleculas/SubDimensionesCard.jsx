@@ -1,6 +1,6 @@
 import { Row, Col, Card } from 'react-bootstrap'
+import AnalisisAcordion from './AnalisisAcordion';
 
-import AnalisisAcordion from "../Moleculas/AnalisisAcordion";
 
 
 const SubDimensionesCard = ({ imagen, titulo, descripcion, textolink, onclick, titulointerpretaciongrafico, descripcioninterpretaciongrafico ,analisistexto  }) => (
