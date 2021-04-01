@@ -165,6 +165,7 @@ export const CarouselDetails = (props) => {
                                             <div className="text-center isDesktop">
                                                 <a href="/#" onClick={() => { setDetailView(14) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                             </div>
+                                            <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Strategy_and_Governability")} analisis={ t("dimensionsAnalysisText") } />
                                         </Col>
                                     </Row>
                                 </Col>
@@ -224,6 +225,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(21) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Activities_or_practices")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -247,6 +249,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(22) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Proceedings")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
@@ -270,6 +273,7 @@ export const CarouselDetails = (props) => {
                                                 <div className="text-center isDesktop">
                                                     <a href="/#" onClick={() => { setDetailView(23) }} className="color-orange-one">{t("dimensionsAnalysisText")}</a>
                                                 </div>
+                                                <AnalisisAcordion titulo={ t("interpretation_of_the_graph") } descripcion={ t("graphic_interpretation_Processes")} analisis={ t("dimensionsAnalysisText") } />
                                             </Col>
                                         </Row>
                                     </Col>
