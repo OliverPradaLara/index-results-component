@@ -215,7 +215,6 @@ export const CarouselDetails = (props) => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row>
                                 <Row className="interpretation-card">
 
                                     <SubDimensionesCard 
@@ -251,7 +250,6 @@ export const CarouselDetails = (props) => {
                                     onclick={ () => { setDetailView(33) } }
                                     />
                                 </Row>
-                            </Row>
                             <Row>
                                 <Col md={12} className="text-center" >
                                     <a onClick={() => props.goBack()} className="goBack-button color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
