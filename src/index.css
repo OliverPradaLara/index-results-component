@@ -10,6 +10,10 @@ body {
     display: none;
 }
 
+.isDesktop{
+    display: block;
+}
+
 .navbar {
     border-bottom: #d1cfcf solid 0.3px;
 }
@@ -881,7 +885,7 @@ body {
         font-size: 12px !important;
         color: #6D6A6A;
         margin-top: -10px;
-        width: 105% !important;
+        width: 100% !important;
     }
     .borde {
         border-left: none !important;
@@ -959,6 +963,10 @@ body {
     .body-container .row-navbar .d-flex .navbar-collapse .navbar-nav .posicion-class a{
         width: 100% !important;
     }
+    .isDesktop{
+        display: none !important;
+    }
+    
 }
 
 @media (min-width: 1260px) {
