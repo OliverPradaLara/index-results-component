@@ -1028,6 +1028,12 @@ body {
     .isResponsive{
         display: block;
     }
+    .tittleTextPpal {
+        display: flex;
+        justify-content: center;
+        text-align: left !important;
+        max-width: 1920px;
+    }
 }
 
 @media (min-width: 1260px) {
