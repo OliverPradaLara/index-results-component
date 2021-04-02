@@ -707,7 +707,58 @@ body {
 .display-element{
     display: none;
 }
+.carrusel-justify{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+}
+.card-interpretacion-grafico{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
 
+.card-interpretacion-grafico .grafico-interpretacion{
+    width: 100%;
+}
+.card-interpretacion-grafico .grafico-interpretacion igm{
+    width: 100%;
+}
+.card-interpretacion-grafico .interpretation-grafico-body{
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    padding-top: 40px;
+    
+}
+.card-interpretacion-grafico .interpretation-grafico-body .title{
+    width: 33%;
+    border-right: 1px dotted #6D6A6A;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+.card-interpretacion-grafico .interpretation-grafico-body .title h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.card-interpretacion-grafico .interpretation-grafico-body .description{
+    width: 90%;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.card-interpretacion-grafico .interpretation-grafico-body .description p{
+    font-size: 20px;
+    color: #000;
+}
+.card-interpretacion-grafico .interpretation-grafico-body .description .enlace{
+    padding-top: 20px;
+}
+.card-interpretacion-grafico .interpretation-grafico-body .description .enlace a{
+    font-size: 20px;
+}
 
 @media (max-width: 900px) {
     

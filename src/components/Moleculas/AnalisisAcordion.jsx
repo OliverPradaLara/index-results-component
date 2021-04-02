@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
-import { Accordion, Card, Button, Row, Col } from 'react-bootstrap';
+import { Accordion, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+//Componentes
 import ArrowCard from './ArrowCard';
 
 const AnalisisAcordion = ({ titulo, descripcion, analisis }) => {
+    
     const [drop, setDrop] = useState(true)
 
     const changeArrow = () => {

@@ -38,7 +38,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={5}>
                                 <Card border="0" >
                                     <Card.Body className="borde-left interpretation-card">
-                                        
+
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
                                             ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
@@ -46,7 +46,7 @@ export const CarouselCollaboration = (props) => {
                                             auctor risus neque, at convallis velit convallis eget.
             </Card.Text>
                                         <a onClick={() => { props.goBack(3) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
-            
+
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -81,7 +81,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={5}>
                                 <Card border="0" >
                                     <Card.Body className="borde-left interpretation-card">
-                                        
+
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
                                             ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
@@ -89,7 +89,7 @@ export const CarouselCollaboration = (props) => {
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
                                         <a onClick={() => { props.goBack(3) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
-                                
+
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -124,7 +124,7 @@ export const CarouselCollaboration = (props) => {
                             <Col md={5}>
                                 <Card border="0" >
                                     <Card.Body className="borde-left interpretation-card">
-                                        
+
                                         <Card.Text className="descripcion-resultado">
                                             Mauris non mattis eros. Curabitur in ex at lorem ultricies aliquet. Pellentesque aliquet
                                             ultrices imperdiet. Fusce gravida accumsan egestas. Integer elementum, sem vitae
@@ -132,7 +132,7 @@ export const CarouselCollaboration = (props) => {
                                             auctor risus neque, at convallis velit convallis eget.
                                 </Card.Text>
                                         <a onClick={() => { props.goBack(3) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
-                                    
+
                                     </Card.Body>
                                 </Card>
                             </Col>

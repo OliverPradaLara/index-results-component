@@ -1,4 +1,6 @@
 import { Row, Col, Card } from 'react-bootstrap'
+
+//Componentes
 import AnalisisAcordion from './AnalisisAcordion';
 
 

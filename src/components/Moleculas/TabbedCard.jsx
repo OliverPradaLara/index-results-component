@@ -1,7 +1,7 @@
+import { Card, Row, Col } from 'react-bootstrap'
 
-
-const DimensionesCard = ({ imagen, titulo, descripcion, textlink, onclick }) => (
-    <Col md={4} className="interpretation-card dimensions-cards">
+const TabbedCard = ({ imagen, titulo, descripcion, textlink, onclick, clase }) => (
+    <Col md={4} className={`interpretation-card dimensions-cards ${clase}`}>
         <Row className="centerGraphicDimesions">
             <div className="tabResponsive">
                 <img width="80%" src={ imagen } alt="gráfico" />
@@ -25,4 +25,4 @@ const DimensionesCard = ({ imagen, titulo, descripcion, textlink, onclick }) => 
     </Col>
 )
 
-export default DimensionesCard;
+export default TabbedCard;

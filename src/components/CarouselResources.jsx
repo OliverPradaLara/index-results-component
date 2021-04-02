@@ -6,6 +6,7 @@ import { SecondResourcesAnalysis } from "./SecondResourcesAnalysis";
 import { ThirdResourcesAnalysis } from "./ThirdResourcesAnalysis";
 import { FourthResourcesAnalysis } from "./FourthResourcesAnalysis";
 
+import InterpretacionGraficoCard from "./Moleculas/InterpretacionGraficoCard";
 
 export const CarouselResources = (props) => {
     const subDimensions = props.subDimensions
@@ -15,7 +16,7 @@ export const CarouselResources = (props) => {
         <Row>
             <Col md={12}>
                 <Carousel interval={null} defaultActiveIndex={subDimensions === 11 ? 0 : subDimensions === 12 ? 1 : subDimensions === 13 ? 2 : 3}>
-                    <Carousel.Item>
+                    <Carousel.Item className="carrusel-justify">
                         <Row className="d-flex color-grey justify-content-center">
                             <Col md={10} className>
                                 <div className="text-carrusel">
@@ -24,9 +25,8 @@ export const CarouselResources = (props) => {
                                 </div>
                             </Col>
                         </Row>
-                        <FirstResourcesAnalysis />
-                        <Row>
-                            <Col md={1} />
+                            <InterpretacionGraficoCard />
+                            {/* <Col md={1} />
                             <Col md={3}>
                                 <Card border="0">
                                     <Card.Body className="interpretation-card">
@@ -48,8 +48,8 @@ export const CarouselResources = (props) => {
                                         <a onClick={() => { props.goBack(1) }} href="/#" className="color-orange-one"><b><i className="fas fa-chevron-left"></i></b> {t("return_to_main_graph")}</a>
                                     </Card.Body>
                                 </Card>
-                            </Col>
-                        </Row>
+                            </Col> */}
+                        
                         <Row>
                             <Col md={12} className="text-center pt-4 pb-4">
                                 <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("dimensionsInformationPlus")}</a>
