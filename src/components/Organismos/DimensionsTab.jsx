@@ -28,20 +28,20 @@ export const DimensionsTab = () => {
                     <CarouselDetailsSubDimensiones dimensions={view} goBack={back} />
                 ) : (
                     <>
-                        <Row className="acc-width">
-                            <Col md={12}>
+                        <div className="acc-width">
+                            <Col md={12} className="compensarMargen">
                                 <div className="p-4 comp-pad-general">
                                     <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                             </Col>
-                        </Row>
-                        <Row className="acc-width">
-                            <Col md={12}>
+                        </div>
+                        <div className="acc-width">
+                            <Col md={12} className="compensarMargen" >
                                 <div className="graphic-acc-3">
                                     <img width="80%" src={Grafico2} alt="grafico2" />
                                 </div>
                             </Col>
-                        </Row>
+                        </div>
                         <Row className=" box-dimensions-text acc-width">
                             <TabbedCard 
                                 imagen={ dimensiones2R } 

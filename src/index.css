@@ -5,6 +5,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff !important;
 }
+
+.compensarMargen{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 button{
     background: transparent;
     border: none;
