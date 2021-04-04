@@ -257,6 +257,7 @@ button{
 }
 
 .acc-width {
+    width: 100%;
     max-width: 1920px;
 }
 
@@ -272,14 +273,14 @@ button{
 
 .tittleColor {
     font-size: 50px !important;
-    color: #6d6a6a;
+    color: #000;
     padding-top: 50px;
     font-weight: bold;
 }
 
 .textIndex {
     font-size: 22px;
-    color: #6d6a6a;
+    color: #000;
     font-weight: 500;
     padding: 0px 30px;
 }
@@ -815,6 +816,11 @@ nav{
     font-size: 16px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.nav-item-nav {
+    color: #616261 !important;
+    line-height: 17px;
+    font-size: 14px;
 }
 @media (max-width: 900px) {
     .navbar-light .navbar-toggler-icon {

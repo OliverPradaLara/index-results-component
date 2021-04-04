@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Accordion, Card, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next';
+
+//Componentes
 import { GeneralTab } from './GeneralTab';
 import { DimensionsTab } from './DimensionsTab';
 import LinkMasInformacion from '../Atomos/LinkMasInformacion';
