@@ -28,36 +28,20 @@ export const DimensionsTab = () => {
                     <CarouselDetailsSubDimensiones dimensions={view} goBack={back} />
                 ) : (
                     <>
-                        {/* <Row className="acc-width">
-                            <Col md={12}>
+                        <div className="acc-width">
+                            <Col md={12} className="compensarMargen">
                                 <div className="p-4 comp-pad-general">
                                     <p className="text-descripcion">{t("tittleDimensions")}</p>
                                 </div>
                             </Col>
-                        </Row>
-                        <Row className="acc-width">
-                            <Col md={12}>
+                        </div>
+                        <div className="acc-width">
+                            <Col md={12} className="compensarMargen" >
                                 <div className="graphic-acc-3">
                                     <img width="80%" src={Grafico2} alt="grafico2" />
                                 </div>
                             </Col>
-                        </Row> */}
-
-                        <div className="d-flex color-grey justify-content-center">
-                            <Col md={10} className>
-                                <div className="text-carrusel">
-                                    <p className="descripcion-carrusel">{t("tittleDimensions")}</p>
-                                </div>
-                            </Col>
                         </div>
-                        <div>
-                            <Col md={12}>
-                                <div className="graphic-acc-3">
-                                    <img width="80%" src={Grafico2} alt="" />
-                                </div>
-                            </Col>
-                        </div>
-
                         <Row className=" box-dimensions-text acc-width">
                             <TabbedCard
                                 imagen={dimensiones2R}

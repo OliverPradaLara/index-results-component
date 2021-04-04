@@ -17,8 +17,8 @@ export const GeneralTab = () => {
 
     return (
         <>
-            <Row className="acc-width">
-                <Col md={12}>
+            <div className="acc-width">
+                <Col md={12} className="compensarMargen" >
                     <div className="p-4 comp-pad-general">
                         <p className="text-descripcion">{t("general_tittle")}</p>
                     </div>
@@ -26,7 +26,7 @@ export const GeneralTab = () => {
                         <img width="80%" src={Grafico1} alt="gráfico" />
                     </div>
                 </Col>
-            </Row>
+            </div>
             <Row className=" box-dimensions-text acc-width">
                 <TabbedCard 
                     imagen={ generales1R } 
