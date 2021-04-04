@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Accordion, Card, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next';
-import { GeneralTab } from './Organismos/GeneralTab';
-import { DimensionsTab } from './Organismos/DimensionsTab';
+import { GeneralTab } from './GeneralTab';
+import { DimensionsTab } from './DimensionsTab';
+import LinkMasInformacion from '../Atomos/LinkMasInformacion';
 
 export const ThirdAccordion = () => {
     const [drop, setDrop] = useState(false)
@@ -47,13 +48,10 @@ export const ThirdAccordion = () => {
                             </>
                         )
                     }
-                    <>
-                    </>
                 </Row>
             </Accordion.Toggle>
 
             <Accordion.Collapse className="" eventKey="0">
-
                 <Tab.Container defaultActiveKey="general">
                     <Card className="acc-width" >
                         <Nav variant="tabs" className="tabGeneralDimensions">
@@ -69,15 +67,16 @@ export const ThirdAccordion = () => {
                             <Tab.Content className="tab-container">
                                 <Tab.Pane eventKey="general">
                                     <GeneralTab />
+                                    <LinkMasInformacion link="http://indice.lab.gob.cl/categories" texto={t("more_category")} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="dimensions">
                                     <DimensionsTab />
+                                    <LinkMasInformacion link="http://indice.lab.gob.cl/methodology" texto={t("dimensionsInformationPlus")} />
                                 </Tab.Pane>
                             </Tab.Content>
                         </Card.Body>
                     </Card>
                 </Tab.Container>
-
             </Accordion.Collapse>
         </>
     )

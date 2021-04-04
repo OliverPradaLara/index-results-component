@@ -1,8 +1,8 @@
 import React from 'react'
-import cloud from '../../SVG/img/download.png'
 import { useTranslation } from 'react-i18next'
+import cloud from '../../SVG/img/download.png'
 
-export const UpFooter = () => {
+export const FooterDescargas = () => {
     const { t } = useTranslation();
     return (
         <>
@@ -10,13 +10,13 @@ export const UpFooter = () => {
                 <div className="contenedor">
                     <div className="descargas">
                         <div className="imagen">
-                            <img src={cloud} alt="Cloud" />
+                            <img src={cloud} alt={t("downloads")} />
                         </div>
                         <div className="titulo">
                             <h4>{t("downloads")}</h4>
                         </div>
                         <div className="descripcion">
-                            <p>({t("all_docs")})</p>
+                            {/* <p>({t("all_docs")})</p> */}
                         </div>
                     </div>
                     <div className="lista">
@@ -31,3 +31,5 @@ export const UpFooter = () => {
     )
 
 }
+
+export default FooterDescargas

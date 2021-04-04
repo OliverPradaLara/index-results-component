@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
-import Fijo2 from "../SVG/img/Fijo2.svg";
-import acordeon2R from "../SVG/img/acordeon2R.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'
 
+//Imagenes
+import Fijo2 from "../../SVG/img/Fijo2.svg";
+import acordeon2R from "../../SVG/img/acordeon2R.svg";
+
 export const SecondAccordion = () => {
+
     const [drop, setDrop] = useState(true)
     const { t } = useTranslation();
 
@@ -41,8 +44,6 @@ export const SecondAccordion = () => {
                             </>
                         )
                     }
-                    <>
-                    </>
                 </Row>
                 <Row className="accordionView">
                     <Col md={12}>
@@ -52,7 +53,6 @@ export const SecondAccordion = () => {
                     </Col>
                 </Row>
             </Accordion.Toggle>
-
             <Accordion.Collapse className="size-box" eventKey="1">
                 <Row className="accordion2ContainerCollapse pb-4">
                     <Col md={4} className="accordion2Box">

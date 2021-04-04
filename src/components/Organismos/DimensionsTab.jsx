@@ -10,7 +10,7 @@ import Grafico2 from "../../SVG/img/Grafico2.svg";
 import dimensiones1R from "../../SVG/img/dimensiones1R.svg";
 import dimensiones2R from "../../SVG/img/dimensiones2R.svg";
 import dimensiones3R from "../../SVG/img/dimensiones3R.svg";
-import { CarouselDetails } from '../CarouselDetails'
+import CarouselDetailsSubDimensiones from './CarouselDetailsSubDimensiones'
 
 export const DimensionsTab = () => {
 
@@ -25,7 +25,7 @@ export const DimensionsTab = () => {
         <>
             {
                 view !== 0 ? (
-                    <CarouselDetails dimensions={view} goBack={back} />
+                    <CarouselDetailsSubDimensiones dimensions={view} goBack={back} />
                 ) : (
                     <>
                         <Row className="acc-width">

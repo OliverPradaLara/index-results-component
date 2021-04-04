@@ -18,7 +18,7 @@ const TabbedCard = ({ imagen, titulo, descripcion, textlink, onclick, clase }) =
         <Row className="row-a-dimensions-bottom">
             <Col className="col-a-dimensions">
                 <div className="text-center">
-                    <a href="/#" onClick={ onclick } className="color-orange-one">{ textlink }</a>
+                    <button onClick={ onclick } className="color-orange-one">{ textlink }</button>
                 </div>
             </Col>
         </Row>

@@ -5,6 +5,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff !important;
 }
+button{
+    background: transparent;
+    border: none;
+}
 
 .tabResponsive {
     display: none;
@@ -45,15 +49,18 @@ body {
 
 .body-container {
     width: 100%;
-    max-width: 1920px;
+    max-width: 1728px;
     margin: 0 auto;
 }
 
 .contenedor-first-footer {
     width: 100%;
-    background: #EAEDED;
+    background: #F6F7F6;
     margin-bottom: 0;
-    padding: 1.5% 0.5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .contenedor-first-footer .contenedor {
@@ -67,28 +74,32 @@ body {
 .contenedor-first-footer .contenedor .descargas {
     width: 40%;
     text-align: center;
-    border-right: 5px solid #FF7043;
+    border-right: 2px solid #FF7043;
 }
 
 .contenedor-first-footer .contenedor .descargas .imagen {
     width: 100%;
     padding-bottom: 1%;
 }
-
 .contenedor-first-footer .contenedor .descargas .imagen img {
-    width: 28%;
+    width: 85px;
+    height: 80px;
+    
+}
+.contenedor-first-footer .contenedor .descargas .titulo{
+    width: 100;
 }
 
 .contenedor-first-footer .contenedor .descargas .titulo h4 {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: 700;
-    color: #566573;
+    color: #000;
     padding: 0;
     margin: 0;
 }
 
 .contenedor-first-footer .contenedor .descargas .descripcion p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
     color: #FF7043;
@@ -96,7 +107,7 @@ body {
 }
 
 .contenedor-first-footer .contenedor .lista {
-    width: 60%;
+    width: 52%;
 }
 
 .contenedor-first-footer .contenedor .lista ul {
@@ -107,12 +118,13 @@ body {
 }
 
 .contenedor-first-footer .contenedor .lista ul li {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 3px;
 }
 
 .contenedor-first-footer .contenedor .lista ul li .underline {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     font-style: normal;
     text-decoration: underline;
@@ -128,10 +140,10 @@ body {
 .contenedor-footer {
     background: #000;
     width: 100%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    padding-right: 1.7rem;
+    padding-left: 1.7rem;
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -145,52 +157,61 @@ body {
     flex-direction: row;
 }
 
-.contenedor-footer .all-logos .logo-izquierdo, .contenedor-footer .all-logos .logo-centro, .contenedor-footer .all-logos .logo-derecho {
+.contenedor-footer .all-logos .logo-izquierdo, 
+.contenedor-footer .all-logos .logo-derecho {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contenedor-footer .all-logos .logo-centro {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
-    width: 33%;
+    width: 30%;
 }
 
 .contenedor-footer .all-logos .logo-izquierdo img {
-    width: 75%;
+    width: 80%;
     height: 90px;
 }
 
 .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica {
+    text-align: center;
     width: 60%;
 }
 
 .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica img {
-    width: 70%;
+    width: 75%;
 }
 
-.contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
+.contenedor-footer .all-logos .logo-derecho .twitter, 
+.contenedor-footer .all-logos .logo-derecho .instagram, 
+.contenedor-footer .all-logos .logo-derecho .in, 
+.contenedor-footer .all-logos .logo-derecho .facebook {
     width: 20%;
-    font-size: 400%;
+    font-size: 240%;
     color: #fff;
     text-align: center;
 }
 
 .contenedor-footer .links {
     width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .contenedor-footer .links ul {
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .contenedor-footer .links ul li {
@@ -198,6 +219,7 @@ body {
 }
 
 .contenedor-footer .links ul li a {
+    font-size: 14px;
     color: #fff;
 }
 
@@ -513,15 +535,6 @@ body {
     text-decoration: none;
 }
 
-.img-laboratorio-gobierno {
-    width: 130px;
-    height: 50px;
-}
-
-.img-indice-innovacion {
-    width: 160px;
-    height: 60px;
-}
 
 .accordionView {
     padding-left: 1.5%;
@@ -667,9 +680,37 @@ body {
 .contenedor-footer .links ul li{
     font-weight: 700;
 }
-.ub-logo {
-    z-index: 1;
+nav{
+    padding: 0 !important;
+    padding-bottom: 5px !important;
 }
+.ub-logo {
+    width: 95%;
+    z-index: 1;
+    padding-left: 30px;
+}
+.ub-logo .navbar-brand{
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+.ub-logo .navbar-brand .logo-nav-lab{
+    width: 18%;
+} 
+.ub-logo .navbar-brand .logo-nav-indice{
+ width: 20%;
+}
+.ub-logo .navbar-brand .logo-nav-lab .img-laboratorio-gobierno {
+    width: 115px;
+    height: 50px;
+}
+.ub-logo .navbar-brand .logo-nav-indice .img-indice-innovacion {
+    width: 145px;
+    height: 60px;
+}
+
+
 .btn-toggler {
     z-index: 2;
 }
@@ -763,22 +804,32 @@ body {
 .card-interpretacion-grafico .interpretation-grafico-body .description .enlace{
     padding-top: 20px;
 }
-.card-interpretacion-grafico .interpretation-grafico-body .description .enlace a{
+.card-interpretacion-grafico .interpretation-grafico-body .description .enlace button{
+    background: transparent;
+    border: none;
     font-size: 20px;
 }
-
+.link-informacion{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 @media (max-width: 900px) {
-    
-    .contenedor-footer .all-logos .logo-izquierdo img {
-        width: 68.4%;
-    }
-    .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica img {
-        width: 80%;
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.6%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 10h17M4 15h17M4 20h17'/%3e%3c/svg%3e") !important;
     }
     
     .img-laboratorio-gobierno {
         display: none;
     }
+    .img-indice-innovacion {
+        width: 124px;
+        height: 40px;
+    }
+    
+    
     .center-translation {
         display: flex;
         align-self: center;
@@ -786,6 +837,8 @@ body {
     .ub-logo {
         float: right;
         z-index: 2;
+        display: flex;
+        justify-content: flex-start;
     }
     .btn-toggler {
         z-index: 1;
@@ -863,11 +916,22 @@ body {
     .borde-top {
         padding-top: 6% !important;
     }
+    .contenedor-footer{
+        padding: 30px 8px 85px 8px; 
+    }
+    .contenedor-footer .all-logos .logo-izquierdo img {
+        width: 68.4%;
+    }
+    .contenedor-footer .all-logos .logo-centro .indice-innovacion-publica img {
+        width: 80%;
+    }
     .contenedor-footer .all-logos .logo-izquierdo {
         padding: 0;
         padding-bottom: 5%;
     }
-    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno, .contenedor-footer .all-logos .logo-izquierdo .ministerio {
+    .contenedor-footer .all-logos .logo-izquierdo .banco-interamericano-desarrollo, 
+    .contenedor-footer .all-logos .logo-izquierdo .laboratorio-gobierno,
+     .contenedor-footer .all-logos .logo-izquierdo .ministerio {
         text-align: center !important;
     }
     .contenedor-footer .all-logos .logo-centro {
@@ -878,10 +942,11 @@ body {
         text-align: center;
         width: 80%;
     }
-    .contenedor-footer .all-logos .logo-derecho {
+    .contenedor-footer .all-logos .logo-derecho,
+    .contenedor-footer .all-logos .logo-izquierdo{
         width: 100% !important;
         padding: 0;
-        text-align: center;
+        justify-content: center;
     }
     .contenedor-footer .all-logos .logo-derecho .twitter {
         font-size: 250%;
@@ -898,7 +963,10 @@ body {
         font-size: 250%;
         color: #fff;
     }
-    .contenedor-footer .all-logos .logo-derecho .twitter, .contenedor-footer .all-logos .logo-derecho .instagram, .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer .all-logos .logo-derecho .facebook {
+    .contenedor-footer .all-logos .logo-derecho .twitter, 
+    .contenedor-footer .all-logos .logo-derecho .instagram, 
+    .contenedor-footer .all-logos .logo-derecho .in, .contenedor-footer 
+    .all-logos .logo-derecho .facebook {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -910,6 +978,7 @@ body {
         padding-top: 7%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .contenedor-footer .links ul {
         width: 90% !important;
@@ -922,13 +991,17 @@ body {
         font-weight: 700 !important;
         list-style-type: none;
         text-align: center;
+        line-height: 18px;
     }
     .contenedor-footer .links ul li a{
         text-decoration: none;
     }
+    .contenedor-first-footer{
+        padding: 5% 2.5% 2% 2.5%;
+    }
     .contenedor-first-footer .contenedor {
         width: 100%;
-        padding: 5%;
+        padding: 0% 6%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -940,23 +1013,31 @@ body {
         border-right: none;
         border-bottom: 5px solid #FF7043;
     }
+    .contenedor-first-footer .contenedor .descargas .titulo{
+        width: 100;
+    }
+    
+    .contenedor-first-footer .contenedor .descargas .titulo h4 {
+        font-size: 35px;
+    }
     .contenedor-first-footer .contenedor .lista {
         width: 100%;
-        padding-top: 6%;
+        padding-top: 5%;
         padding-bottom: 2%;
     }
     .contenedor-first-footer .contenedor .lista ul {
-        width: 90%;
+        width: 100%;
         padding: 0;
         margin: 0;
     }
     .contenedor-first-footer .contenedor .lista ul li {
+        width: 100%;
         font-size: 15px;
         font-weight: 600;
         padding-bottom: 3%;
     }
     .contenedor-first-footer .contenedor .lista ul li .underline {
-        font-size: 17px;
+        font-size: 20px;
     }
     .borde-accordion-3-r {
         padding: 0px 4% 0px 4%;

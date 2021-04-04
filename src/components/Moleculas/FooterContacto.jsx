@@ -7,7 +7,7 @@ import { Row, Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
 
-export const PieFooter = () => {
+const FooterContacto = () => {
     const { t } = useTranslation();
     return (
         <>
@@ -52,12 +52,14 @@ export const PieFooter = () => {
                 </Row>
                 <Row className="links">
                     <ul>
-                        <li><a href="https://indice.lab.gob.cl/about"><span className='color-orange-two'>{t("footer_down_1")}</span></a></li>
-                        <li><a href="https://indice.lab.gob.cl/privacy-policies"><span className='color-orange-two'>{t("footer_down_2")}</span></a></li>
-                        <li className="color-orange-two" >{(t("footer_down_3"))} <a className="linksFooter" href="https://indice.lab.gob.cl/login">{t("footer_down_4")}</a></li>
+                        <li className='col-md-4'><a href="https://indice.lab.gob.cl/about"><span className='color-orange-two'>{t("footer_down_1")}</span></a></li>
+                        <li className='col-md-2'><a href="https://indice.lab.gob.cl/privacy-policies"><span className='color-orange-two'>{t("footer_down_2")}</span></a></li>
+                        <li className="color-orange-two col-md-6 text-center" >{(t("footer_down_3"))} <a className="linksFooter" href="https://indice.lab.gob.cl/login">{t("footer_down_4")}</a></li>
                     </ul>
                 </Row>
             </div>
         </>
     )
 }
+
+export default FooterContacto;

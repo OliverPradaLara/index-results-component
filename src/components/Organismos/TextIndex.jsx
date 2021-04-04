@@ -1,8 +1,8 @@
 import React from 'react';
-import { Row, Col, Card } from 'react-bootstrap'
+import { Col, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
-export const TextIndex = () => {
+const TextIndex = () => {
     const { t } = useTranslation();
     return (
         <div>
@@ -27,3 +27,4 @@ export const TextIndex = () => {
         </div>
     )
 }
+export default TextIndex;

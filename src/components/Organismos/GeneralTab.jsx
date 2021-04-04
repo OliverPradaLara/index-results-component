@@ -46,11 +46,6 @@ export const GeneralTab = () => {
                     descripcion={ t("new_text") }
                 />
             </Row>
-            <Row className="acc-width">
-                <Col className="text-center pt-4 pb-4" md={12}>
-                    <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_category")}</a>
-                </Col>
-            </Row>
         </>
     )
 }

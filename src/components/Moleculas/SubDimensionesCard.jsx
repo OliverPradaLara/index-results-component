@@ -22,8 +22,8 @@ const SubDimensionesCard = ({ imagen, titulo, descripcion, textolink, onclick, t
         </Row>
         <Row className="row-a-dimensions-bottom">
             <Col className="col-a-dimensions">
-                <div className="text-center isDesktop">
-                    <a href="/#" onClick={ onclick } className="color-orange-one">{ textolink }</a>
+                <div className="text-center enlace-button isDesktop">
+                    <button onClick={ onclick } className="color-orange-one">{ textolink }</button>
                 </div>
                 <AnalisisAcordion titulo={ titulointerpretaciongrafico } descripcion={ descripcioninterpretaciongrafico } analisis={ analisistexto } />
             </Col>

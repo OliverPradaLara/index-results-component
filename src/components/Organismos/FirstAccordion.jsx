@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Accordion, Card, Row, Col } from 'react-bootstrap'
-import Fijo1 from "../SVG/img/Fijo1.svg";
-import graficoAcordeonR from "../SVG/img/graficoAcordeonR.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'
 
+//Imagenes
+import Fijo1 from "../../SVG/img/Fijo1.svg";
+import graficoAcordeonR from "../../SVG/img/graficoAcordeonR.svg";
 
 export const FirstAccordion = () => {
     const [drop, setDrop] = useState(true)
@@ -44,8 +45,6 @@ export const FirstAccordion = () => {
                                 </>
                             )
                     }
-                    <>
-                    </>
                 </Row>
                 <Row className="accordionView" >
                     <Col md={12} >
@@ -65,7 +64,7 @@ export const FirstAccordion = () => {
                         <img width="80%" src={graficoAcordeonR} alt="gráfico" />
                     </div>
                     <div className="text-center pt-4 pb-4 text-ancor">
-                        <a href="https://www.google.com/?hl=es" className="color-orange-one">{t("more_info_acc_1")}</a>
+                        <a href="http://indice.lab.gob.cl/benefits" className="color-orange-one">{t("more_info_acc_1")}</a>
                     </div>
                 </Card.Body>
             </Accordion.Collapse>
