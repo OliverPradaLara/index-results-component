@@ -14,8 +14,8 @@ const SubDimensionesCard = ({ imagen, titulo, descripcion, textolink, onclick, t
         </Row>
         <Row className="row-a-dimensions-top">
             <Col>
-                <Card.Title className="title-resultado">{ titulo }</Card.Title>
-                <Card.Text className="descripcion-resultado">
+                <Card.Title className="title-resultado padding-card">{ titulo }</Card.Title>
+                <Card.Text className="descripcion-resultado padding-card">
                     { descripcion }
                 </Card.Text>
             </Col>

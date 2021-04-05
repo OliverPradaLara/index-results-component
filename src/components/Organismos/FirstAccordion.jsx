@@ -3,6 +3,9 @@ import { Accordion, Card, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'
 
+
+import LinkMasInformacion from "../Atomos/LinkMasInformacion"
+
 //Imagenes
 import Fijo1 from "../../SVG/img/Fijo1.svg";
 import graficoAcordeonR from "../../SVG/img/graficoAcordeonR.svg";
@@ -63,9 +66,7 @@ export const FirstAccordion = () => {
                     <div className="graficoAcc1R">
                         <img width="80%" src={graficoAcordeonR} alt="gráfico" />
                     </div>
-                    <div className="text-center pt-4 pb-4 text-ancor">
-                        <a href="http://indice.lab.gob.cl/benefits" className="color-orange-one">{t("more_info_acc_1")}</a>
-                    </div>
+                    <LinkMasInformacion link="http://indice.lab.gob.cl/benefits" texto={t("more_info_acc_1")} />
                 </Card.Body>
             </Accordion.Collapse>
         </>
