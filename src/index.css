@@ -21,11 +21,11 @@ button{
 }
 
 .isDesktop{
-    display: block;
+    display: block !important;
 }
 
 .isResponsive{
-    display: none;
+    display: none !important;
 }
 
 .navbar {
@@ -894,6 +894,7 @@ nav{
     .nav-item-nav {
         text-align: left;
         border-bottom: 1px solid #6D6A6A;
+        width: 100% !important;
     }
     .row-navbar {
         display: flex;
@@ -1215,7 +1216,7 @@ nav{
     }
     
     .isResponsive{
-        display: block;
+        display: block !important;
     }
     .tittleTextPpal {
         display: flex;

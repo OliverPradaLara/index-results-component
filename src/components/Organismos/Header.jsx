@@ -52,7 +52,7 @@ const Header = () => {
                             <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("text_institution")} <br/> {t("text_categories")}</b></Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item className="center-translation">
+                        <Nav.Item className="center-translation isDesktop">
                             <NavDropdown className="color-nav posicion-class" title={language ? `| ESP` : "| ENG"} id="basic-nav-dropdown">
                                 <NavDropdown.Item onClick={() => {
                                     setLanguage(true)
@@ -64,6 +64,21 @@ const Header = () => {
                                 }}>{t("english")}</NavDropdown.Item>
                             </NavDropdown>
                         </Nav.Item>
+
+                        <Nav.Item className="center-translation isResponsive">
+                            <NavDropdown className="color-nav posicion-class" title={language ? ` ESP` : " ENG"} id="basic-nav-dropdown">
+                                <NavDropdown.Item onClick={() => {
+                                    setLanguage(true)
+                                    i18n.changeLanguage("es")
+                                }}>{t("spanish")}</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => {
+                                    setLanguage(false)
+                                    i18n.changeLanguage("en")
+                                }}>{t("english")}</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav.Item>
+
+
                     </Nav>
                 </Navbar.Collapse>
             </Col>
