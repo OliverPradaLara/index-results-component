@@ -41,7 +41,6 @@ const CarouselDetailsSubDimensiones = (props) => {
     const carouselCollaborationCodes = [31, 32, 33]
 
     const [detailView, setDetailView] = useState(dimensions)
-    console.log({ detailView })
 
     const goBack = (dimension) => {
         setDetailView(dimension)
