@@ -709,6 +709,7 @@ nav{
     color: #616261 !important;
     line-height: 17px;
     font-size: 14px;
+    margin-right: 55px;
 }
 .navbar-nav .dropdown-menu{
     top: 10%;
