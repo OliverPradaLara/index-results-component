@@ -26,10 +26,10 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="d-flex justify-content-end">
                         <Nav.Item>
-                            <Nav.Link className="color-orange-one text_decoration nav-item-nav" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                            <Nav.Link className="color-orange-one text_decoration nav-item-nav" href="#home"><b>{t("text_Resultados")}<br/>{t("text_Index")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("measurement_methodology")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("text_methodology")}<br/>{t("text_measurement")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("benefits_of_participating")} </b></Nav.Link>

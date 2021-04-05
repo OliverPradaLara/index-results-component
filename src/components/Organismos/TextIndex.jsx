@@ -10,7 +10,7 @@ const TextIndex = () => {
                 <div className="tittleTextPpal">
                     <Col md={6} sm={12} xs={12}>
                         <h1 className="tittleColor">
-                            <b>{t("text_index_tittle")}</b>
+                            <b>{t("text_Resultados")} {t("text_Index")}</b>
                         </h1>
                     </Col>
                 </div>

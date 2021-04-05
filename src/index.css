@@ -704,6 +704,7 @@ nav{
 }
 
 .nav-item-nav {
+    width: auto !important;
     text-align: center;
     color: #616261 !important;
     line-height: 17px;
