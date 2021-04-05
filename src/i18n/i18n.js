@@ -133,7 +133,6 @@ i18n
                     "text_methodology": "Metodología",
                     "text_measurement": " de medición",
                     "benefits_of_participating": "Beneficios de participar",
-                    "institution_categories": "Categorías de instituciones",
                     "text_Resultados": "Resultados",
                     "text_Index": " del Índice",
                     "measurement_methodology": "Metodología de medición",
