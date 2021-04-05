@@ -10,7 +10,7 @@ const Header = () => {
     const [language, setLanguage] = useState(true)
     const { t, i18n } = useTranslation();
     return (
-        <Navbar expand="lg" collapseOnSelect className="pl-2 pr-2" bg="withe" variant="light">
+        <Navbar expand="lg" collapseOnSelect className="header-nav" bg="withe" variant="light">
             <div className="ub-logo" >
                 <div className="navbar-brand">
                     <a className="logo-nav-lab" href="https://lab.gob.cl/" >
@@ -26,16 +26,16 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="d-flex justify-content-end">
                         <Nav.Item>
-                            <Nav.Link className="color-orange-one text-center text_decoration nav-item-nav" href="#home"><b>{t("index_results")}</b></Nav.Link>
+                            <Nav.Link className="color-orange-one text_decoration nav-item-nav" href="#home"><b>{t("index_results")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="text-center nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("measurement_methodology")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("measurement_methodology")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="text-center nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("benefits_of_participating")} </b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="text-center nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("institution_categories")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("institution_categories")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="center-translation">
                             <NavDropdown className="color-nav posicion-class" title={language ? `| ESP` : "| ENG"} id="basic-nav-dropdown">
