@@ -32,10 +32,10 @@ const Header = () => {
                             <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("measurement_methodology")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("benefits_of_participating")} </b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("text_benefits")} <br/> {t("text_of_participating")}  </b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("institution_categories")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("text_institution")} <br/> {t("text_categories")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="center-translation">
                             <NavDropdown className="color-nav posicion-class" title={language ? `| ESP` : "| ENG"} id="basic-nav-dropdown">
