@@ -56,7 +56,7 @@ export const SecondAccordion = () => {
             <Accordion.Collapse className="size-box" eventKey="1">
                 <Row className="accordion2ContainerCollapse pb-4">
                     <Col md={4} className="accordion2Box">
-                        <h1 className="accordion2Tittle">130</h1>
+                        <h1 className="accordion2Tittle">134</h1>
                         <h2 className="accordion2SubTittle">{t("innovation_initiatives")}</h2>
                         <p className="accordion2Body">{t("text_acc_2")}</p>
                     </Col>
