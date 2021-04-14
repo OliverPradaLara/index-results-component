@@ -69,11 +69,11 @@ export const ThirdAccordion = () => {
                             <Tab.Content className="tab-container">
                                 <Tab.Pane eventKey="general">
                                     <GeneralTab />
-                                    <LinkMasInformacion link="http://indice.lab.gob.cl/categories" texto={t("more_category")} />
+                                    <LinkMasInformacion link="http://indice.lab.gob.cl/#/site/categories" texto={t("more_category")} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="dimensions">
                                     <DimensionsTab />
-                                    <LinkMasInformacion link="http://indice.lab.gob.cl/methodology" texto={t("dimensionsInformationPlus")} />
+                                    <LinkMasInformacion link="http://indice.lab.gob.cl/#/site/methodology" texto={t("dimensionsInformationPlus")} />
                                 </Tab.Pane>
                             </Tab.Content>
                         </Card.Body>

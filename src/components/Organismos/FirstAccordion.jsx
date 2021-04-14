@@ -66,7 +66,7 @@ export const FirstAccordion = () => {
                     <div className="graficoAcc1R">
                         <img width="80%" src={graficoAcordeonR} alt="gráfico" />
                     </div>
-                    <LinkMasInformacion link="http://indice.lab.gob.cl/benefits" texto={t("more_info_acc_1")} />
+                    <LinkMasInformacion link="http://indice.lab.gob.cl/#/site/categories" texto={t("more_info_acc_1")} />
                 </Card.Body>
             </Accordion.Collapse>
         </>
