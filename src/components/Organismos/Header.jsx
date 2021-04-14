@@ -30,26 +30,26 @@ const Header = () => {
                             <Nav.Link className="color-orange-one text_decoration nav-item-nav" href="#home"><b>{t("text_Resultados")} {t("text_Index")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isResponsive">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("text_methodology")} {t("text_measurement")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/methodology"><b>{t("text_methodology")} {t("text_measurement")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isResponsive">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("text_benefits")} {t("text_of_participating")}  </b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/benefits"><b>{t("text_benefits")} {t("text_of_participating")}  </b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isResponsive">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("text_institution")} {t("text_categories")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/categories"><b>{t("text_institution")} {t("text_categories")}</b></Nav.Link>
                         </Nav.Item>
                         {/* Escritorio */}
                         <Nav.Item className="isDesktop">
                             <Nav.Link className="color-orange-one text_decoration nav-item-nav" href="#home"><b>{t("text_Resultados")}<br/>{t("text_Index")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isDesktop">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/methodology"><b>{t("text_methodology")}<br/>{t("text_measurement")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/methodology"><b>{t("text_methodology")}<br/>{t("text_measurement")}</b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isDesktop">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/benefits"><b>{t("text_benefits")} <br/> {t("text_of_participating")}  </b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/benefits"><b>{t("text_benefits")} <br/> {t("text_of_participating")}  </b></Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="isDesktop">
-                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/categories"><b>{t("text_institution")} <br/> {t("text_categories")}</b></Nav.Link>
+                            <Nav.Link className="nav-item-nav" href="http://indice.lab.gob.cl/#/site/categories"><b>{t("text_institution")} <br/> {t("text_categories")}</b></Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item className="center-translation isDesktop">
