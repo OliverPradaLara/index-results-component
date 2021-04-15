@@ -21,7 +21,7 @@ export const FooterDescargas = () => {
                     </div>
                     <div className="lista">
                         <ul>
-                            <li><i className="fas fa-chevron-right color-orange-one"></i> <a href="/static/Nota_Técnica_Indice_Innovación_Pública.pdf" target="_blank" className="color-orange-one"> <span className="underline">{t("technical_note_of_results")}</span> <span>(.pdf)</span> </a></li>
+                            <li><i className="fas fa-chevron-right color-orange-one"></i> <a href="/static/Nota_Tecnica_Indice_Innovacion_Publica.pdf" target="_blank" className="color-orange-one"> <span className="underline">{t("technical_note_of_results")}</span> <span>(.pdf)</span> </a></li>
                             <li><i className="fas fa-chevron-right color-orange-one"></i> <a href="/Base_de_datos_IIP.zip" target="_blank" className="color-orange-one"> <span className="underline">{t("database")}</span> <span>(.csv)</span></a></li>
                         </ul>
                     </div>
